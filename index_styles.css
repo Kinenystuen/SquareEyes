@@ -1,0 +1,399 @@
+/* Uni code */
+
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+body {
+  background-color: #050517;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #f7f7f7;
+  margin-top: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.active_page {
+  color: #f7f7f7;
+  font-style: bold;
+}
+
+/* ///////// Header code ////////// */
+
+header {
+  position: relative;
+  max-width: 1440px;
+  height: 80px;
+  top: 0px;
+  opacity: 100;
+  background-color: #050517;
+  /* drop shadow */
+  box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);
+}
+
+.header_left {
+  position: absolute;
+  height: 84px;
+  left: 8.33%;
+  top: 0px;
+  flex-direction: ;
+  display: inline;
+}
+
+.logo_se {
+  position: absolute;
+  display: block;
+  max-width: 121px;
+  height: 65px;
+  background-color: #f0c808;
+  padding: 9px 31px;
+  gap: 8px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.header_left nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 20px;
+  height: 64px;
+  top: 9px;
+  min-width: 590px;
+  left: 150px;
+}
+
+.header_right nav {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding: 6px 6px 6px 6px;
+  position: absolute;
+  max-width: 1200px;
+  height: 64px;
+  right: 8.33%;
+  top: 12px;
+}
+
+.header_right img {
+  width: auto;
+  height: 24px;
+  top: 0px;
+}
+
+.smaller_icon {
+  height: 43px;
+  width: auto;
+
+}
+
+header nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #d2d2d2;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+
+  border: 1px solid #050517;
+  border-radius: 5px;
+  font-family: "Abril Fatface";
+  font-size: 20px;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #f7f7f7;
+  background: #2e1b3b;
+  border: 1px solid #2e1b3b;
+}
+
+/* Movie screen design here */
+
+.headerdesign {
+  position: relative;
+  height: 100svh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: #f7f7f7;
+  max-width: 1200px;
+  background-color: #D2D2D2;
+}
+
+headergradient {
+  /*background*/
+  position: absolute;
+  max-height: 100%;  
+  left: 112px;
+  right: 112px;
+  top: 84px;
+  max-width: cover;
+  background: radial-gradient(56.02% 56.02% at 50% 64.69%,
+      #4f3362 0.09%,
+      #2b1d3e 29.54%,
+      #050517 100%);
+}
+
+.headerscreen {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  width: 704px;
+  height: 345px;
+  left: calc(50% - 704px/2);
+  top: 86px;
+  border: 3pxsolid #2E1B3B;
+  border-radius: 8px;
+  /* White shadow */
+  box-shadow: 0px 4px 70px 2px;
+}
+
+.squareeyes_glasses {
+  position: absolute;
+  width: 104.5px;
+  height: 61.95px;
+  left: calc(50% - 104.5px/2 - 0.25px);
+  top: 183px;
+}
+
+.Squareeyes_logoscreen {
+  position: absolute;
+  top: 213px;
+  left: calc(50% - 286px/2);
+  max-height: 245px;
+  max-width: 50vw;
+  object-fit: scale-down;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  display: flex;
+
+}
+
+.logo_text {
+  position: absolute;
+  width: 628px;
+  max-height: 22px;
+  left: calc(50% - 628px/2 - 2px);
+  top: 292px;
+
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.batmanseats {
+  position: absolute;
+  display: flex;
+  align-items: calc(50% - 1200px);
+
+  max-width: 100vw;
+  max-height: 358px;
+  top: 317px;
+  object-fit: cover;
+
+}
+
+.arrowdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 81.93px;
+  height: 93.99px;
+  left: calc(50% - 81.93px/2 - 0.04px);
+  top: 591px;
+}
+
+/* /////////////////////////// */
+
+.section1 {
+  /*with the crewpic */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  position: relative;
+  width: 1200px;
+  height: 440px;
+  left: 120px;
+  top: 1007px;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px 20px;
+
+  width: 285px;
+  height: 440px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.leftsideinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  gap: 10px;
+
+  width: 270px;
+  height: 244px;
+}
+
+.section1 p {
+  position: absolute;
+  width: 250px;
+  height: 203px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: right;
+  color: #F7F7F7;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+
+}
+
+/* Line 1 */
+line-crewpic {
+  position: absolute;
+  width: 440px;
+  height: 0px;
+  left: 405px;
+  top: 1007px;
+
+  border: 2px solid #2E1B3B;
+  transform: rotate(90deg);
+}
+
+
+.section2 {
+  position: relative;
+}
+
+.batman_sunset {
+  top: 2000px;
+  position: absolute;
+  position: absolute;
+  width: 895px;
+  height: 440px;
+  left: 120px;
+  top: 2070px;
+}
+
+line-batman {}
+
+
+.section3 {
+  position: relative;
+}
+
+line-mostpopular {}
+
+.abrilfatface {
+  font-family: "Abril Fatface", cursive;
+}
+
+
+.section4 {
+  position: relative;
+}
+
+
+
+
+/* ////////////////// Checkout page starts here /////////////////////*/
+
+.form__input {
+  display: block;
+}
+
+/*
+.checkout_page {
+  position: relative;
+}
+
+.item {
+
+}
+
+.movie {
+
+}
+
+.price {
+
+}
+
+.total {
+
+}
+
+.price_sum {
+
+}
+
+line_paymentdetails {
+  display: flex;
+  width: cover;
+  height: 0px;
+  border: 2px solid #2E1B3B;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+*/
+
+.checkbox {
+  /*just the checkbox */
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  background: #D2D2D2;
+  border: 1px solid #2E1B3B;
+  border-radius: 8px;
+}
+
+.checkboxes {
+  /*Checkbox and text */
+  justify-content: center;
+  text-align: center;
+}
+
+
+*/
