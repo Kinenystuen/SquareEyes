@@ -7,39 +7,40 @@
   <meta name="describtion" content="Webpage for movie lovers. Choose between numbers of fantastic movies.">
   <link rel="stylesheet" href="index_styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
   <title>Square Eyes | Home</title>
 </head>
 <body>
-  <header>
+  <header class="content_wrap">
       <section class="header_left">
         <a href="index.html"><img class="logo_se" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-        <nav>
-          <ul>
+        <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="hamburger_icon"><i class="fa-solid fa-bars fa-2x"></i></label>
+        <nav class="nav_left">
             <li><a href="index.html" class="active_page">Home</a></li>
             <li><a href="movie-pages/all-movies.html">Movies</a></li>
             <li><a href="about_us.html">About us</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
-          </ul>
         </nav>
       </section>
       <section class="header_right">
-        <nav>
             <a href="#"><img src="icons/icon_search_2.png" alt="Search bar"></a>
             <a href="your_fav.html" class=""><img src="icons/icon_heart_2.png" alt="Go to favotire movies" ></a>
             <a href="your_list.html" class=""><img src="icons/icon_pluss.png" alt="Go to your list"></a>
             <a href="checkout.html" class=""><img src="icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
             <a href="your_page.html" class=""><img src="icons/icon_profile.png" alt="Go to your profile"></a>
-        </nav>
       </section>
     </header>
-  <main>
+  <main class="content_wrap">
     <section class="headerdesign">
       <headergradient></headergradient>
       <div>
-        <img class="headerscreen" src="images/screen_header.png" alt="Movie screen">
+        <div class="headerscreenmes">
+          <headerscreen></headerscreen>
+        </div>
         <img class="squareeyes_glasses" src="images/squareeyes_glasses.png" alt="Design of glasses">
-        <h1 class="Squareeyes_logoscreen">SquareEyes</h1>
-        <h2 class="logo_text">Connecting Film Lovers</h2>
+        <h1 class="Squareeyes_logoname">SquareEyes</h1>
+        <h2 class="logo_undertext">Connecting Film Lovers</h2>
         <img class="batmanseats" src="images/cinema_batman.png" alt="Design of cinema seats">
         <img class="arrowdown" src="icons/icon_arrow.png" alt="Arrow for guiding you down.">
       </div>
@@ -111,7 +112,7 @@
     </section>
 
   </main>
-  <footer>
+  <footer class="content_wrap">
 <section>
   <h2>Want to sign up to our newsletter?</h2>
   <p>Join the SquareEyes family and be among the first to receive news about new movies! </p>
@@ -122,12 +123,10 @@
 </section>
 <section>
   <div>
-    <nav>
       Copyright &copy; SquareEyes
       <a href="about_us.html">About us</a>
       <a href="contact_us.html">Contact us</a>
       <a href="#">Terms and conditions</a>
-    </nav>
   </div>
   <div>
     <a href="index.html"><img class="logo_se" src="images/SquareEyes_Logo_org.png" alt="Squareeyes logo"></a>
