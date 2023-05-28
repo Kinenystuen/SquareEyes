@@ -66,13 +66,22 @@ header  {
 }
 
 .nav_left a {
-  border: 1px solid #050517;
   border-radius: 5px;
+  
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
 }
 .nav_left a:hover {
   background: #2E1B3B;
-  border: 1px solid #2E1B3B;
+  outline: 1px solid #2E1B3B;
   border-radius: 5px;
+}
+
+.active_page {
+  box-sizing: border-box;
+  color: #F7F7F7;
+  border-bottom: 5px solid #2E1B3B;
 }
 
 
@@ -84,7 +93,7 @@ header  {
   color: #d2d2d2;
 }
 
-@media (max-width:1100px) {
+@media (max-width:1140px) {
   .nav_left {
     display: none;
   }
@@ -112,6 +121,12 @@ header  {
   left: 240px;
   top: 40px;
 }
+.active_page {
+  box-sizing: border-box;
+  color: #F7F7F7;
+  border-left: 5px solid #2E1B3B;
+  border-bottom: none;
+}
 
 }
 
@@ -130,19 +145,14 @@ header  {
 
 .nav_right a {
   padding: 10px;
+  
+  border: 1px solid #050517;
 }
 
 .nav_right a:hover {
   background: #2E1B3B;
   border: 1px solid #2E1B3B;
   border-radius: 5px;
-}
-
-.active_page {
-  color: #F7F7F7;
-  border-style: solid;
-  border-color: #2E1B3B;
-  text-decoration: underline;
 }
 
 /* ///////// Footer code //////// */
@@ -181,7 +191,7 @@ footer  {
 .headerdesign {
   position: relative;
   height: 735px;
-  width: 1200px;
+  max-width: 100%;
   text-align: center;
   align-items: center;
   color: #f7f7f7;
@@ -203,8 +213,6 @@ headergradient {
 
 .headerscreenmes {
   position: absolute;
-  width: 704px;
-  height: 345px;
   left: calc(50% - 704px/2);
   top: 86px;
 }
@@ -212,6 +220,8 @@ headergradient {
 headerscreen {
   box-sizing: border-box;
   position: absolute;
+  width: 704px;
+  height: 345px;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -269,9 +279,6 @@ headerscreen:hover {
   max-height: 358px;
   top: 400px;
   object-fit: cover;
-  margin: 0px auto;
-  justify-content: center;
-  align-items: center;
 
 }
 
