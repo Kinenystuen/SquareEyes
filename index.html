@@ -11,7 +11,7 @@
   <title>Square Eyes | Home</title>
 </head>
 <body>
-  <header class="header_fit">
+  <header>
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
     <section>
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
@@ -42,72 +42,76 @@
         <div class="headerscreenmes">
           <div><headerscreen></headerscreen></div>
         </div>
-        <img class="squareeyes_glasses" src="images/squareeyes_glasses.png" alt="Design of glasses">
-        <h1 class="Squareeyes_logoname">SquareEyes</h1>
-        <h2 class="logo_undertext">Connecting Film Lovers</h2>
-        <img class="batmanseats" src="images/cinema_batman.png" alt="Design of cinema seats">
-        <img class="arrowdown" src="icons/icon_arrow.png" alt="Arrow for guiding you down.">
+        <div class="moviescreen">
+          <img class="squareeyes_glasses" src="images/squareeyes_glasses.png" alt="Design of glasses">
+          <h1 class="Squareeyes_logoname">SquareEyes</h1>
+          <h2 class="logo_undertext">Connecting Film Lovers</h2>
+        </div>
+        <img class="batmanseats" src="images/cinema_batman_test.png" alt="Design of cinema seats">
+        <a href="#section1" class="scrollArrow">
+          <figure>
+            <img class="arrowdown" src="icons/icon_arrow.png" alt="Arrow for guiding you down.">
+          </figure>
+        </a>
       </div>
     </section> 
-    <section class="section1">
-      <div  class="leftside">
-        <div class="leftsideinfo">
-          <p>Embrace the world of independent cinema and discover great collections from talented filmmakers.</p>
+    <section class="section1" id="section1">
+      <div class="section1_info">
+        <p>Embrace the world of independent cinema and discover great collections from talented filmmakers.</p>
         <a href="movie-pages/all-movies.html">See our collection</a>
-        </div>
-        <div>
-          <line-crewpic></line-crewpic>
-        </div>
       </div>
-      <div>
+      <div class="section1_image">
         <img src="images/clipped_crew_pic_home_page.png" alt="A picture of two movie crew members">
       </div>
     </section>
     <section class="section2">
-      <div>
-        <div>
-          <div>
+      <div class="section2_area">
+          <div class="section2_row">
             <img src="icons/icon_yellow_dot.png" alt="A yellow dot">
             <p>Find your new favorite movies with our handpicked collections and easy-to-browse categories.</p>
           </div>
-          <div>
-            <img src="icons/icon_yellow_dot.png" alt="A yellow dot">
-            <p>Discover high-quality videos and support independent filmmakers.</p>
-          </div>
+        <div class="section2_row">
+          <img src="icons/icon_yellow_dot.png" alt="A yellow dot">
+          <p>Discover high-quality videos and support independent filmmakers.</p>
         </div>
       </div>
     </section>
     <section class="section3">
-      <div>
-        <img class="batman_sunset"src="images/batman sunset.jpg" alt="A picture of Batman">
+      <div class="section3_image">
+        <img class="batman_sunset"src="images/batman sunset cropped2.jpg" alt="A picture of Batman">
       </div>
-      <div>
-        <line-batman></line-batman>
+      <div class="section3_info">
         <p>Experience the excitement of superheroes, the wonder of animation, and the thrill of horror with our collection of movies.</p>
       </div>
     </section>
     <section class="section4">
       <h2>Suggestions:</h2>
       <div>
-        <img src="images/Movie_fasr & furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
-        <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
-        <img src="images/Movie_toy story.jpeg" alt="Movie cover for Toy Story 4">
-        <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
+        <figure class="section4_movie">
+          <img src="images/Movie_fasr & furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
+        </figure>
+        <figure class="section4_movie">
+          <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
+        </figure>
+        <figure class="section4_movie">
+          <img src="images/Movie_toy story.jpeg" alt="Movie cover for Toy Story 4">
+        </figure>
+        <figure class="section4_movie">
+          <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
+        </figure>
       </div>
     </section>
-    <section>
-      <div>
+    <section class="section5">
+      <div class="section5_image">
         <img src="images/once_hollywood_homepage.jpg" alt="Movie cover for Once Upon a time in Hollywood">
       </div>
-      <div>
-        <line-mostpopular></line-mostpopular>
-        <div>
-          <h2 class="AbrilFatface">Most popular right now</h2>
-          <h3>Once upon a time in hollywood</h3>
-          <a href="products/batman-movie-page.html">More info</a>
-        </div>
+      <div class="section5_info">
+        <h2 class="AbrilFatface">Most popular right now</h2>
+        <h3>Once upon a time in hollywood</h3>
+        <a href="products/batman-movie-page.html">More info</a>
       </div>
     </section>
+
     <section>
       <div>
         <p>Supporting small filmmakers and discovering interesting films.</p>
