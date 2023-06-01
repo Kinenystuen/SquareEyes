@@ -8,6 +8,8 @@ html {
   --white: #f7f7f7;
 
   scroll-behavior: smooth;
+
+  font-size: 16px;
 }
 
 header, body {
@@ -71,7 +73,7 @@ header  {
   font-family: 'Abril Fatface';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .nav_left li, .nav_left a{
@@ -203,7 +205,7 @@ footer  {
   text-align: center;
   align-items: center;
   color: var(--white);
-  margin-top: 10%;
+  margin-top: 5vh;
 }
 
 headergradient {
@@ -251,6 +253,7 @@ headerscreen:hover {
 }
 .Squareeyes_logoname {
   position: absolute;
+  display: flex;
   top: 213px;
   left: calc(50% - 286px/2);
   max-height: 245px;
@@ -258,6 +261,7 @@ headerscreen:hover {
   object-fit: scale-down;
   font-weight: 800;
   font-size: 40px;
+  font-size: 2.5rem;
   line-height: 49px;
   text-transform: uppercase;
 }
@@ -272,7 +276,7 @@ headerscreen:hover {
   font-family: 'Abril Fatface';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.1rem;
   line-height: 22px;
 }
 
@@ -325,7 +329,7 @@ headerscreen:hover {
   display: flex;
   flex-direction: column;
   text-align: right;
-  font-size: 20px;
+  font-size: 1rem;
   align-items: flex-end;
 }
 
@@ -389,7 +393,7 @@ headerscreen:hover {
 
 .section2_row p {
   width: 70%;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 /* Section3 design - batman part */
@@ -409,7 +413,7 @@ headerscreen:hover {
   padding: 20px;
   flex-direction: column-reverse;
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .section3_image {
   flex: 3;
@@ -440,7 +444,7 @@ headerscreen:hover {
 
 .section4 h2 {
   grid-column: -1/1;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 100;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -487,13 +491,13 @@ headerscreen:hover {
 .section5 h2 {
   font-family: 'Abril Fatface', 'Montserrat', Verdana, Geneva, Tahoma, sans-serif ;
   font-weight: 100;
-  font-size: 36px;
+  font-size: 2.2rem;
   line-height: 49px;
 }
 
 .section5 h3 {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -501,7 +505,7 @@ headerscreen:hover {
   display: flex;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1rem;
   color: var(--greywhite);
   border: 1px solid var(--greywhite);
   border-radius: 5px;
