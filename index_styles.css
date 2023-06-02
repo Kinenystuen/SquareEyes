@@ -12,7 +12,7 @@ html {
   font-size: 16px;
 }
 
-header, body {
+header, body , footer{
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #050517;
   color: var(--white);
@@ -156,7 +156,12 @@ header  {
 }
 
 .nav_right a {
+  display: flex;
   padding: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+  align-items: flex-end;
 }
 
 .nav_right a:hover {
@@ -170,29 +175,123 @@ header  {
 footer  {
   position: relative;
   display: block;
-  max-width: 1440px;
+  width: 80%;
   height: auto;
   margin: auto;
   background-color: var(--dark_purple);
   box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);/* drop shadow */
 }
 
-.logo_footer {
-    display: flex;
-    padding: 9px 31px;
-    gap: 8px;
-    position: absolute;
-    height: 80px;
-    align-items: center;
-    bottom: 0px;
-    background: var(--yellow);
-    border-radius: 10px 10px 0px 0px;
-}
-
 .footer_space {
   margin-top: 20px;
 }
 
+/* Newsletter */
+
+.newsletter {
+  display: flex;
+  margin: 0px auto 5vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter_area {
+  max-width: 66%;
+  font-size: 1rem;
+}
+
+.newsletterinput {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+.newsletteremail {
+  flex: 1;
+  align-items: flex-start;  
+  background-color: var(--greywhite);
+}
+
+.newslettersubscribe {
+  align-items: flex-end;
+  background-color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.newsletteremail, .newslettersubscribe {
+  border-radius: 5px;
+  padding: 8px;
+  font-family: 'montserrat';
+  font-weight: lighter;
+}
+
+.newsletteremail:hover {
+  font-weight: 600;
+}
+
+.newsletteremail:focus {
+  font-weight: 400;
+  background-color: var(--white);
+  outline: none;
+}
+
+.newslettersubscribe:hover {
+  font-weight: 600;
+}
+
+/* Footerbar */
+
+.footerbar {
+  display: flex;
+  min-height: 84px;
+  justify-content: space-between;
+  width: 100%;
+}
+.footernav {
+  object-fit: cover;
+  padding: 0px 20px;
+  flex: 1;
+}
+
+.footernav a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 4px 0px;
+  color: var(--greywhite);
+  justify-content: space-between; 
+}
+.footernav a:hover {
+  color: var(--white);
+}
+
+.footerlogo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.logo_footer {
+  padding: 9px 31px;
+  height: 80px;
+  bottom: 0px;
+  background: var(--yellow);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.footersocialmedia {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 8px;
+  margin-right: 8px;
+}
+.footersocialmedia figure {
+  margin: 0px;
+}
 
 /* /////////// Home page //////////// */
 
@@ -432,7 +531,7 @@ headerscreen:hover {
 /* Section 4 - movies */
 
 .section4 {
-  min-height: 424px;
+  min-height: 440px;
   margin: 170px auto;
   max-width: 1500px;
 }
@@ -455,6 +554,8 @@ headerscreen:hover {
   height: 100%;
   box-sizing: border-box;
   grid-column: -1/1;
+  object-fit: cover; /* to set a specific height, without the pic squeezing */
+
 }
 
 .section4 img:hover {
@@ -472,7 +573,7 @@ headerscreen:hover {
   align-items: center;
   justify-content: center;
   max-width: 1500px;
-  margin: 0px auto;
+  margin: 170px auto;
 }
 
 .section5_image {
@@ -518,3 +619,35 @@ headerscreen:hover {
   color: var(--white);
   font-weight:600;
 }
+
+/* Section6 - Supporting small filmmakers */
+
+.supportfilm {
+  display: flex;
+  margin: 170px auto 150px;
+  justify-content: center;
+  text-align: center;
+}
+
+.supportfilm_area {
+  max-width: 40%;
+  font-size: 1.3rem;
+}
+
+.supportfilm_area a {
+  display: flex;
+  justify-content: center; /* center yellow textbox */
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark_purple);
+  font-size: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--yellow);
+  padding: 8px;
+}
+
+.supportfilm_area a:hover {
+  font-weight: 600;
+}
+

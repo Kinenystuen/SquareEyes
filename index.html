@@ -15,7 +15,7 @@
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
     <section>
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-    <label for="menu_checkbox" class="hamburger_icon"><i class="fa-solid fa-bars fa-2x"></i></label>
+    <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"><i class="fa-solid fa-bars fa-2x"></i></label>
     <nav class="nav_left">
           <ul>
             <li><a href="index.html" class="active_page">Home</a></li>
@@ -112,38 +112,44 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="supportfilm">
+      <div class="supportfilm_area">
         <p>Supporting small filmmakers and discovering interesting films.</p>
         <a href="movie-pages/all-movies.html">View movies</a>
       </div>
     </section>
 
 </main>
-<footer class="content_wrap footer_space">
-    <section>
+<footer>
+    <section class="newsletter">
+      <div class="newsletter_area">
         <h2>Want to sign up to our newsletter?</h2>
         <p>Join the SquareEyes family and be among the first to receive news about new movies! </p>
-        <div>
-            <input id="email" value="Your email" name="email" type="text" required>
-            <input type="submit" value="Subscribe">
+        <div class="newsletterinput">
+            <input id="email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
+            <input type="submit" value="Subscribe" class="newslettersubscribe">
         </div>
+      </div>
     </section>
-    <section>
-        <div>
-            Copyright &copy; SquareEyes
+    <section class="footerbar">
+        <div class="footernav">
+            <span> &copy; SquareEyes </span>
             <a href="about_us.html">About us</a>
             <a href="contact_us.html">Contact us</a>
             <a href="#">Terms and conditions</a>
         </div>
-        <div>
+        <div class="footerlogo">
             <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png"
                     alt="Squareeyes logo"></a>
         </div>
-        <div>
-            <img src="icons/icon_instagram.png" alt="Icon for Instagram">
-            <img src="icons/icon_twitter.png" alt="Icon for Twitter">
-            <img src="icons/icon_facebook.png" alt="Icon for Facebook">
+        <div class="footersocialmedia">
+            <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram">
+            </figure>
+            <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter">
+            </figure>
+            <figure>
+              <img src="icons/icon_facebook.png" alt="Icon for Facebook">
+            </figure>
         </div>
     </section>
 </footer>
