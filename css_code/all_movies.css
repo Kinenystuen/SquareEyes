@@ -12,6 +12,9 @@ h1 {
     font-size: 1.8rem;
     font-weight: 200;
 }
+h2 {
+    margin: 2px;
+}
 
 /* Movie categorie nav */
 .movie_nav a {
@@ -29,7 +32,8 @@ h1 {
     height: auto;
   }
   .movie_nav ul {
-    padding: 8px;
+    padding: 2% 1%;
+    margin: 0px;
   }
 
   .movie_nav li, .movie_nav a{
@@ -70,41 +74,48 @@ h1 {
 
   .movies {
     min-height: auto;
-    margin: 170px auto;
+    margin: 20px auto 170px auto;
     max-width: 1500px;
   }
-  .movies .movie_card {
+  .movies {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-template-columns:repeat(2, 50%);
+    flex-direction: row;
+    grid-gap: 20px;    
   }
-
-
   .movie_card {
     display: flex;
-    flex-direction: row;
   }
 
   .movie_cover {
-    flex: 1fr;
+    flex: 1;
     padding-right: 1rem;
     border-right: 2px solid var(--purple);
+    object-fit: cover;
+    margin: auto;
   }
-  .movie_card img {
+    .cover_img {
     display: flex;
     max-height: 420px;
     justify-content: end;
     justify-self: end;
     align-items: end;
     text-align: flex-end;
+    object-fit: cover; 
   }
 
   .movie_info {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1rem;
-    justify-content: space-around ;
+    padding: 0px 0px 0px 1rem;
+    justify-content: space-between ;
+  }
+  .movie_info p {
+    margin: 0.5rem 0px;
+  }
+  .movie_info .movie_price {
+    font-size: 1.4rem;
   }
 
   .icon_heart {
@@ -143,7 +154,6 @@ h1 {
     width: 100%;
   }
   .buttons button a {
-    
     text-transform: uppercase;
     text-decoration: none;
     color: var(--dark_purple);
@@ -152,6 +162,10 @@ h1 {
   
   @media (max-width:1100px) {
 
+    main {
+        font-size: 14px;
+    }
+
     /* Changes the categories menu */
     .movie_nav li {
         display: none;
@@ -159,12 +173,6 @@ h1 {
     .movie_nav label:nth-child(1) {
         display: flex;
         p
-    }
-    .categories {
-        background-color: var(--purple);
-        padding: 8px;
-        border-radius: 5px;
-        cursor: pointer;
     }
     #moviemenu_checkbox:checked ~ .movie_nav li{
         display: flex;
@@ -176,7 +184,6 @@ h1 {
         display: none;
       }
     .movie_nav ul {
-        margin: 8px 0px;
     } 
     .movie_nav li {
         margin: 8px 0px;
@@ -184,5 +191,59 @@ h1 {
     .movie_nav a {
         width: 100%;
     }
-    /* stop - Changes the categories menu */
+    .categories {
+        background-color: var(--purple);
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+    }
+  }
+
+  @media (max-width:950px) {
+    .movie_info {
+        flex: 1;
+    }
+    .movie_descrition {
+        font-size: 0.7rem;
+    }
+    .movie_info h2 {
+        font-size: 1rem;
+    }
+    
+  }
+  @media (max-width:700px) {
+    .movies {
+        grid-template-columns:repeat(1, 1fr);
+    }
+    .movie_descrition {
+        font-size: 1rem;
+    }
+    .movie_info h2 {
+        font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width:500px) {
+      html {
+          font-size: 12px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        height: 1rem;
+        margin: 2%;
+      }
+
+      .movie_nav ul {
+          width: 100%;
+      }
+      .movie_nav a{
+        font-size: 1rem;
+      }
+
+      .categories {
+          width: 95%;
+          background-color: var(--dark_purple);
+          border: 2px solid var(--purple);
+      }
   }
