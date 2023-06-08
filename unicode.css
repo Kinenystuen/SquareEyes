@@ -106,14 +106,9 @@ html {
     display: none;
   }
   
-  
   #menu_checkbox, .hamburger_icon {
     display: none;
-  }
-  
-  .fa-solid, .fa-bars {    /*hamburger menu icon */
-    color: var(--greywhite);
-  }
+  }  
   
   /* nav right side */
   
@@ -282,7 +277,7 @@ html {
           top: 22px;
           width: 2rem;
           height: 2rem;
-          left: 4%;
+          left: 10%;
 
       }
 

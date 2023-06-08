@@ -37,72 +37,118 @@
             </nav>
           </section>
         </header>
-    <main class="checkout_page">
-        <button class="go_back_button"><div class="backarrow"></div><p>Go back</p></button>
+    <main class="content_wrap main_h">
+        <button class="go_back_button"><span class="backarrow"></span><span class="go_back_button_text">Go back</span></button>
         <h1>Checkout</h1>
-        <section>
-            <h2>Shopping bag</h2>
+        <section class="checkout_page">
             <div class="shopping_bag">
-
-            </div>
-
-            <button class="continue_shopping"><div class="backarrow"></div> Continue shopping</button>
-
-        </section>
-
-
-        <form action="form-success.php" method="post">
-            <h2>Payment Details</h2>
-            <article class="item">
-                <p class="movie">The Batman</p>
-                <p class="price">34kr</p>
-            </article>
-            <line_paymentdetails>
-                <article class="item">
-                    <p class="total">Total price</p>
-                    <p class="price_sum">34kr</p>
-                </article>
-                <div>
-                    <h3><a href="movie-pages/all-movies.html">Log in/Sign in</a></h3>
-                    <p>or</p>
-                    <h3>Submit your details</h3>
+                <h2>1. Shopping bag</h2>
+                <p>Number of items: 1</p>
+                <div class="item1">1.</div>
+                <div class="chosen_movie">
+                    <div class="chosen_moviecover">
+                        <img class="batman_cover" src="/images/Movie_batman.jpeg" alt="Batman movie cover">
+                    </div>
+                        <div class="movie_details">
+                        <h3>The Batman</h3>
+                        <h4>34kr</h4>
+                        <div class="row_details">
+                            <div class="details_more">
+                                <div class="movie_details_more">
+                                    <p class="what">Age restriction</p>
+                                    <p class="it_is">12</p>
+                                </div>
+                                <div class="movie_details_more">
+                                    <p class="what">Play time</p>
+                                    <p class="it_is">2h 56m</p>
+                                </div>
+                            </div>
+                            <div class="trashcan"><img src="/icons/icon_trashcan.svg" alt="Trash can"></div>
+                        </div>
+                    </div>
                 </div>
-    
-                <section>
-                    <label for="name">Your name</label>
-                    <input type="text" name="name" id="name" value="Your name" aria-labelledby="Your name"
-                        class="form__input" required>
-                    <label for="email">Your email</label>
-                    <input type="email" name="email" id="email" value="Your email" aria-labelledby="Your email"
-                        class="form__input" required>
-    
-                    <p>Select payment method</p>
-                    <input type="radio" id="visa" name="payment_metod" value="Visa" checked>
-                    <label for="visa">Visa</label>
-                    <input type="radio" id="paypal" name="payment_method" value="Paypal">
-                    <label for="paypal">Paypal</label>
-    
-                    <label for="card_number" class="form__input">Card number</label>
-                    <input type="text" name="card_number" id="card_number" value="xxxx xxxx xxxx xxxx"
-                        aria-labelledby="Card number" class="form__input" required>
-                    <label for="expire_date" class="form__input">Expire date</label>
-                    <input type="text" name="expire_date" id="expire_date" value="xx/xx" aria-labelledby="Expire date"
-                        class="form__input" required>
-                    <label for="cvc" class="form__input">CVC</label>
-                    <input type="text" name="cvc" id="cvc" value="xxx" aria-labelledby="CVC" class="form__input" required>
-                    <div class="checkboxes">
-                        <input class="checkbox" type="checkbox" name="terms" id="terms">
-                        <label for="terms">I agree with the terms.</label>
+                <div class="line"></div>
+                <div class="total_pricearea">
+                    <p class="total">Total price:</p>
+                    <p class="price">34kr</p>
+                </div>
+        
+                <button class="continue_shopping">
+                    <div class="backarrow"></div> Continue shopping
+                </button>
+            </div>
+            <section class="payment_details">
+                <h2>2. Payment Details</h2>
+                <form class="payment_area" action="form-success.php" method="post">
+                    <div class="item">
+                        <p>The Batman</p>
+                        <p>34kr</p>
                     </div>
-                    <div class="checkboxes">
-                        <input class="checkbox" type="checkbox" name="newsletter" id="newsletter">
-                        <label for="newsletter">I want to recive updates via email.</label>
+                    <div class="line"></div>
+                    <div class="item">
+                        <p>Total price</p>
+                        <p>34kr</p>
                     </div>
-                    <input type="submit" value="Pay now">
-                </section>
-    
-        </form>
-    
+                    <div class="loginpart">
+                        <button class="Login_signin_b"><a href="movie-pages/all-movies.html">Log in / sign in</a></button>
+                        <p>or</p>
+                        <p>Submit your details</p>
+                    </div>
+                
+                    <section class="your_datails">
+                        <div>
+                            <label class="name" for="name">Your name</label>
+                            <input type="text" name="name" id="name" placeholder="Your name" aria-labelledby="Your name" class="form__input"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input type="email" name="email" id="email" placeholder="Your email" aria-labelledby="Your email"
+                                class="form__input" required>
+                        </div>
+                
+                        <p>Select payment method</p>
+                        <div class="paymentmethod">
+                            <div class="visaarea">
+                                <input type="radio" id="visa" name="payment_metod" value="visa" checked>
+                                <label for="visa" class="icon_visa"></label>
+                            </div>
+                            <div class="paypalarea">
+                                <input type="radio" id="paypal" name="payment_method" value="paypal">
+                                <label for="paypal" class="icon_paypal">Paypal</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="card_number" class="form__input">Card number</label>
+                            <input type="text" name="card_number" id="card_number" placeholder="xxxx xxxx xxxx xxxx"
+                                aria-labelledby="Card number" class="form__input" required>
+                        </div>
+                        <div class="expiredate_cvcarea">
+                            <div>
+                                <label for="expire_date" class="form__input">Expire date</label>
+                                <input type="text" name="expire_date" id="expire_date" placeholder="xx/xx" aria-labelledby="Expire date"
+                                    class="form__input" required>
+                            </div>
+                            <div>
+                                <label for="cvc" class="form__input">CVC</label>
+                                <input type="text" name="cvc" id="cvc" placeholder="xxx" aria-labelledby="CVC" class="form__input" required>
+                            </div>
+                        </div>
+                        <p>When clicking “Pay now” you confirm that you are 18 years old and that you agree to these terms. Your purchase(s) will be available immediatly after payment.</p>
+                        <div class="checkboxes">
+                            <input class="checkbox_box" type="checkbox" name="terms" id="terms">
+                            <label for="terms" class="checkbox_label">I agree with the terms.</label>
+                        </div>
+                        <div class="checkboxes">
+                            <input class="checkbox_box" type="checkbox" name="newsletter" id="newsletter">
+                            <label for="newsletter" class="checkbox_label">I want to recive updates via email.</label>
+                        </div>
+                        <input type="submit" value="Pay now" id="paynow">
+                        <label for="paynow" class="paynow"><a href="/checkout_sucsess.html">Pay now</a></label>
+                    </section>
+                </form>
+            </section>
+        </section>
     
     </main>
 
