@@ -30,6 +30,10 @@ html {
     width: 80%;
     margin: 0px auto;
   }
+  .main_h {
+    min-height: 100vh;
+    min-height: 100svh;
+}
   
   .fullwidthsection {
     width: 100%;

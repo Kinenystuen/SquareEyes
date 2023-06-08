@@ -6,21 +6,17 @@ html {
     --white: #f7f7f7;
 
     position: relative;
-    display: flex;
 }
 button, label, input { /*do i need this? fix*/
     font-family: 'Montserrat' Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-.main_h {
-    min-height: 100vh;
-    min-height: 100svh;
-}
-
 .checkout_page {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    
+    margin-bottom: 170px;
 }
 
 /*go back button*/
@@ -43,7 +39,6 @@ button, label, input { /*do i need this? fix*/
 }
 
 .go_back_button p {
-    display: ;
     font-size: 1rem;
 }
 
@@ -282,12 +277,14 @@ button, label, input { /*do i need this? fix*/
     background-repeat: no-repeat;
     max-height: 1.5rem;
     object-fit: fill;
+    cursor: pointer;
 }
 .icon_paypal {
     content: url(/icons/icon_paypal.svg);
     background-repeat: no-repeat;
     max-height: 1.5rem;
     object-fit: fill;
+    cursor: pointer;
 }
 
 .visaarea, .paypalarea{
@@ -299,8 +296,7 @@ button, label, input { /*do i need this? fix*/
 }
 
 .expiredate_cvcarea {
-    display: flex;
-    
+    display: flex; 
     margin: 0px 2.5% 0px 2.5%;
 }
 .expiredate_cvcarea div {
@@ -361,7 +357,7 @@ input[type="submit"] {
     color: var(--dark_purple);
     margin: auto;
 }
-.paypal a:hover { /*dosnt work.. fix*/
+.paynow a:hover { /*dosnt work.. fix*/
     font-weight: 600;
 }
 
