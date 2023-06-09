@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="describtion" content="Information about The Batman movie">
+  <script src="/js/all_movies.js"></script>
   <link rel="stylesheet" href="/unicode.css">
   <link rel="stylesheet" href="/css_code/all_movies.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
@@ -30,7 +31,7 @@
           <section class="header_right">
             <nav class="nav_right">
                 <a href="#"><img src="/icons/icon_search_2.png" alt="Search bar"></a>
-                <a href="/your_fav.html" class=""><img src="/icons/icon_heart_2.png" alt="Go to favotire movies" ></a>
+                <a href="/your_fav.html" class=""><img src="/icons/icon_heart.svg" alt="Go to favotire movies" ></a>
                 <a href="/your_list.html" class=""><img src="/icons/icon_pluss.png" alt="Go to your list"></a>
                 <a href="/checkout.html" class=""><img src="/icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
                 <a href="/your_page.html" class=""><img src="/icons/icon_profile.png" alt="Go to your profile"></a>
@@ -39,7 +40,7 @@
         </header>
   <main class="content_wrap main_h">
     <h1>Movies</h1>
-    <section>
+    <section class="movie_org">
       <input type="checkbox" name="moviemenu_checkbox" id="moviemenu_checkbox">
       <nav class="movie_nav">
         <ul>
@@ -53,172 +54,207 @@
           <li><a href="">Family</a></li>
         </ul>
       </nav>
+      <section>
+        <input type="checkbox" name="sortby_menu" id="sortby_menu">
+        <nav class="sortby_menu">
+          <ul>
+          <label for="sortby_menu" class="sortby"><span class="sortby_text">Sort by<img class="downarrow"></span></label>
+          <li><a href="">Name</a></li>
+            <li><a href="">Release date</a></li>
+            <li><a href="">Popularity</a></li>
+            <li><a href="">Price low-high</a></li>
+            <li><a href="">Price high-low</a></li>
+          </ul>
+        </nav>
+      </section>
     </section>
+    
     <section class="movies">
-      <div class="movie_card">
+      <div class="movie_card"> <!-- batman-->
         <div class="movie_cover">
           <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
         </div>
         <div class="movie_info">
-          <h2>The Batman</h2>
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
           <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
             city’s hidden corruption and question his family’s incolvement.</p>
           <p class="movie_price">34 kr</p>
           <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
           </div>
         </div>
       </div>
-      <div class="movie_card">
+      <div class="movie_card"> <!-- batman-->
         <div class="movie_cover">
           <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
         </div>
         <div class="movie_info">
-          <h2>The Batman</h2>
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
           <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
             city’s hidden corruption and question his family’s incolvement.</p>
           <p class="movie_price">34 kr</p>
           <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
-          </div>
-        </div>
-      </div><div class="movie_card">
-        <div class="movie_cover">
-          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
-        </div>
-        <div class="movie_info">
-          <h2>The Batman</h2>
-          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
-            city’s hidden corruption and question his family’s incolvement.</p>
-          <p class="movie_price">34 kr</p>
-          <div class="icons">
-            <img class="icon_heart" alt="Heart icon">
-            <img class="icon_pluss" alt="Pluss icon">
-          </div>
-          <div class="buttons">
-            <button><a href="/products/batman-movie-page.html">More info</a></button>
-            <button>Add <img class="shopping_bag"></button>
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
           </div>
         </div>
       </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="movie_card"> <!-- batman-->
+        <div class="movie_cover">
+          <img class="cover_img" src="/images/Movie_batman.jpeg" alt="The Batman movie cover">
+        </div>
+        <div class="movie_info">
+          <h2><a href="/products/batman-movie-page.html">The Batman</a></h2>
+          <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the
+            city’s hidden corruption and question his family’s incolvement.</p>
+          <p class="movie_price">34 kr</p>
+          <div class="icons">
+            <input type="checkbox" name="favorites" id="favorites">
+            <label for="favorites" class="icon_heart"></label>
+            <input type="checkbox" name="your_list" id="your_list">
+            <label for="your_list" class="icon_pluss"></label>
+          </div>
+          <div class="buttons">
+            <label><a href="/products/batman-movie-page.html">More info</a></label>
+            <input type="checkbox" name="shopping_bag_button" id="shopping_bag_button">
+            <label for="shopping_bag_button" class="shopping_bag_button">
+              <span class="shopping_bag"></span></label>
+          </div>
+        </div>
+      </div>
+      
 
     </section>
 
