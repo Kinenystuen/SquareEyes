@@ -266,6 +266,216 @@ html {
     width: 2rem;
   }
 
+  /* Section6 - Supporting small filmmakers */
+
+.supportfilm {
+  display: flex;
+  margin: 170px auto 150px;
+  justify-content: center;
+  text-align: center;
+}
+
+.supportfilm_area {
+  max-width: 40%;
+  font-size: 1.3rem;
+}
+
+.supportfilm_area a {
+  display: flex;
+  max-width: 68%;
+  margin: 0px auto;
+  justify-content: center; /* center yellow textbox */
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark_purple);
+  font-size: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--yellow);
+  padding: 8px;
+}
+
+.supportfilm_area a:hover {
+  font-weight: 600;
+}
+
+/*go back button*/
+.go_back_button {
+  border: none;
+  background-color: var(--dark_purple);
+  color: var(--greywhite);
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  margin: 16px 0px;
+}
+
+.backarrow {
+  content:  url(/icons/icon_backarrow.svg);
+  background-repeat: no-repeat;
+  height: 1.8rem;
+  width: auto;
+  padding-right: 15px;
+}
+
+.go_back_button p {
+  font-size: 1rem;
+}
+
+.go_back_button:hover {
+  background-color: #2E1B3B;
+  border-radius: 8px;
+}
+
+.go_back_button_text {
+  visibility: hidden;
+}
+.go_back_button:hover .go_back_button_text {
+  visibility: visible;
+}
+
+/* Favorite and list icons */
+.icons {
+  display: flex;
+  gap: 1rem;
+  padding: 10px 0px;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+/* didn't fine any way for this to be a collab */
+.icon_heart {
+  content: url(/icons/icon_heart.svg);
+}
+
+#favorites1:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites2:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites3:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites4:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites5:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites6:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites7:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+#favorites8:checked ~.icon_heart {
+  content: url(/icons/icon_heart_checked.png);
+}
+
+
+.icon_pluss {
+  content: url(/icons/icon_pluss.svg);
+}
+#your_list1:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list2:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list3:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list4:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list5:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list6:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list7:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+#your_list8:checked ~.icon_pluss {
+  content: url(/icons/icon_pluss_added.png);
+  height: 1.5rem;
+  margin: auto;
+}
+
+#favorites1, #favorites2,#favorites3,#favorites4,#favorites5,#favorites6,#favorites7,#favorites8, #your_list1, #your_list2, #your_list3 ,#your_list4,#your_list5,#your_list6,#your_list7,#your_list8, #shopping_bag_button1, #shopping_bag_button2, #shopping_bag_button3, #shopping_bag_button4, #shopping_bag_button5, #shopping_bag_button6, #shopping_bag_button7, #shopping_bag_button8{
+  display: none;
+}
+
+/* shopping bag */
+.shopping_bag {
+  content: url(/icons/icon_shopping_bag_final.png);
+  width: 1rem;
+  height: auto;
+}
+.shopping_bag_button::before {
+  content: "Add";
+}
+#shopping_bag_button1:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button1:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button2:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button2:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button3:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button3:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button4:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button4:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button5:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button5:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button6:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button6:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button7:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button7:checked  ~ .shopping_bag_button::before {content: 'Added';}
+#shopping_bag_button8:checked ~ .shopping_bag_button {background-color: var(--yellow);}
+#shopping_bag_button8:checked  ~ .shopping_bag_button::before {content: 'Added';}
+
+.buttons {
+  display: flex;
+  flex: 1fr;
+  gap: 4px;
+}
+.buttons label {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0px;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  border-radius: 5px;    
+  width: 100%;
+  color: var(--dark_purple);
+  text-transform: uppercase;
+  background-color: var(--greywhite);
+}
+.buttons a {
+  text-decoration: none;
+  color: var(--dark_purple);
+  text-align: center;
+}
+.buttons label:hover {
+  font-weight: 600;
+}
+
+
   @media (max-width:1060px) {
       /* Header nav bar */
 
@@ -348,6 +558,17 @@ html {
           top: 15px;
       }
 
+            /* Section6 - Supporting small filmmakers */
+      
+            .supportfilm_area {
+              max-width: 70%;
+              font-size: 1rem;
+            }
+      
+            .supportfilm_area a {
+              font-size: 1.2rem;
+            }
+
       /* footer */
 
       .logo_footer {
@@ -422,6 +643,21 @@ html {
           border-radius: 8px;
           align-items: end;
       }
+
+            /* Section6 - Supporting small filmmakers */
+      
+            .supportfilm {
+              margin: 100px auto 100px;
+            }
+      
+            .supportfilm_area {
+              max-width: 80%;
+              font-size: 1rem;
+            }
+      
+            .supportfilm_area a {
+              font-size: 1.2rem;
+            }
 
       /* Footerbar */
 

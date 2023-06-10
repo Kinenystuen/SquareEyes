@@ -1,0 +1,25 @@
+html {
+    --dark_purple: #050517;
+    --purple: #2E1B3B;
+    --yellow: #F0C808;
+    --greywhite: #d2d2d2;
+    --white: #f7f7f7;
+
+    position: relative;
+}
+
+
+/* trailer */
+.trailer {
+    font-size: 1rem;
+    background-color: var(--yellow);
+    width: fit-content;
+}
+
+#movietrailer {
+    display: none;
+}
+#playbutton:focus + #movietrailer {
+    display: block;
+  }
+  

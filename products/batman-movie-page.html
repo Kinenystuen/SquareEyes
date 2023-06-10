@@ -10,3 +10,104 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
   <title>Square Eyes | Batman moviepage</title>
 </head>
+<body>
+    <header>
+        <a href="/index.html"><img class="logo_header" src="/Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
+        <section>
+          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+        <nav class="nav_left">
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movie-pages/all-movies.html">Movies</a></li>
+                <li><a href="/contact_us.html">Your list</a></li>
+                <li><a href="/contact_us.html">Favorites</a></li>
+                <li><a href="/about_us.html">About us</a></li>
+                <li><a href="/contact_us.html">Contact us</a></li>
+              </ul>
+          </nav>
+          </section>  
+          <section class="header_right">
+            <nav class="nav_right">
+                <a href="#"><img src="/icons/icon_search_2.png" alt="Search bar"></a>
+                <a href="/your_fav.html" class=""><img src="/icons/icon_heart.svg" alt="Go to favotire movies" ></a>
+                <a href="/your_list.html" class=""><img src="/icons/icon_pluss.png" alt="Go to your list"></a>
+                <a href="/checkout.html" class=""><img src="/icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
+                <a href="/your_page.html" class=""><img src="/icons/icon_profile.png" alt="Go to your profile"></a>
+            </nav>
+          </section>
+        </header>
+    <main class="main_h">
+        <div class="content_wrap">
+            <button class="go_back_button" type="button" onclick="history.back()"><span class="backarrow"></span><span class="go_back_button_text">Go back</span></button>
+        </div>
+        <section>
+            <div>
+                <img src="/images/batman header.png" alt="Backgorund pricture from the Batman movie">
+            </div>
+            <div>
+                <div class="movie_info">
+                    <h1>The Batman</h1>
+                    <div>
+                        <span>IMDb RATING</span>
+                        <span>7,8/10</span>
+                    </div>
+                    <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham,
+                        Batman is forced to investigate the
+                        city’s hidden corruption and question his family’s incolvement.</p>
+                    <p class="movie_price">34 kr</p>
+                    <div id="movietrailer">
+                        <button type="button" onclick="doSomething()"></button>
+                        <iframe id="trailerplayer" class="batman_trailer" width="100%" height="100%" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                        <script>
+                            function doSomething() {
+                                document.getElementById("trailerplayer").innerHTML
+                            }
+                        </script>
+                    </div>
+                    <button id="playbutton">Play Video</button>
+
+                    <div class="icons">
+                        <input type="checkbox" name="favorites1" id="favorites1">
+                        <label for="favorites1" class="icon_heart"></label>
+                        <input type="checkbox" name="your_list1" id="your_list1">
+                        <label for="your_list1" class="icon_pluss"></label>
+                    </div>
+                    <div class="buttons">
+                        <label><a href="/products/batman-movie-page.html">More info</a></label>
+                        <input type="checkbox" name="shopping_bag_button1" id="shopping_bag_button1">
+                        <label for="shopping_bag_button1" class="shopping_bag_button">
+                            <span class="shopping_bag"></span></label>
+                    </div>
+                </div>
+                <div class="heihei">
+                    <p>Hei hei!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footerbar">
+            <div class="footernav">
+                <span> &copy; SquareEyes </span>
+                <a href="/about_us.html">About us</a>
+                <a href="/contact_us.html">Contact us</a>
+                <a href="#">Terms and conditions</a>
+            </div>
+            <div class="footerlogo">
+                <a href="/index.html"><img class="logo_footer" src="/images/SquareEyes_Logo_org.png"
+                        alt="Squareeyes logo"></a>
+            </div>
+            <div class="footersocialmedia">
+                <figure><img src="/icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+                </figure>
+                <figure><img src="/icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+                </figure>
+                <figure>
+                  <img src="/icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+                </figure>
+            </div>
+        </section>
+    </footer>
+</body>

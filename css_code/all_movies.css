@@ -91,12 +91,11 @@ h2 a{
     margin: auto;
     border-radius: 5px;
     cursor: pointer;
-    width: 131.6px;
   }
   .sortby_text {
     display: flex;
     margin: auto;
-    width:max-content;
+    width:fit-content;
     color: var(--dark_purple);
   }
   .downarrow {
@@ -110,6 +109,8 @@ h2 a{
   }
   .sortby_menu {
     position: absolute;
+    
+    width: fit-content;
     top: -6px;
     right: 2px;
     z-index: 1;
@@ -142,7 +143,7 @@ h2 a{
   #sortby_menu:checked ~ .movie_nav {
     height: 30px;
   }
-  #sortby_menu:checked ~ .downarrow {
+  #sortby_menu:checked ~ .downarrow { /*dosnt work */
     content: url(/icons/icon_downarrow_rotated.png);
   }
 
@@ -195,82 +196,6 @@ h2 a{
     font-size: 1.4rem;
   }
 
-  .icons {
-    display: flex;
-    gap: 1rem;
-    padding: 10px 0px;
-    width: 2rem;
-    height: 1.8rem;
-  }
-
-  .icon_heart {
-    content: url(/icons/icon_heart.svg);
-  }
-  #favorites:checked ~.icon_heart {
-    content: url(/icons/icon_heart_checked.png);
-  }
-  .icon_pluss {
-    content: url(/icons/icon_pluss.svg);
-  }
-  #your_list:checked ~.icon_pluss {
-    content: url(/icons/icon_pluss_added.png);
-    height: 1.6rem;
-    margin: auto;
-  }
-
-  #favorites, #your_list {
-    display: none;
-  }
-
-/* shopping bag */
-  .shopping_bag {
-    content: url(/icons/icon_shopping_bag_final.png);
-    width: 1rem;
-    height: auto;
-  }
-  #shopping_bag_button {
-    display: none;
-  }
-  .shopping_bag_button::before {
-    content: "Add";
-  }
-  #shopping_bag_button:checked ~ .shopping_bag {
-    content: url();
-  }
-  #shopping_bag_button:checked ~ .shopping_bag_button {
-    background-color: var(--yellow);
-  }
-  #shopping_bag_button:checked  ~ .shopping_bag_button::before {
-    content: 'Added';
-  }
-
-  .buttons {
-    display: flex;
-    flex: 1fr;
-    gap: 4px;
-  }
-  .buttons label {
-    display: flex;
-    gap: 8px;
-    padding: 8px 0px;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    border-radius: 5px;    
-    width: 100%;
-    color: var(--dark_purple);
-    text-transform: uppercase;
-    background-color: var(--greywhite);
-  }
-  .buttons a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--dark_purple);
-  }
-  .buttons label:hover {
-    font-weight: 600;
-  }
   @media (max-width:1700px) {
     .movies {
         grid-template-columns:repeat(2, 1fr);

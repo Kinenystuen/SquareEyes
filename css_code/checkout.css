@@ -19,43 +19,8 @@ button, label, input { /*do i need this? fix*/
     margin-bottom: 170px;
 }
 
-/*go back button*/
-.go_back_button {
-    border: none;
-    background-color: var(--dark_purple);
-    color: var(--greywhite);
-    display: flex;
-    align-items: center;
-    padding: 4px 8px;
-    margin: 16px 0px;
-}
-
-.backarrow {
-    content:  url(/icons/icon_backarrow.svg);
-    background-repeat: no-repeat;
-    height: 1.8rem;
-    width: auto;
-    padding-right: 15px;
-}
-
-.go_back_button p {
-    font-size: 1rem;
-}
-
-.go_back_button:hover {
-    background-color: #2E1B3B;
-    border-radius: 8px;
-}
-
-.go_back_button_text {
-    visibility: hidden;
-}
-.go_back_button:hover .go_back_button_text {
-    visibility: visible;
-}
-
 /* shopping bag */
-.shopping_bag {
+.checkout_shopping_bag {
     flex: 2;
 }
 
@@ -362,7 +327,7 @@ input[type="submit"] {
 }
 
 @media (max-width:1400px) {
-    .shopping_bag {
+    .checkout_shopping_bag {
         flex: 1;
     }
     .payment_details {

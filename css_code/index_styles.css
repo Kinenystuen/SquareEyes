@@ -337,39 +337,6 @@ headerscreen:hover {
   font-weight:600;
 }
 
-/* Section6 - Supporting small filmmakers */
-
-.supportfilm {
-  display: flex;
-  margin: 170px auto 150px;
-  justify-content: center;
-  text-align: center;
-}
-
-.supportfilm_area {
-  max-width: 40%;
-  font-size: 1.3rem;
-}
-
-.supportfilm_area a {
-  display: flex;
-  max-width: 68%;
-  margin: 0px auto;
-  justify-content: center; /* center yellow textbox */
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--dark_purple);
-  font-size: 1.5rem;
-  border-radius: 8px;
-  background-color: var(--yellow);
-  padding: 8px;
-}
-
-.supportfilm_area a:hover {
-  font-weight: 600;
-}
-
 
 @media (max-width:1060px) {
 
@@ -434,21 +401,6 @@ headerscreen:hover {
   .yellow_dot {
     height: 24px;
   }
-
-  
-
-/* Section6 - Supporting small filmmakers */
-
-.supportfilm_area {
-  max-width: 70%;
-  font-size: 1rem;
-}
-
-.supportfilm_area a {
-  font-size: 1.2rem;
-}
-
-
 }
 
 /* ///// new media query ////// */
@@ -777,21 +729,6 @@ margin: 0px auto;
 .section5 a {
   position: relative;
   margin-top: 1rem;
-}
-
-/* Section6 - Supporting small filmmakers */
-
-.supportfilm {
-  margin: 100px auto 100px;
-}
-
-.supportfilm_area {
-  max-width: 80%;
-  font-size: 1rem;
-}
-
-.supportfilm_area a {
-  font-size: 1.2rem;
 }
 
 /* Newsletter */
