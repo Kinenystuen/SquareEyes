@@ -99,7 +99,8 @@ h2 {
 }
 .batman_trailer {
     width: 80%;
-    height: 90vh;
+    height: auto;
+    min-height: 80vh;
     justify-content: center;
     margin: 20px 0;
 }
@@ -153,8 +154,8 @@ padding-top: 100px;
 }
 .moviephotos {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
-    gap: 2%;
+    grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
   }
   .moviephotos img {
     width: 100%;
@@ -174,4 +175,89 @@ padding-top: 100px;
     .batmansection1 {
         min-height: 80vh;
     }
+}
+
+@media (max-width: 500px) {
+    .content_wrap {
+        max-width: 90%;
+    }
+    .batmansection1, .headerpic_gradient {
+        background-image: none;
+        padding-bottom: 50px;
+    }
+    .batman_header_pic {
+        content: url(/images/batman\ header.png);
+        width: 100%;
+        margin: 0px;
+    }
+    .movie_info {
+        position: relative; 
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .movie_info_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .movie_info h1 {
+        font-size: 1.2rem;
+    }
+    .imdb_rating {
+        display: none;
+    }
+    .imdb_rating_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 1rem;
+    }
+    .movie_price {
+        font-size: 1.4rem;
+        margin: 8px;
+    }
+    .playbutton {
+        padding: 0px 8px;
+    }
+    .playbutton:hover {
+        padding: 0px 4.3px;
+    }
+    .buttons label a {
+        padding: 0px;
+    }
+    /* trailer window */
+    .movietrailer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .batman_trailer {
+        width: 90%;
+        min-height: 40vh;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+        /* section 3 moviephotos_section */
+    
+        .moviephotos_section,
+        .suggestion_section {
+            position: relative;
+            padding-top: 100px;
+        }
+    
+        .moviephotos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+    
+        .moviephotos img {
+            width: 100%;
+            height: 20rem;
+            box-sizing: border-box;
+            object-fit: cover;
+            /* to set a specific height, without the pic squeezing */
+        }
 }
