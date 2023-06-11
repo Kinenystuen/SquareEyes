@@ -91,6 +91,7 @@ h2 a{
     margin: auto;
     border-radius: 5px;
     cursor: pointer;
+    width: fit-content;
   }
   .sortby_text {
     display: flex;

@@ -7,19 +7,171 @@ html {
 
     position: relative;
 }
-
-
-/* trailer */
-.trailer {
-    font-size: 1rem;
-    background-color: var(--yellow);
-    width: fit-content;
+h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
-#movietrailer {
+/* batmansection1 */
+
+.batmansection1 {
+    position: relative;
+    background-image: url(/images/batman\ header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    width: 100%;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.headerpic_gradient {
+    position: absolute;
+    background: linear-gradient(90deg, #050517 0%, rgba(5, 5, 23, 0.5) 31.59%, rgba(217, 217, 217, 0) 65.21%);
+    height: 100%;
+    width: 100%;
+    z-index: 10; /*sends the background to the back */
+}
+
+.movie_info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;    
+    max-width: 28%;
+    margin-left: 10%;
+    z-index: 1;
+    height: 100%;
+}
+.movie_info h1 {
+    font-size: 2rem;
+    text-transform:uppercase;
+    margin: 0px;
+}
+.imdb_rating_mobile {
     display: none;
 }
-#playbutton:focus + #movietrailer {
-    display: block;
+.movie_price {
+    font-size: 1.4rem;
+}
+.button_icon_area {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+.playbutton {
+    font-family: 'montserrat',  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    background-color: var(--yellow);
+    padding: 8px 12.5px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+.playbutton:hover {
+    font-weight: 600;
+    padding: 8px;
+}
+.buttons {
+    margin: 2px 0;
+}
+.shoppingbag_options {
+    display: none;
+}
+.buttons label a {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+#shopping_bag_button1:checked~.shoppingbag_options {
+    display: show;
+    display: flex;
+}
+
+/* trailer window */
+.movietrailer {
+    display: flex;
+    justify-content: center;
+}
+.batman_trailer {
+    width: 80%;
+    height: 90vh;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*section 2 - details */
+.movie_details_section {
+    padding: 16px 0px;
+}
+.movie_details {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.movie_details_more {
+    display: flex;
+    flex-direction: row;
+}
+.movie_details_more p {
+    font-size: 0.7rem;
+    padding: 2px 0px;
+    margin: 0px;
+}
+.what {
+    flex: 1;
+    text-align: left;
+
+}
+.it_is {
+    flex: 1;
+    text-align: left;
+}
+.details_more .movie_details_more:nth-child(4) {
+    margin-top: 20px;
+}
+
+.imdb_rating {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: start;
+    align-items: end;
+    font-size: 0.7rem;
+    padding: 2px 0px;
+}
+
+/* section 3 moviephotos_section */
+
+.moviephotos_section, .suggestion_section {
+position: relative;
+padding-top: 100px;
+}
+.moviephotos {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2%;
   }
+  .moviephotos img {
+    width: 100%;
+    height: 20rem;
+    box-sizing: border-box;
+    object-fit: cover; /* to set a specific height, without the pic squeezing */
+  }
+
+
+  /* suggestions part */
+.suggestion_section {
+    padding: 100px 0px;
+}
   
+
+@media (max-height: 900px) {
+    .batmansection1 {
+        min-height: 80vh;
+    }
+}

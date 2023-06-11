@@ -1,91 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="describtion" content="Information about The Batman movie">
-  <link rel="stylesheet" href="/unicode.css">
-  <link rel="stylesheet" href="/css_code/batman_movie_page.css">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <title>Square Eyes | Batman moviepage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="describtion" content="Information about The Batman movie">
+    <link rel="stylesheet" href="/unicode.css">
+    <link rel="stylesheet" href="/css_code/batman_movie_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+    <title>Square Eyes | Batman moviepage</title>
 </head>
+
 <body>
     <header>
         <a href="/index.html"><img class="logo_header" src="/Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
         <section>
-          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
-        <nav class="nav_left">
-              <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/movie-pages/all-movies.html">Movies</a></li>
-                <li><a href="/contact_us.html">Your list</a></li>
-                <li><a href="/contact_us.html">Favorites</a></li>
-                <li><a href="/about_us.html">About us</a></li>
-                <li><a href="/contact_us.html">Contact us</a></li>
-              </ul>
-          </nav>
-          </section>  
-          <section class="header_right">
+            <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+            <nav class="nav_left">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/movie-pages/all-movies.html">Movies</a></li>
+                    <li><a href="/contact_us.html">Your list</a></li>
+                    <li><a href="/contact_us.html">Favorites</a></li>
+                    <li><a href="/about_us.html">About us</a></li>
+                    <li><a href="/contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header_right">
             <nav class="nav_right">
                 <a href="#"><img src="/icons/icon_search_2.png" alt="Search bar"></a>
-                <a href="/your_fav.html" class=""><img src="/icons/icon_heart.svg" alt="Go to favotire movies" ></a>
+                <a href="/your_fav.html" class=""><img src="/icons/icon_heart.svg" alt="Go to favotire movies"></a>
                 <a href="/your_list.html" class=""><img src="/icons/icon_pluss.png" alt="Go to your list"></a>
                 <a href="/checkout.html" class=""><img src="/icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
                 <a href="/your_page.html" class=""><img src="/icons/icon_profile.png" alt="Go to your profile"></a>
             </nav>
-          </section>
-        </header>
+        </section>
+    </header>
     <main class="main_h">
         <div class="content_wrap">
-            <button class="go_back_button" type="button" onclick="history.back()"><span class="backarrow"></span><span class="go_back_button_text">Go back</span></button>
+            <button class="go_back_button" type="button" onclick="history.back()"><span class="backarrow"></span><span
+                    class="go_back_button_text">Go back</span></button>
         </div>
-        <section>
-            <div>
-                <img src="/images/batman header.png" alt="Backgorund pricture from the Batman movie">
-            </div>
-            <div>
-                <div class="movie_info">
-                    <h1>The Batman</h1>
-                    <div>
-                        <span>IMDb RATING</span>
-                        <span>7,8/10</span>
-                    </div>
-                    <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures in Gotham,
-                        Batman is forced to investigate the
-                        city’s hidden corruption and question his family’s incolvement.</p>
-                    <p class="movie_price">34 kr</p>
-                    <div id="movietrailer">
-                        <button type="button" onclick="doSomething()"></button>
-                        <iframe id="trailerplayer" class="batman_trailer" width="100%" height="100%" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
-                        <script>
-                            function doSomething() {
-                                document.getElementById("trailerplayer").innerHTML
-                            }
-                        </script>
-                    </div>
-                    <button id="playbutton">Play Video</button>
+        <section class="batmansection1">
+            <div class="headerpic_gradient">
+                <div class="content_wrap ">
+                    <div class="movie_info">
+                        <h1>The Batman</h1>
+                        <div class="imdb_rating_mobile">
+                            <span>IMDb RATING</span>
+                            <span>7,8/10</span>
+                        </div>
+                        <p class="movie_descrition">When a sadistic serial killer begins murdering key political figures
+                            in
+                            Gotham,
+                            Batman is forced to investigate the
+                            city’s hidden corruption and question his family’s incolvement.</p>
+                        <p class="movie_price">34 kr</p>
+                        <div class="button_icon_area">
+                            <button id="playbutton" class="playbutton" onclick="watchtrailer()">Watch trailer</button>
 
-                    <div class="icons">
-                        <input type="checkbox" name="favorites1" id="favorites1">
-                        <label for="favorites1" class="icon_heart"></label>
-                        <input type="checkbox" name="your_list1" id="your_list1">
-                        <label for="your_list1" class="icon_pluss"></label>
-                    </div>
-                    <div class="buttons">
-                        <label><a href="/products/batman-movie-page.html">More info</a></label>
+                            <div class="icons">
+                                <input type="checkbox" name="favorites1" id="favorites1">
+                                <label for="favorites1" class="icon_heart"></label>
+                                <input type="checkbox" name="your_list1" id="your_list1">
+                                <label for="your_list1" class="icon_pluss"></label>
+                            </div>
+                        </div>
                         <input type="checkbox" name="shopping_bag_button1" id="shopping_bag_button1">
-                        <label for="shopping_bag_button1" class="shopping_bag_button">
-                            <span class="shopping_bag"></span></label>
+                        <label for="shopping_bag_button1" class="shopping_bag_button"><span
+                                class="shopping_bag"></span></label></label>
+                        <div class="buttons">
+
+                        </div>
+                        <div class="buttons shoppingbag_options">
+                            <label><a href="/movie-pages/all-movies.html"><span class="leftarrow"></span>Continue
+                                    shopping</a></label>
+                            <label><a href="/checkout.html">Go to shopping bag<span
+                                        class="rightarrow"></span></a></label>
+                        </div>
                     </div>
-                </div>
-                <div class="heihei">
-                    <p>Hei hei!</p>
                 </div>
             </div>
         </section>
-
+        <div class="movietrailer">
+            <iframe id="trailerplayer" class="batman_trailer" width="100%" height="100%"
+                src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <script> /* problem: tried to movie the script code to a js file, but for some reason only the button part worked then */
+                const trailerplayer = document.getElementById("trailerplayer");
+                trailerplayer.style.display = "none";
+                function watchtrailer() {
+                    if (playbutton.textContent === "Watch trailer") {
+                        playbutton.textContent = "Close trailer";
+                        trailerplayer.style.display = "block";
+                    }
+                    else {
+                        playbutton.textContent = "Watch trailer";
+                        trailerplayer.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+        <section class="movie_details_section content_wrap">
+            <h2>Movie details:</h2>    
+            <div class="movie_details">
+            <div class="details_more">
+                    <div class="movie_details_more">
+                        <p class="what">Director</p>
+                        <p class="it_is">Matt Reeves</p>
+                    </div>
+                    <div class="movie_details_more">
+                        <p class="what">Stars</p>
+                        <p class="it_is">Robert Pattinson, Zoë, Jeffrey Wright</p>
+                    </div>
+                    <div class="movie_details_more">
+                        <p class="what">Production companies</p>
+                        <p class="it_is">Warner Bros., DC Entertainment, 6th & Idaho Productions</p>
+                    </div>
+                    <div class="movie_details_more">
+                        <p class="what">Release year</p>
+                        <p class="it_is">2022</p>
+                    </div>
+                    <div class="movie_details_more">
+                        <p class="what">Age restriction</p>
+                        <p class="it_is">12</p>
+                    </div>
+                    <div class="movie_details_more">
+                        <p class="what">Play time</p>
+                        <p class="it_is">2h 56m</p>
+                    </div>
+                </div>
+                <div class="imdb_rating">
+                    <span>IMDb RATING</span>
+                    <span>7,8/10</span>
+                </div>
+            </div>
+        </section>
+        <section class="moviephotos_section content_wrap">
+            <h2>Photos:</h2>
+            <div class="moviephotos">
+                <img src="/images/Movie_batman.jpeg" alt="Batman movie cover. Robert Pattinson in The Batman (2022). ">
+                <img src="/images/batman pic2.png" alt="The Batman. (2022). Andy Serkis in The Batman (2022).">
+                <img src="/images/batman pic3.png" alt="The Batman. (2022). Roberst Pattinson and Zoë Kravitz in The Batman (2022).">
+            </div>
+        </section>
+        <section class="suggestion_section content_wrap">
+            <h2>Suggestions:</h2>
+            <div>
+              <figure class="suggestion_movie">
+                <img src="/images/Movie_fasr & furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
+              </figure>
+              <figure class="suggestion_movie">
+                <img src="/images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
+              </figure>
+              <figure class="suggestion_movie">
+                <img src="/images/Movie_toy story.jpeg" alt="Movie cover for Toy Story 4">
+              </figure>
+              <figure class="suggestion_movie">
+                <img src="/images/Movie_scream.jpeg" alt="Movie cover for Scream">
+              </figure>
+            </div>
+          </section>
     </main>
     <footer>
         <section class="footerbar">
@@ -105,9 +185,11 @@
                 <figure><img src="/icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
                 </figure>
                 <figure>
-                  <img src="/icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+                    <img src="/icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
                 </figure>
             </div>
         </section>
     </footer>
 </body>
+
+</html>
