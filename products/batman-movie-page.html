@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css_code/batman_movie_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
         rel="stylesheet">
+        <script src="/js/batman_moviepage.js"></script>
     <title>Square Eyes | Batman moviepage</title>
 </head>
 
@@ -45,7 +46,7 @@
             <button class="go_back_button" type="button" onclick="history.back()"><span class="backarrow"></span><span
                     class="go_back_button_text">Go back</span></button>
         </div>
-        <section class="batmansection1">
+        <section class="batmansection1" id="batmansection1">
             <figure class="batman_header_pic"></figure>
             <div class="headerpic_gradient">
                 <div class="content_wrap ">
@@ -89,22 +90,33 @@
                 </div>
             </div>
         </section>
-        <div class="movietrailer">
+        <div class="movietrailer" id="movietrailer">
+            <div id="close_trailer" class="close_trailer" onclick="watchtrailer()"><figure></figure></div>
             <iframe id="trailerplayer" class="batman_trailer" width="100%" height="100%"
                 src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <script> /* problem: tried to movie the script code to a js file, but for some reason only the button part worked then */
-                const trailerplayer = document.getElementById("trailerplayer");
                 trailerplayer.style.display = "none";
+                close_trailer.style.display = "none";
                 function watchtrailer() {
+                    const trailerplayer = document.getElementById("trailerplayer");
+                    const movietrailer = document.getElementById("movietrailer");
+                    const close_trailer = document.getElementById("close_trailer");
+                    const batmansection1 = document.getElementById("batmansection1");
                     if (playbutton.textContent === "Watch trailer") {
                         playbutton.textContent = "Close trailer";
                         trailerplayer.style.display = "block";
+                        close_trailer.style.display = "flex";
+                        movietrailer.scrollIntoView({ 
+                            behavior: 'smooth' });
                     }
                     else {
                         playbutton.textContent = "Watch trailer";
                         trailerplayer.style.display = "none";
+                        close_trailer.style.display = "none";
+                        batmansection1.scrollIntoView({ 
+                            behavior: 'smooth' });
                     }
                 }
             </script>

@@ -6,6 +6,13 @@ html {
     --white: #f7f7f7;
     position: relative;
 }
+body {
+    background-image: url("/images/squareeyes_logo_glasses_big.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+  }
 
 .about_us_section {
     max-width: 1000px;
@@ -52,6 +59,7 @@ html {
     align-items: center;
     margin: 100px 0px;
     gap: 4px;
+    z-index: 1;
 }
 .contact_us_here p, .supportfilm p {
     font-size: 1.4rem;

@@ -87,11 +87,10 @@ h2 a{
   .sortby {
     display: flex;
     background-color: var(--greywhite);
-    padding: 8px;
+    padding: 8px 17px;
     margin: auto;
     border-radius: 5px;
     cursor: pointer;
-    width: fit-content;
   }
   .sortby_text {
     display: flex;

@@ -1,3 +1,19 @@
+html {
+    --dark_purple: #050517;
+    --purple: #2E1B3B;
+    --yellow: #F0C808;
+    --greywhite: #d2d2d2;
+    --white: #f7f7f7;
+
+    position: relative;
+}
+body {
+    background-image: url("/images/squareeyes_logo_glasses_big.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+  }
 
 .contact_us_section {
     margin: auto;
@@ -7,7 +23,7 @@
 .contact_us_section h1 {
     display: flex;
     font-size: 2.2rem;
-    margin-left: 5%;
+    margin-top: 10vh;
 }
 .squareeyes_details {
     padding: 10px 0px;
@@ -35,6 +51,13 @@
 .message_area {
     display: flex;
     flex-direction: column;
+    z-index: 1;
+}
+.message_area input:hover, .message_area textarea:hover{
+    background-color: var(--white);
+}
+.message_area input:focus, .message_area textarea:focus{
+    background-color: var(--white);
 }
 .message_area div {
     margin: 0px;
@@ -48,7 +71,7 @@
     margin-bottom: 8px;
 }
 
-.message_area input {
+.message_area input, .message_area textarea {
     display: flex;
     background-color: var(--greywhite);
     box-sizing: border-box;
@@ -56,10 +79,7 @@
     border: none;
     padding: 6px;
     width: 100%;
-    
-}
-.message_area input {
-    width: 100%;
+    align-items: end;
 }
 .message_input {
     display: flex; 
@@ -68,10 +88,67 @@
 .message_input div {
     width: 100%;
 }
-#message {
+.message_area textarea {
+    min-height: 180px;
+}
+.submit_area {
     display: flex;
-    height: 16rem;
-    align-items: flex-start;
-    align-self: flex-start;
-    justify-content: flex-start;
+}
+.submit_area input:nth-child(1) {
+    visibility: hidden;
+}
+.submit_area div {
+    background-color: var(--yellow);
+    color: var(--dark_purple);
+    text-align:  center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 12px 0px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit_area div:hover {
+    font-weight: 600;
+}
+
+
+/* social media */
+.divsocialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+}
+.socialmedia {
+    display: flex;
+    justify-content: center;    
+    column-gap: 12px;
+}
+.socialmedia figure {
+    margin: 0px;
+}
+.instagram, .twitter, .facebook {
+    height: 4rem;
+    width: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+.instagram {
+    content: url(/icons/icon_instagram.svg);
+}
+.instagram:hover {
+    content: url(/icons/icon_instagram_hover.svg);
+}
+.twitter {
+    content: url(/icons/icon_twitter.svg);
+}
+.twitter:hover {
+    content: url(/icons/icon_twitter_hover.svg);
+}
+.facebook {
+    content: url(/icons/icon_facebook.svg);
+}
+.facebook:hover {
+    content: url(/icons/icon_facebook_hover.svg);
 }

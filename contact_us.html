@@ -12,32 +12,32 @@
   <title>Square Eyes | Contact us</title>
 </head>
 <body>
-  <header>
-    <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-    <section>
-      <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-    <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
-    <nav class="nav_left">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movie-pages/all-movies.html">Movies</a></li>
-            <li><a href="contact_us.html">Your list</a></li>
-            <li><a href="contact_us.html">Favorites</a></li>
-            <li><a href="about_us.html" class="active_page">About us</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-          </ul>
-      </nav>
-      </section>  
-      <section class="header_right">
-        <nav class="nav_right">
-            <a href="#"><img src="icons/icon_search_2.png" alt="Search bar"></a>
-            <a href="your_fav.html" class=""><img src="icons/icon_heart.svg" alt="Go to favotire movies" ></a>
-            <a href="your_list.html" class=""><img src="icons/icon_pluss.png" alt="Go to your list"></a>
-            <a href="checkout.html" class=""><img src="icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
-            <a href="your_page.html" class=""><img src="icons/icon_profile.png" alt="Go to your profile"></a>
-        </nav>
-      </section>
-    </header>
+    <header>
+        <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
+        <section>
+          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+        <nav class="nav_left">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie-pages/all-movies.html">Movies</a></li>
+                <li><a href="contact_us.html">Your list</a></li>
+                <li><a href="contact_us.html">Favorites</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="contact_us.html" class="active_page">Contact us</a></li>
+              </ul>
+          </nav>
+          </section>  
+          <section class="header_right">
+            <nav class="nav_right">
+                <a href="#"><img src="icons/icon_search_2.png" alt="Search bar"></a>
+                <a href="your_fav.html" class=""><img src="icons/icon_heart.svg" alt="Go to favotire movies" ></a>
+                <a href="your_list.html" class=""><img src="icons/icon_pluss.png" alt="Go to your list"></a>
+                <a href="checkout.html" class=""><img src="icons/icon_shopping_bag.png" alt="Go to shopping bag"></a>
+                <a href="your_page.html" class=""><img src="icons/icon_profile.png" alt="Go to your profile"></a>
+            </nav>
+          </section>
+        </header>
     <main class="main_h content_wrap">
         <section class="contact_us_section">
             <h1>Contact us</h1>
@@ -52,22 +52,37 @@
                     <p class="it_is">Squareeyes@squareeyes.com</p>
                 </div>
             </div>
-            <div class="message_area">
+            <form class="message_area" method="post" enctype="text/plain">
                 <div class="message_input">
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your name" aria-labelledby="Your name"
-                             required>
+                        <input type="text" name="name" id="name" placeholder="Your name" aria-labelledby="Your name" required>
                     </div>
                     <div>
-                        <label for="email" >Email</label>
-                        <input type="text" name="email" id="email" placeholder="Your email" aria-labelledby="email" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" aria-labelledby="email" required>
                     </div>
                 </div>
-                <label for="message" >Message</label>
-                <input type="text" name="message" id="message" placeholder="Your message" aria-labelledby="email" required>
-            </div>
+                <label for="message">Message</label>
+                <textarea type="text" name="message" id="message" cols="20" rows="2" placeholder="Your message"
+                    aria-labelledby="email" required></textarea>
+                <div class="submit_area">
+                    <input type="submit" name="Submit" value="Send">
+                    <div>Send</div>
+                </div>
+            </form>
         </section>
+        <div class="divsocialmedia">
+            <p>You can also find us on soscial media:</p>
+            <div class="socialmedia">
+                <figure class="instagram">
+                </figure>
+                <figure class="twitter">
+                </figure>
+                <figure class="facebook">
+                </figure>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="newsletter">

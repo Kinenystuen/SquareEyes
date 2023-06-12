@@ -19,7 +19,7 @@ h2 {
     background-image: url(/images/batman\ header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 60vh;
+    min-height: 600px;
     width: 100%;
     background-position-x: right;
     background-position-y: bottom;
@@ -58,7 +58,9 @@ h2 {
     display: flex;
     gap: 10px;
     padding: 10px 0;
+    color: var(--dark_purple);
 }
+
 .playbutton {
     font-family: 'montserrat',  Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -99,7 +101,31 @@ h2 {
 }
 
 /* trailer window */
+
+.close_trailer {
+    position: absolute;
+    display: flex;
+    background: rgba(46, 27, 59, 0.5);
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    top: 2%;
+    right: 5%;
+}
+.close_trailer figure{
+    content: url(/icons/icon_cross_grey.png);
+    object-position: center;
+    width: 2rem;
+    height: auto;
+    margin: auto;
+}
+.close_trailer figure:hover {
+    content: url(/icons/icon_cross.png);
+    cursor: pointer;
+}
+
 .movietrailer {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -178,7 +204,10 @@ padding-top: 100px;
 
 @media (max-height: 900px) {
     .batmansection1 {
-        min-height: 80vh;
+        min-height: 400px;
+    }
+    .movie_info {
+        max-width: 350px;
     }
 }
 
@@ -187,8 +216,10 @@ padding-top: 100px;
         max-width: 90%;
     }
     .batmansection1, .headerpic_gradient {
+        min-height: 580px;
         background-image: none;
-        padding-bottom: 50px;
+        background: none;
+        height: 0%;
     }
     .batman_header_pic {
         content: url(/images/batman\ header.png);
@@ -235,6 +266,23 @@ padding-top: 100px;
     .movietrailer {
         display: flex;
         justify-content: center;
+        z-index: 10;
+    }
+    .movietrailer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+    .close_trailer {
+        position: absolute;
+        display: flex;
+        background: rgba(46, 27, 59, 0.5);
+        border-radius: 100%;
+        width: 4rem;
+        height: 4rem;
+        top: 2%;
+        right: 2%;
+        z-index: 1;
     }
 
     .batman_trailer {
@@ -243,6 +291,8 @@ padding-top: 100px;
         justify-content: center;
         margin: 20px 0;
     }
+
+    
 
         /* section 3 moviephotos_section */
     

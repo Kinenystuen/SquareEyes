@@ -22,10 +22,15 @@ html {
     font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
     background-color: #050517;
     color: var(--white);
-    
     margin: 0px auto;
   }
   
+    input,
+    label,
+    textarea {
+      font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
   .content_wrap /* tells the page to center everything */ {
     width: 80%;
     margin: 0px auto;
@@ -44,16 +49,6 @@ html {
     max-width: 100%;
     display: block;
   }
-  
-  .background_picture {
-    position: absolute;
-    bottom: 300px;
-    content: url(/images/squareeyes_logo_glasses_big.png);
-    background-repeat: no-repeat;
-    height: auto;
-    width: 75vw;
-    height: auto;
-}
   
   /* /////// Header code //////////*/
   
