@@ -45,6 +45,15 @@ html {
     display: block;
   }
   
+  .background_picture {
+    position: absolute;
+    bottom: 300px;
+    content: url(/images/squareeyes_logo_glasses_big.png);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 75vw;
+    height: auto;
+}
   
   /* /////// Header code //////////*/
   

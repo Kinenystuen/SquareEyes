@@ -79,9 +79,11 @@ h2 {
 }
 .shoppingbag_options {
     display: none;
+    padding: 0px;
+    margin: 4px 0px;
 }
 .shoppingbag_options label {
-    padding: 11.5px;
+    padding: 2.2px;
 }
 .buttons label a {
     display: flex;
@@ -151,7 +153,7 @@ h2 {
 }
 
 /* section 3 moviephotos_section */
-/*
+
 .moviephotos_section, .suggestion_section {
 position: relative;
 padding-top: 100px;
@@ -163,11 +165,10 @@ padding-top: 100px;
   }
   .moviephotos img {
     width: 100%;
-    height: 20rem;
+    height: 26rem;
     box-sizing: border-box;
     object-fit: cover; /* to set a specific height, without the pic squeezing */
   }
-  */
 
   /* suggestions part */
 .suggestion_section {
@@ -263,34 +264,6 @@ padding-top: 100px;
             box-sizing: border-box;
             object-fit: cover;
             /* to set a specific height, without the pic squeezing */
-        }
-
-        /* test*/
-        .suggestion_section {
-            position: relative;
-        }
-        .carousel {
-            display: flex;
-            overflow: hidden;
-        }
-        .carousel img {
-            width: 100%;
-            height: auto;
-        }
-        .prev_button, .next_button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: var(--greywhite);
-            padding: 10px 20px;
-            border: none;
-            color: var(--dark_purple);
-        }
-        .prev_button {
-            left: 10px;
-        }
-        .next_button {
-            right: 10px;
         }
 }
 

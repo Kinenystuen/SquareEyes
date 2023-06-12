@@ -1,0 +1,77 @@
+
+.contact_us_section {
+    margin: auto;
+    max-width: 500px;
+
+}
+.contact_us_section h1 {
+    display: flex;
+    font-size: 2.2rem;
+    margin-left: 5%;
+}
+.squareeyes_details {
+    padding: 10px 0px;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+}
+.what {
+    flex: 1;
+    text-align: left;
+    font-weight: 600;
+
+}
+.it_is {
+    flex: 5;
+    text-align: left;
+}
+
+.squareeyes_details p {
+    margin: 0px;
+}
+
+/* message area */
+.message_area {
+    display: flex;
+    flex-direction: column;
+}
+.message_area div {
+    margin: 0px;
+    margin: 10px 0px;
+}
+.message_area label {   
+    display: flex;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.message_area input {
+    display: flex;
+    background-color: var(--greywhite);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    width: 100%;
+    
+}
+.message_area input {
+    width: 100%;
+}
+.message_input {
+    display: flex; 
+    gap: 1rem;
+}
+.message_input div {
+    width: 100%;
+}
+#message {
+    display: flex;
+    height: 16rem;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
