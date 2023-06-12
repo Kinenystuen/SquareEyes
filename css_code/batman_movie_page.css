@@ -63,6 +63,7 @@ h2 {
     font-family: 'montserrat',  Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     background-color: var(--yellow);
+    color: var(--dark_purple);
     padding: 8px 12.5px;
     width: fit-content;
     border-radius: 5px;
@@ -78,6 +79,9 @@ h2 {
 }
 .shoppingbag_options {
     display: none;
+}
+.shoppingbag_options label {
+    padding: 11.5px;
 }
 .buttons label a {
     display: flex;
@@ -147,7 +151,7 @@ h2 {
 }
 
 /* section 3 moviephotos_section */
-
+/*
 .moviephotos_section, .suggestion_section {
 position: relative;
 padding-top: 100px;
@@ -163,7 +167,7 @@ padding-top: 100px;
     box-sizing: border-box;
     object-fit: cover; /* to set a specific height, without the pic squeezing */
   }
-
+  */
 
   /* suggestions part */
 .suggestion_section {
@@ -177,7 +181,7 @@ padding-top: 100px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 730px) {
     .content_wrap {
         max-width: 90%;
     }
@@ -260,4 +264,33 @@ padding-top: 100px;
             object-fit: cover;
             /* to set a specific height, without the pic squeezing */
         }
+
+        /* test*/
+        .suggestion_section {
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+        .prev_button, .next_button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--greywhite);
+            padding: 10px 20px;
+            border: none;
+            color: var(--dark_purple);
+        }
+        .prev_button {
+            left: 10px;
+        }
+        .next_button {
+            right: 10px;
+        }
 }
+

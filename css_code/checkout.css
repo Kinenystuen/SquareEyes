@@ -80,7 +80,7 @@ button, label, input { /*do i need this? fix*/
 }
 .movie_details_more p {
     font-size: 0.6rem;
-    padding: 4px 8px;
+    padding: 0px 8px 0px 0px;
 }
 .what {
     flex: 1;

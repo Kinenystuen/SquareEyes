@@ -194,6 +194,7 @@ html {
     padding: 8px;
     font-family: 'montserrat';
     font-weight: lighter;
+    border: none;
   }
   
   .newsletteremail:hover {
@@ -495,7 +496,7 @@ html {
 .buttons label, .shopping_bag_button {
   display: flex;
   gap: 8px;
-  padding: 8px 0px;
+  padding: 14px 0px;
   font-size: 1rem;
   align-items: center;
   justify-content: center;
@@ -637,7 +638,7 @@ html {
           margin-bottom: 4%;
           align-items: center;
       }
-
+      
       /* uni code stop -
   section 1 */
   }

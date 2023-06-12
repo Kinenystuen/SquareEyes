@@ -97,8 +97,13 @@
                 
                     <section class="your_datails">
                         <div>
-                            <label class="name" for="name">Your name</label>
-                            <input type="text" name="name" id="name" placeholder="Your name" aria-labelledby="Your name" class="form__input"
+                            <label class="firstname" for="firstname">Your first name</label>
+                            <input type="name" name="firstname" id="firstname" placeholder="First name" aria-labelledby="Your first name" class="form__input"
+                                required>
+                        </div>
+                        <div>
+                            <label class="lastname" for="lastname">Your last name</label>
+                            <input type="name" name="lastname" id="lastname" placeholder="Last name" aria-labelledby="Your last name" class="form__input"
                                 required>
                         </div>
                         <div>
@@ -136,7 +141,7 @@
                         </div>
                         <p>When clicking “Pay now” you confirm that you are 18 years old and that you agree to these terms. Your purchase(s) will be available immediatly after payment.</p>
                         <div class="checkboxes">
-                            <input class="checkbox_box" type="checkbox" name="terms" id="terms">
+                            <input class="checkbox_box" type="checkbox" name="terms" id="terms" required>
                             <label for="terms" class="checkbox_label">I agree with the terms.</label>
                         </div>
                         <div class="checkboxes">

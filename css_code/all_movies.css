@@ -220,7 +220,7 @@ h2 a{
 
     /* movie card */
     .buttons label {
-        padding: 3px 0px;
+        padding: 2px 0px;
         font-size: 0.8rem;
       }
   }
@@ -324,5 +324,14 @@ h2 a{
       .sortby {
         width: auto;
       }
-      
+       /* fiks detta */
+      .buttons {
+        padding: 8px;
+        height: 30px;
+      }
+      .shopping_bag_button {
+        height: 30px;
+        background-color: var(--yellow);
+      }
+
   }
