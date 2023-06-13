@@ -75,6 +75,7 @@ html {
     background: var(--yellow);
     border-radius: 0px 0px 10px 10px;
     margin-top: 0px;
+    z-index: 1;
   }
   
   /*  Hamburger menu */
@@ -125,21 +126,97 @@ html {
     position: absolute;
     right: 10%;
     top: 18px;
+    width: 30%;
+    align-items: center;
+    justify-content: end;
+    z-index: 5;
   }
   
   .nav_right a {
+    position: relative;
     display: flex;
-    padding: 10px;
-    width: 1.5rem;
-    height: 1.5rem;
+    align-items: end;
+    height: 1.8rem;
+    width: 2rem;
+  }
+
+  /* icons right nav*/
+   .icon_favorites_nav {
+    content: url(/icons/icon_heart_nav.png);
+  }
+  .icon_favorites_nav:hover {
+    content: url(/icons/icon_heart_nav_hover.png);
+  }
+
+  .icon_your_list_nav {
+    content: url(/icons/icon_pluss_nav.svg);
+  }
+  .icon_your_list_nav:hover {
+    content: url(/icons/icon_pluss_nav_hover.png);
+  }
+
+  .icon_shopping_bag_nav {
+    content: url(/icons/icon_shopping_bag_nav.png);
+  }
+  .icon_shopping_bag_nav:hover {
+    content: url(/icons/icon_shopping_bag_nav_hover.png);
+  }
+
+  .icon_profile_nav {
+    content: url(/icons/icon_profile.png);
+  }
+  .icon_profile_nav:hover {
+    content: url(/icons/icon_profile_hover.png);
+  }
+
+  .icon_favorites_nav, .icon_your_list_nav,.icon_shopping_bag_nav, .icon_profile_nav {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+    align-items: center;
+    margin: 0px;
     
+    align-self: center;
+    justify-self: center;
   }
-  
-  .nav_right a:hover {
-    background: var(--purple);
-    outline: 1px solid var(--purple);
+  /* Search icon and bar */
+  .search {
+    flex: 1fr;
+    height: 2.2rem;
+    padding-left: 4px;
     border-radius: 5px;
-  }
+    background-image: url(/icons/icon_search_2.png);
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: right;
+    background-position: 98%;
+    background-color: transparent;
+    place-content: var(--dark_purple);
+    border: none;
+    z-index: 99;
+}
+.search::placeholder {
+    color: transparent;
+}
+/* removed the "x" from the search bar */
+.search::-webkit-search-cancel-button,
+.search::-webkit-search-decoration,
+.search::-webkit-search-results-button,
+.search::-webkit-search-results-decoration {
+  appearance: none;
+}
+
+.search:hover {
+    background-image: url(/icons/icon_search_hover.png);
+    z-index: 1;
+}
+.search:focus {
+    background-image: url(/icons/icon_search_open.png);
+    outline: none;
+    background-color: var(--white);
+    z-index: 1;
+}
+
   
   /* ///////// Footer code //////// */
   
@@ -564,6 +641,7 @@ html {
 
       .nav_right {
           top: 15px;
+          width: 100%;
       }
 
 
@@ -653,20 +731,20 @@ html {
           align-items: end;
       }
 
-            /* Section6 - Supporting small filmmakers */
-      
-            .supportfilm {
-              margin: 100px auto 100px;
-            }
-      
-            .supportfilm_area {
-              max-width: 80%;
-              font-size: 1rem;
-            }
-      
-            .supportfilm_area a {
-              font-size: 1.2rem;
-            }
+      /* Section6 - Supporting small filmmakers */
+
+      .supportfilm {
+        margin: 100px auto 100px;
+      }
+
+      .supportfilm_area {
+        max-width: 80%;
+        font-size: 1rem;
+      }
+
+      .supportfilm_area a {
+        font-size: 1.2rem;
+      }
 
       /* Footerbar */
 

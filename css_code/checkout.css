@@ -7,6 +7,8 @@ html {
 
     position: relative;
 }
+
+
 button, label, input { /*do i need this? fix*/
     font-family: 'Montserrat' Verdana, Geneva, Tahoma, sans-serif;
 } 
