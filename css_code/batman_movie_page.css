@@ -11,6 +11,9 @@ h2 {
     font-size: 0.9rem;
     text-transform: uppercase;
 }
+.max_width {
+    max-width: 1500px;
+}
 
 /* batmansection1 */
 
@@ -22,7 +25,7 @@ h2 {
     min-height: 600px;
     width: 100%;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: top;
 }
 .headerpic_gradient {
     position: absolute;
@@ -174,6 +177,7 @@ h2 {
 /*section 2 - details */
 .movie_details_section {
     padding: 16px 0px;
+    max-width: 1500px;
 }
 .movie_details {
     display: flex;
@@ -185,7 +189,7 @@ h2 {
     flex-direction: row;
 }
 .movie_details_more p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 2px 0px;
     margin: 0px;
 }
@@ -217,6 +221,7 @@ h2 {
 .moviephotos_section, .suggestion_section {
 position: relative;
 padding-top: 100px;
+max-width: 1500px;
 }
 .moviephotos {
     display: grid;

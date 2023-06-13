@@ -53,11 +53,9 @@ body {
     flex-direction: column;
     z-index: 1;
 }
-.message_area input:hover, .message_area textarea:hover{
+.message_area input:hover, .message_area textarea:hover, .message_area input:focus, .message_area textarea:focus{
     background-color: var(--white);
-}
-.message_area input:focus, .message_area textarea:focus{
-    background-color: var(--white);
+    outline: none;
 }
 .message_area div {
     margin: 0px;

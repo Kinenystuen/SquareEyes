@@ -1,0 +1,118 @@
+html {
+    --dark_purple: #050517;
+    --purple: #2E1B3B;
+    --yellow: #F0C808;
+    --greywhite: #d2d2d2;
+    --white: #f7f7f7;
+
+    position: relative;
+}
+
+.signin_section, .signup_section {
+    margin: auto;
+    max-width: 400px;
+    margin-bottom: 10rem;
+}
+.signin_section h1, .signup_section h1{
+    font-size: 2.2rem;
+    margin-top: 10vh;
+}
+
+/* Sign in area */
+
+.signin_area {
+    display: flex;
+    flex-direction: column;
+}
+.signin_area div {
+    margin: 0px;
+    margin: 10px 0px;
+}
+.signin_area label {
+    display: flex;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+.signin_area input {
+    display: flex;
+    background-color: var(--greywhite);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    width: 100%;
+    align-items: end;
+}
+.signin_area input:hover , .signin_area input:focus {
+    background-color: var(--white);
+}
+.yellow input{
+    background-color: var(--yellow);
+    color: var(--dark_purple);
+    text-align:  center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.yellow input:hover {
+    background-color: var(--yellow);
+    font-weight: 600;
+}
+.grey input{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.grey input:hover{
+    font-weight: 600;
+}
+
+.signin_area a {
+    color: var(--greywhite);
+    font-size: 0.8rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+/* checkbox area*/
+.checkboxes {
+    display: flex;
+    width: 100%;
+}
+.checkboxes input[type="checkbox"] {
+    display: none;
+}
+.checkboxes label {
+    position: relative;
+    cursor: pointer;
+    justify-content: end;
+    align-items: center;
+}
+.checkboxes label::after {
+    content: "";
+    outline: 1px solid var(--purple);
+
+    border-radius: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/* checkbox icon*/
+input[type="checkbox"]:hover + label::after {
+    background-color: var(--greywhite);
+    background-image: url(/icons/icon_checked_c.svg);
+}
+input[type="checkbox"]:checked + label::after {
+    background-color: var(--purple);
+    background-image: url(/icons/icon_checked.svg);
+}

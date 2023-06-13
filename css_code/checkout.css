@@ -286,7 +286,7 @@ input:hover, input:focus {
     display:flex;
 }
 
-input[type="checkbox"] {
+.checkboxes input[type="checkbox"] {
     display: none;
 }
 
@@ -311,13 +311,12 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 input[type="checkbox"]:hover + label:before {
-    background-color: var(--purple);
-    background-image: url(/icons/icon_checked.svg);
+    background-color: var(--greywhite);
+    background-image: url(/icons/icon_checked_c.svg);
 }
 input[type="checkbox"]:checked + label:before {
     background-color: var(--purple);
-    background-image: url(/icons/icon_checked_c.svg);
-    background-color: var(--greywhite);
+    background-image: url(/icons/icon_checked.svg);
 }
 
 input[type="submit"] {
@@ -379,5 +378,3 @@ input[type="submit"] {
         
     }
 }
-  
-  
