@@ -195,6 +195,51 @@ h2 a{
   .movie_info .movie_price {
     font-size: 1.4rem;
   }
+  /* buttons and shopping bag */
+  /* 
+  buttons = the boss
+  buttons a = more info button all. 
+  */
+  .buttons { 
+    display: flex;
+    gap: 4px;
+  }
+  .buttons a, .shopping_bag_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;    
+    width: 100%;
+    width: fit-content;
+    padding: 0px 4px;
+    text-transform: uppercase;
+    background-color: var(--greywhite);
+    color: var(--dark_purple);
+    margin: 0px 2px;
+  }
+  .shopping_bag_button {
+    gap: 8px; /*sets the gap between "add" and icon */
+  }
+  .buttons a {
+    text-decoration: none;
+    color: var(--dark_purple);
+    text-align: center;
+    padding: 8px 10px;
+    background-color: var(--greywhite);
+    flex: 1;
+  }
+  .buttons a:hover, .shopping_bag_button:hover {
+    font-weight: 600;
+  }
+  .shopping_bag { /*adds shopping bag icon to the button */
+    content: url(/icons/icon_shopping_bag_final.png);
+      width: 1rem;
+      height: auto;
+  }
+  .shopping_bag_button::before {
+    content: "Add";
+  }
+
 
   @media (max-width:1700px) {
     .movies {
@@ -212,22 +257,28 @@ h2 a{
     }
   }
   
-  @media (max-width:1100px) {
+  @media (max-width:1120px) {
     main {
         font-size: 14px;
     }
 
     /* movie card */
     .buttons label {
-        padding: 2px 0px;
         font-size: 0.8rem;
       }
   }
+  @media (max-width:1000px) {
+    /* movie card */
+    .movie_cover {
+      flex: 1;
+    }
+    .movie_info {
+      flex: 2;
+    }
+  }
+  
 
   @media (max-width:950px) {
-    .movie_info {
-        flex: 1;
-    }
     .movie_descrition {
         font-size: 0.7rem;
     }
@@ -267,14 +318,10 @@ h2 a{
         cursor: pointer;
         width: fit-content;
     }
-  @media (max-width: 890px) {
-    .buttons button {
-        padding: 3px 0px;
-        font-size: 0.7rem;
-      }
-  }
+}
 
-  }
+
+
   @media (max-width:700px) {
     .movies {
         grid-template-columns:repeat(1, 1fr);
@@ -285,10 +332,13 @@ h2 a{
     .movie_info h2 {
         font-size: 1.4rem;
     }
-    .buttons button {
-        padding: 4px 0px;
+    .buttons label {
         font-size: 1rem;
       }
+    
+    .icons {
+      height: 1.8rem;
+    }
   }
 
   @media (max-width:500px) {
@@ -324,4 +374,7 @@ h2 a{
         width: auto;
       }
 
+      .icons {
+        height: 2rem;
+      }
   }

@@ -467,14 +467,6 @@ html {
 }
 
 /* shopping bag */
-.shopping_bag {
-  content: url(/icons/icon_shopping_bag_final.png);
-  width: 1rem;
-  height: auto;
-}
-.shopping_bag_button::before {
-  content: "Add";
-}
 #shopping_bag_button1:checked ~ .shopping_bag_button {background-color: var(--yellow);}
 #shopping_bag_button1:checked  ~ .shopping_bag_button::before {content: 'Added';}
 #shopping_bag_button2:checked ~ .shopping_bag_button {background-color: var(--yellow);}
@@ -491,35 +483,6 @@ html {
 #shopping_bag_button7:checked  ~ .shopping_bag_button::before {content: 'Added';}
 #shopping_bag_button8:checked ~ .shopping_bag_button {background-color: var(--yellow);}
 #shopping_bag_button8:checked  ~ .shopping_bag_button::before {content: 'Added';}
-
-.buttons {
-  display: flex;
-  flex: 1fr;
-  gap: 4px;
-}
-.buttons label, .shopping_bag_button {
-  display: flex;
-  gap: 8px;
-  padding: 14px 0px;
-  font-size: 1rem;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  border-radius: 5px;    
-  width: 100%;
-  color: var(--dark_purple);
-  text-transform: uppercase;
-  background-color: var(--greywhite);
-}
-.buttons a {
-  text-decoration: none;
-  color: var(--dark_purple);
-  text-align: center;
-}
-.buttons label:hover, .shopping_bag_button:hover {
-  font-weight: 600;
-}
-
 
   @media (max-width:1060px) {
       /* Header nav bar */
@@ -603,16 +566,17 @@ html {
           top: 15px;
       }
 
-            /* Section6 - Supporting small filmmakers */
-      
-            .supportfilm_area {
-              max-width: 70%;
-              font-size: 1rem;
-            }
-      
-            .supportfilm_area a {
-              font-size: 1.2rem;
-            }
+
+      /* Section6 - Supporting small filmmakers */
+
+      .supportfilm_area {
+        max-width: 70%;
+        font-size: 1rem;
+      }
+
+      .supportfilm_area a {
+        font-size: 1.2rem;
+      }
 
       /* footer */
 
