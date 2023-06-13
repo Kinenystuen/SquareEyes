@@ -377,4 +377,12 @@ h2 a{
       .icons {
         height: 2rem;
       }
+
+      /* movie cards */
+      .movie_cover {
+        flex: 1;
+      }
+      .movie_info {
+        flex: 1;
+      }
   }
