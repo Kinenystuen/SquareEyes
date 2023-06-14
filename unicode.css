@@ -49,6 +49,13 @@ html {
     max-width: 100%;
     display: block;
   }
+
+  button { /*removes the original button look */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
   
   /* /////// Header code //////////*/
   
@@ -126,7 +133,7 @@ html {
     position: absolute;
     right: 10%;
     top: 18px;
-    width: 30%;
+    width: fit-content;
     align-items: center;
     justify-content: end;
     z-index: 5;
@@ -183,6 +190,7 @@ html {
   .search {
     flex: 1fr;
     height: 2.2rem;
+    max-width: 400px;
     padding-left: 4px;
     border-radius: 5px;
     background-image: url(/icons/icon_search_2.png);
@@ -641,7 +649,7 @@ html {
 
       .nav_right {
           top: 15px;
-          width: 100%;
+          width: fit-content;
       }
 
 

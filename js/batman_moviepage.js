@@ -1,4 +1,4 @@
-    trailerplayer.style.display = "none";
+trailerplayer.style.display = "none";
     close_trailer.style.display = "none";
     function watchtrailer() {
         const trailerplayer = document.getElementById("trailerplayer");

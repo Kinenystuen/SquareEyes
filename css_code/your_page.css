@@ -20,22 +20,22 @@ html {
 
 /* Sign in area */
 
-.signin_area {
+.signin_area, .signup_area {
     display: flex;
     flex-direction: column;
 }
-.signin_area div {
+.signin_area div, .signup_area div {
     margin: 0px;
     margin: 10px 0px;
 }
-.signin_area label {
+.signin_area label, .signup_area label {
     display: flex;
     font-size: 0.8rem;
     width: 100%;
     margin: 0px;
     margin-bottom: 8px;
 }
-.signin_area input {
+.signin_area input, .signup_area input {
     display: flex;
     background-color: var(--greywhite);
     box-sizing: border-box;
@@ -45,8 +45,11 @@ html {
     width: 100%;
     align-items: end;
 }
-.signin_area input:hover , .signin_area input:focus {
+.signin_area input:hover , .signin_area input:focus, .signup_area input:hover , .signup_area input:focus {
     background-color: var(--white);
+}
+.signin_button a, .signup_area a {
+    text-decoration: none;
 }
 .yellow input{
     background-color: var(--yellow);
@@ -72,7 +75,7 @@ html {
     font-weight: 600;
 }
 
-.signin_area a {
+.signin_area a, .signup_area a {
     color: var(--greywhite);
     font-size: 0.8rem;
     padding: 1rem;
@@ -101,6 +104,7 @@ html {
     height: 1.5rem;
     margin-left: 1rem;
     
+    background-color: var(--greywhite);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -111,6 +115,8 @@ html {
 input[type="checkbox"]:hover + label::after {
     background-color: var(--greywhite);
     background-image: url(/icons/icon_checked_c.svg);
+    outline: 1px solid var(--greywhite);
+
 }
 input[type="checkbox"]:checked + label::after {
     background-color: var(--purple);

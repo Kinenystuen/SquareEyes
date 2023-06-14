@@ -96,6 +96,7 @@ h2 a{
     display: flex;
     margin: auto;
     width:fit-content;
+    white-space: nowrap;
     color: var(--dark_purple);
   }
   .downarrow {

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/css_code/batman_movie_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
         rel="stylesheet">
-        <script src="/js/batman_moviepage.js"></script>
     <title>Square Eyes | Batman moviepage</title>
 </head>
 
@@ -93,30 +92,6 @@
                 src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <script> /* problem: tried to movie the script code to a js file, but for some reason only the button part worked then */
-                trailerplayer.style.display = "none";
-                close_trailer.style.display = "none";
-                function watchtrailer() {
-                    const trailerplayer = document.getElementById("trailerplayer");
-                    const movietrailer = document.getElementById("movietrailer");
-                    const close_trailer = document.getElementById("close_trailer");
-                    const batmansection1 = document.getElementById("batmansection1");
-                    if (playbutton.textContent === "Watch trailer") {
-                        playbutton.textContent = "Close trailer";
-                        trailerplayer.style.display = "block";
-                        close_trailer.style.display = "flex";
-                        movietrailer.scrollIntoView({ 
-                            behavior: 'smooth' });
-                    }
-                    else {
-                        playbutton.textContent = "Watch trailer";
-                        trailerplayer.style.display = "none";
-                        close_trailer.style.display = "none";
-                        batmansection1.scrollIntoView({ 
-                            behavior: 'smooth' });
-                    }
-                }
-            </script>
         </div>
         <section class="movie_details_section content_wrap">
             <h2>Movie details:</h2>    
@@ -202,6 +177,6 @@
             </div>
         </section>
     </footer>
+    <script src="/js/batman_moviepage.js"></script>
 </body>
-
 </html>

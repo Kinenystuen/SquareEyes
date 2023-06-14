@@ -305,6 +305,7 @@ input:hover, input:focus {
     height: 1.5rem;
     margin-right: 1rem;
     
+    background-color: var(--greywhite);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -313,6 +314,7 @@ input:hover, input:focus {
 input[type="checkbox"]:hover + label:before {
     background-color: var(--greywhite);
     background-image: url(/icons/icon_checked_c.svg);
+    outline: 1px solid var(--greywhite);
 }
 input[type="checkbox"]:checked + label:before {
     background-color: var(--purple);
