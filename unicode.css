@@ -86,7 +86,11 @@ html {
   }
   
   /*  Hamburger menu */
-  
+  .header_left {
+    display: flex;
+    align-self: center;
+  }
+
   .nav_left a, .nav_right a {
     text-decoration: none;
     padding: 8px;
@@ -142,9 +146,10 @@ html {
   .nav_right a {
     position: relative;
     display: flex;
-    align-items: end;
+    align-items: center;
     height: 1.8rem;
     width: 2rem;
+    justify-content: center;
   }
 
   /* icons right nav*/
@@ -190,8 +195,7 @@ html {
   .search {
     flex: 1fr;
     height: 2.2rem;
-    max-width: 400px;
-    padding-left: 4px;
+    max-width: auto;
     border-radius: 5px;
     background-image: url(/icons/icon_search_2.png);
     background-repeat: no-repeat;
@@ -223,6 +227,47 @@ html {
     outline: none;
     background-color: var(--white);
     z-index: 1;
+}
+/* search dropdown - for smaller screens*/
+.icon_search {
+  content: url(/icons/icon_search_2.png);
+  background-repeat: no-repeat;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0px 2px;
+  display: none;
+}
+.icon_search:hover {
+  content: url(/icons/icon_search_hover.png);
+}
+.search_bar_area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.search_dropdown {
+  width: 100%;
+  height: 2.2rem;
+  max-width: 98%;
+  border-radius: 5px;
+  background-image: url(/icons/icon_search_open.png);
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  background-position: right;
+  background-position: 99%;
+  background-color: var(--greywhite);
+  border: none;
+  z-index: 99;
+  margin: 1rem 0px;
+}
+.search_dropdown:hover, .search_:focus {
+  background-color: var(--white);
+  outline: none;
+  z-index: 1;
+}
+
+#menu_search_icon:checked ~ .search_dropdown {
+  display: show;
 }
 
   
@@ -569,7 +614,9 @@ html {
 #shopping_bag_button8:checked ~ .shopping_bag_button {background-color: var(--yellow);}
 #shopping_bag_button8:checked  ~ .shopping_bag_button::before {content: 'Added';}
 
-  @media (max-width:1060px) {
+
+
+ @media (max-width:1200px) {
       /* Header nav bar */
 
       header {
@@ -630,9 +677,8 @@ html {
       .nav_left li:nth-child(4) {
           display: flex;
       }
-
-      .nav_right a:nth-child(2),
-      .nav_right a:nth-child(3) {
+      .nav_right a:nth-child(3),
+      .nav_right a:nth-child(4) {
           display: none;
       }
 
@@ -652,6 +698,13 @@ html {
           width: fit-content;
       }
 
+      /* Search icon show/hide */
+        .search {
+          display: none;
+        }
+        .icon_search {  
+          display: flex;
+        }
 
       /* Section6 - Supporting small filmmakers */
 
@@ -692,9 +745,12 @@ html {
           margin-bottom: 4%;
           align-items: center;
       }
-      
-      /* uni code stop -
-  section 1 */
+      .nav_right a {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+      }
   }
 
   @media (max-width: 520px) {

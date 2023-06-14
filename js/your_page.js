@@ -15,3 +15,7 @@ const signinButtonOne = document.getElementById('sign_in')
         SectionOne.style.display = 'none';
         SectionTwo.style.display = 'block';
     });
+
+function goto_your_profile() {
+    window.location.href ="/your_profile.html"
+}

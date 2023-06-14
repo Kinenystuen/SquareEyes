@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,51 @@
   <meta name="describtion" content="Webpage for movie lovers. Choose between numbers of fantastic movies.">
   <link rel="stylesheet" href="unicode.css">
   <link rel="stylesheet" href="css_code/index_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
   <title>Square Eyes | Home</title>
 </head>
+
 <body>
   <header>
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-    <section>
+    <section class="header_left">
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-    <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
-    <nav class="nav_left">
-          <ul>
-            <li><a href="index.html" class="active_page">Home</a></li>
-            <li><a href="movie-pages/all-movies.html">Movies</a></li>
-            <li><a href="contact_us.html">Your list</a></li>
-            <li><a href="contact_us.html">Favorites</a></li>
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-          </ul>
+      <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+      <nav class="nav_left">
+        <ul>
+          <li><a href="index.html" class="active_page">Home</a></li>
+          <li><a href="movie-pages/all-movies.html">Movies</a></li>
+          <li><a href="contact_us.html">Your list</a></li>
+          <li><a href="contact_us.html">Favorites</a></li>
+          <li><a href="about_us.html">About us</a></li>
+          <li><a href="contact_us.html">Contact us</a></li>
+        </ul>
       </nav>
-      </section>  
-      <section class="header_right">
-        <nav class="nav_right">
-            <input type="search" placeholder="Search" class="search">
-            <a href="your_fav.html"><figure class="icon_favorites_nav"></figure></a>
-            <a href="your_list.html"><figure class="icon_your_list_nav"></figure></a>
-            <a href="checkout.html"><figure class="icon_shopping_bag_nav"></figure></a>
-            <a href="your_page.html"><figure class="icon_profile_nav"></figure></a>
-        </nav>
-      </section>
-    </header>
+    </section>
+    <section class="header_right">
+      <nav class="nav_right">
+        <input type="search" placeholder="Search" class="search">
+        <label id="menu_search_icon" class="icon_search" alt="Show search bar"></label>
+        <a href="your_fav.html">
+          <figure class="icon_favorites_nav"></figure>
+        </a>
+        <a href="your_list.html">
+          <figure class="icon_your_list_nav"></figure>
+        </a>
+        <a href="checkout.html">
+          <figure class="icon_shopping_bag_nav"></figure>
+        </a>
+        <a href="your_page.html">
+          <figure class="icon_profile_nav"></figure>
+        </a>
+      </nav>
+    </section>
+    <div class="search_bar_area" id="search_bar_area">
+      <input type="search" placeholder="Search" class="search_dropdown" fucus>
+    </div>
+  </header>
   <main class="content_wrap">
     <section class="headerdesign">
       <div><headergradient></headergradient></div>
@@ -160,5 +175,6 @@
         </div>
     </section>
 </footer>
+<script src="/js/uni.js"></script>
 </body>
 </html>

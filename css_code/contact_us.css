@@ -110,6 +110,32 @@ body {
     font-weight: 600;
 }
 
+/* sent message area */
+
+.message_area_sent {
+    height: auto;
+    display: flex;
+    width: 100%;
+}
+.message_area_sent div {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 0px;
+    box-sizing: border-box;
+}
+.message_area_sent h2 { 
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.message_area_sent p {
+    justify-content: flex-end;
+    padding-top: 100px;
+    align-self: center;
+}
+.message_area_sent p:hover {
+    font-weight: 600;
+}
 
 /* social media */
 .divsocialmedia {
