@@ -120,7 +120,7 @@ body {
 .message_area_sent div {
     display: flex;
     flex-direction: column;
-    padding: 140px 0px;
+    padding: 140px 0px 16.8px 0px;
     box-sizing: border-box;
 }
 .message_area_sent h2 { 

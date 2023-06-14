@@ -7,6 +7,10 @@ html {
 
     position: relative;
 }
+
+main h1 {
+    font-size: 1.8rem;
+}
 .successfull_purchase, .watch_now {
     display: flex;
     justify-content: center;

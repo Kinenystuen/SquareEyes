@@ -1,10 +1,10 @@
 
 
 const signinButtonOne = document.getElementById('sign_in')
-    const signupButtonTwo = document.getElementById('sign_up')
-    const SectionOne = document.getElementById('section_signin')
-    const SectionTwo = document.getElementById('section_signup')
-    SectionTwo.style.display = 'none';
+const signupButtonTwo = document.getElementById('sign_up')
+const SectionOne = document.getElementById('section_signin')
+const SectionTwo = document.getElementById('section_signup')
+SectionTwo.style.display = 'none';
 
     signinButtonOne.addEventListener('click', function () {
         SectionOne.style.display = 'block';

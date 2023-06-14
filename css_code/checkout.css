@@ -16,9 +16,14 @@ button, label, input { /*do i need this? fix*/
 .checkout_page {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 6rem;
     
     margin-bottom: 170px;
+}
+
+.max-width {
+    max-width: 1500px;
+    margin: 0px auto;
 }
 
 /* shopping bag */

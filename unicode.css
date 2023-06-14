@@ -39,6 +39,10 @@ html {
     min-height: 100vh;
     min-height: 100svh;
 }
+  .max_width {
+    max-width: 1500px;
+    margin: 0px auto;
+  }
   
   .fullwidthsection {
     width: 100%;
@@ -48,6 +52,17 @@ html {
   img {
     max-width: 100%;
     display: block;
+  }
+  main h1 {
+    margin-top: 4rem;
+}
+
+  /*to add info to icons */
+  .gone_text {
+    display: none;
+  }
+  .hidden_text {
+    visibility: hidden;
   }
 
   button { /*removes the original button look */
@@ -179,6 +194,10 @@ html {
   }
   .icon_profile_nav:hover {
     content: url(/icons/icon_profile_hover.png);
+  }
+  .icon_settings_wheel {
+    content: url(/icons/icon_settings_wheel.png);
+    margin: 0px;
   }
 
   .icon_favorites_nav, .icon_your_list_nav,.icon_shopping_bag_nav, .icon_profile_nav {

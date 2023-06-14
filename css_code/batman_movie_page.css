@@ -11,9 +11,6 @@ h2 {
     font-size: 0.9rem;
     text-transform: uppercase;
 }
-.max_width {
-    max-width: 1500px;
-}
 
 /* batmansection1 */
 
@@ -41,8 +38,7 @@ h2 {
 .movie_info {
     flex-direction: column;
     justify-content: center;
-    align-items: left;    
-    max-width: 28%;
+    align-items: left; 
     margin-left: 15%;
     z-index: 1;
     height: 100%;

@@ -11,6 +11,8 @@ html {
 h1 {
     font-size: 1.8rem;
     font-weight: 200;
+    margin: 16px auto;
+    max-width: 1500px;
 }
 h2 {
     margin: 2px;
@@ -25,7 +27,8 @@ h2 a{
 .movie_org {
     position: relative;
     display: flex;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 /* Movie categorie nav */
 .movie_nav a {

@@ -15,8 +15,3 @@ newmailButton.addEventListener('click', function () {
     message_area.style.display = 'block';
     message_area_sent.style.display = 'none';
 });
-
-function sendmessage() {
-    message_area.style.display = 'none';
-    message_area_sent.style.display = 'block';
-}
