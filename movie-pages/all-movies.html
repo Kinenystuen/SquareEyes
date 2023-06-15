@@ -27,15 +27,27 @@
             </ul>
           </nav>
           </section>  
-          <section class="header_right">
+          <div class="header_right">
             <nav class="nav_right">
                 <input type="search" placeholder="Search" class="search">
-                <a href="/your_fav.html"><figure class="icon_favorites_nav"></figure></a>
-                <a href="/your_list.html"><figure class="icon_your_list_nav"></figure></a>
-                <a href="/checkout.html"><figure class="icon_shopping_bag_nav"></figure></a>
-                <a href="/your_page.html"><figure class="icon_profile_nav"></figure></a>
+                <label id="menu_search_icon" class="icon_search"><span class="gone_text">Show search bar</span></label>
+                <a href="/your_fav.html">
+                    <figure class="icon_favorites_nav"></figure>
+                </a>
+                <a href="/your_list.html">
+                    <figure class="icon_your_list_nav"></figure>
+                </a>
+                <a href="/checkout.html">
+                    <figure class="icon_shopping_bag_nav"></figure>
+                </a>
+                <a href="/your_page.html">
+                    <figure class="icon_profile_nav"></figure>
+                </a>
             </nav>
-        </section>
+        </div>
+        <div class="search_bar_area" id="search_bar_area">
+            <input type="search" placeholder="Search" class="search_dropdown" fucus>
+        </div>
         </header>
   <main class="content_wrap main_h">
     <h1>Movies</h1>
@@ -68,7 +80,6 @@
         </nav>
       </section>
     </section>
-  
     <section class="movies">
       <div class="movie_card"> <!-- 1. batman-->
         <div class="movie_cover">
@@ -99,7 +110,7 @@
       <div class="movie_card"> <!-- 2. godzilla-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-            <img class="cover_img" src="/images/Movie_godzilla.jpeg" alt="The Batman movie cover">
+            <img class="cover_img" src="/images/Movie_godzilla.jpeg" alt="Godzilla cover">
           </a>
         </div>
         <div class="movie_info">
@@ -125,7 +136,7 @@
       <div class="movie_card"> <!--3.  toy story-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-            <img class="cover_img" src="/images/Movie_toy story.jpeg" alt="The Batman movie cover">
+            <img class="cover_img" src="/images/Movie_toy_story.jpeg" alt="Toy story 4 cover">
           </a>
         </div>
         <div class="movie_info">
@@ -150,7 +161,7 @@
       <div class="movie_card"> <!-- 4. scream-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-            <img class="cover_img" src="/images/Movie_scream.jpeg" alt="The Batman movie cover">
+            <img class="cover_img" src="/images/Movie_scream.jpeg" alt="Scream cover">
           </a>
         </div>
         <div class="movie_info">
@@ -176,7 +187,7 @@
       <div class="movie_card"> <!--5. Fast & furious-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-            <img class="cover_img" src="/images/Movie_fasr & furious.jpeg" alt="The Batman movie cover">
+            <img class="cover_img" src="/images/Movie_fasr_&_furious.jpeg" alt="Fast & furious: Hobbs & Shaw cover">
           </a>
         </div>
         <div class="movie_info">
@@ -201,7 +212,7 @@
       <div class="movie_card"> <!--6. Once upon a time in hollywood-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-            <img class="cover_img" src="/images/Movie_hollywood.jpeg" alt="The Batman movie cover">
+            <img class="cover_img" src="/images/Movie_hollywood.jpeg" alt="Once upon a time in Hollywood cover">
           </a>
         </div>
         <div class="movie_info">
@@ -226,7 +237,7 @@
       <div class="movie_card"> <!-- 7. Sweetheart-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-          <img class="cover_img" src="/images/Movie_sweetheart.jpeg" alt="The Batman movie cover">
+          <img class="cover_img" src="/images/Movie_sweetheart.jpeg" alt="Sweetheart cover">
         </a></div>
         <div class="movie_info">
           <h2><a href="/products/batman-movie-page.html">Sweetheart</a></h2>
@@ -251,7 +262,7 @@
       <div class="movie_card"> <!-- 8. Addams fam-->
         <div class="movie_cover">
           <a href="/products/batman-movie-page.html">
-          <img class="cover_img" src="/images/Movie_addams family.jpeg" alt="The Batman movie cover">
+          <img class="cover_img" src="/images/Movie_addams family.jpeg" alt="The Addams Family cover">
         </a></div>
         <div class="movie_info">
           <h2><a href="/products/batman-movie-page.html">The Addams family</a></h2>
@@ -277,7 +288,6 @@
     <section class="supportfilm">
       <div class="supportfilm_area">
         <p>Supporting small filmmakers and discovering interesting films.</p>
-        <a href="movie-pages/all-movies.html">View movies</a>
       </div>
     </section>
   </main>

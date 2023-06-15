@@ -12,7 +12,7 @@
   margin-top: 5vh;
 }
 
-headergradient {
+.headergradient {
   /*background*/
   position: absolute;
   height: auto;
@@ -33,7 +33,7 @@ headergradient {
   width:fit-content
 }
 
-headerscreen {
+.headerscreen {
   box-sizing: border-box;
   position: absolute;
   width: 704px;
@@ -44,7 +44,7 @@ headerscreen {
   transition: all 0.3 ease;
 }
 
-headerscreen:hover {
+.headerscreen:hover {
   background: radial-gradient(91.59% 91.59% at 50% 50.14%, rgba(27, 14, 44, 0) 0%, #1B0E2C 100%);
 }
 
@@ -350,12 +350,12 @@ headerscreen:hover {
     left: calc(50% - 469.3px/2);
   }
 
-  headerscreen {
+  .headerscreen {
     width: 469.3px;
     height: 230px;
   }
 
-  headergradient {
+  .headergradient {
     bottom: 320px;
   }
 
@@ -509,13 +509,13 @@ headerscreen:hover {
     left: calc(50% - 266px/2);
   }
 
-  headerscreen {
+  .headerscreen {
     margin-top: 0px;
     width: 266px;
     height: 126.73px;
   }
 
-  headergradient {
+  .headergradient {
     bottom: 100px;
   }
 

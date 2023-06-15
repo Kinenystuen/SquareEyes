@@ -17,12 +17,12 @@
 <body>
   <header>
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-    <section class="header_left">
+    <div class="header_left">
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-      <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+      <label for="menu_checkbox" class="hamburger_icon"></label><span class="gone_text">Show navigation bar</span></label>
       <nav class="nav_left">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active_page">Home</a></li>
           <li><a href="movie-pages/all-movies.html">Movies</a></li>
           <li><a href="your_list.html">Your list</a></li>
           <li><a href="your_fav.html">Favorites</a></li>
@@ -30,11 +30,11 @@
           <li><a href="contact_us.html">Contact us</a></li>
       </ul>
       </nav>
-    </section>
-    <section class="header_right">
+    </div>
+    <div class="header_right">
       <nav class="nav_right">
         <input type="search" placeholder="Search" class="search">
-        <label id="menu_search_icon" class="icon_search" alt="Show search bar"></label>
+        <label id="menu_search_icon" class="icon_search"><span class="gone_text">Show search bar</span></label>
         <a href="your_fav.html">
           <figure class="icon_favorites_nav"></figure>
         </a>
@@ -48,17 +48,17 @@
           <figure class="icon_profile_nav"></figure>
         </a>
       </nav>
-    </section>
+    </div>
     <div class="search_bar_area" id="search_bar_area">
       <input type="search" placeholder="Search" class="search_dropdown" fucus>
     </div>
   </header>
   <main class="content_wrap">
     <section class="headerdesign">
-      <div><headergradient></headergradient></div>
+      <div class="headergradient"></div>
       <div>
         <div class="headerscreenmes">
-          <div><headerscreen></headerscreen></div>
+          <div class="headerscreen"></div>
         </div>
         <div class="moviescreen">
           <img class="squareeyes_glasses" src="images/squareeyes_glasses.png" alt="Design of glasses">
@@ -73,7 +73,7 @@
         </a>
       </div>
     </section> 
-    <section class="section1" id="section1">
+    <div class="section1" id="section1">
       <div class="section1_info">
         <p>Embrace the world of independent cinema and discover great collections from talented filmmakers.</p>
         <a href="movie-pages/all-movies.html">See our collection</a>
@@ -81,8 +81,8 @@
       <div class="section1_image">
         <img src="images/clipped_crew_pic_home_page.png" alt="A picture of two movie crew members">
       </div>
-    </section>
-    <section class="section2">
+    </div>
+    <div class="section2">
       <div class="section2_area">
           <div class="section2_row">
             <img src="icons/icon_yellow_dot.png" alt="A yellow dot" class="yellow_dot">
@@ -93,27 +93,27 @@
           <p>Discover high-quality videos and support independent filmmakers.</p>
         </div>
       </div>
-    </section>
-    <section class="section3">
+    </div>
+    <div class="section3">
       <div class="section3_image">
-        <img class="batman_sunset"src="images/batman sunset cropped2.jpg" alt="A picture of Batman">
+        <img class="batman_sunset" src="images/batman_sunset_cropped2.jpg" alt="A picture of Batman">
         <img class="batman_cover" src="images/Movie_batman.jpeg" alt="Batman cover picture">
       </div>
       <div class="section3_info">
         <p>Experience the excitement of superheroes, the wonder of animation, and the thrill of horror with our collection of movies.</p>
       </div>
-    </section>
+    </div>
     <section class="section4">
       <h2>Suggestions:</h2>
       <div>
         <figure class="section4_movie">
-          <img src="images/Movie_fasr & furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
+          <img src="images/Movie_fasr_&_furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
         </figure>
         <figure class="section4_movie">
           <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
         </figure>
         <figure class="section4_movie">
-          <img src="images/Movie_toy story.jpeg" alt="Movie cover for Toy Story 4">
+          <img src="images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
         </figure>
         <figure class="section4_movie">
           <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
@@ -134,12 +134,12 @@
       
     </section>
 
-    <section class="supportfilm">
+    <div class="supportfilm">
       <div class="supportfilm_area">
         <p>Supporting small filmmakers and discovering interesting films.</p>
         <a href="movie-pages/all-movies.html">View movies</a>
       </div>
-    </section>
+    </div>
 
 </main>
 <footer>
