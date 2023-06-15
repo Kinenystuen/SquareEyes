@@ -13,9 +13,9 @@
 <body>
     <header>
         <a href="/index.html"><img class="logo_header" src="/Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-        <section class="header_left">
+        <div class="header_left">
           <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+        <label for="menu_checkbox" class="hamburger_icon"></label><span class="gone_text">Show navigation bar</span></label>
         <nav class="nav_left">
               <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -26,7 +26,7 @@
                 <li><a href="/contact_us.html">Contact us</a></li>
             </ul>
           </nav>
-          </section>  
+        </div>  
           <div class="header_right">
             <nav class="nav_right">
                 <input type="search" placeholder="Search" class="search">
@@ -46,16 +46,16 @@
             </nav>
         </div>
         <div class="search_bar_area" id="search_bar_area">
-            <input type="search" placeholder="Search" class="search_dropdown" fucus>
+            <input type="search" placeholder="Search" class="search_dropdown">
         </div>
         </header>
   <main class="content_wrap main_h">
     <h1>Movies</h1>
-    <section class="movie_org">
+    <div class="movie_org">
       <input type="checkbox" name="moviemenu_checkbox" id="moviemenu_checkbox">
       <nav class="movie_nav">
         <ul>
-          <label for="moviemenu_checkbox" class="categories" alt="Show movie categories">Categories - All</label>
+          <li><label for="moviemenu_checkbox" class="categories" alt="Show movie categories">Categories - All</label></li>
           <li><a href="" class="active_movie">All</a></li>
           <li><a href="">Action</a></li>
           <li><a href="">Adventure</a></li>
@@ -65,12 +65,11 @@
           <li><a href="">Family</a></li>
         </ul>
       </nav>
-      <section>
+      <div>
         <input type="checkbox" name="sortby_menu" id="sortby_menu">
         <nav class="sortby_menu">
           <ul>
-            <label for="sortby_menu" class="sortby"><span class="sortby_text">Sort by<img
-                  class="downarrow"></span></label>
+            <label for="sortby_menu" class="sortby"><span class="sortby_text">Sort by <figure class="downarrow"></figure></span></label>
             <li><a href="">Name</a></li>
             <li><a href="">Release date</a></li>
             <li><a href="">Popularity</a></li>
@@ -78,8 +77,8 @@
             <li><a href="">Price high-low</a></li>
           </ul>
         </nav>
-      </section>
-    </section>
+      </div>
+    </div>
     <section class="movies">
       <div class="movie_card"> <!-- 1. batman-->
         <div class="movie_cover">
@@ -100,7 +99,7 @@
             <label for="your_list1" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button1" id="shopping_bag_button1">
             <label for="shopping_bag_button1" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -126,7 +125,7 @@
             <label for="your_list2" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button2" id="shopping_bag_button2">
             <label for="shopping_bag_button2" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -151,7 +150,7 @@
             <label for="your_list3" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button3" id="shopping_bag_button3">
             <label for="shopping_bag_button3" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -177,7 +176,7 @@
             <label for="your_list4" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button4" id="shopping_bag_button4">
             <label for="shopping_bag_button4" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -202,7 +201,7 @@
             <label for="your_list5" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button5" id="shopping_bag_button5">
             <label for="shopping_bag_button5" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -227,7 +226,7 @@
             <label for="your_list6" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button6" id="shopping_bag_button6">
             <label for="shopping_bag_button6" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -252,7 +251,7 @@
             <label for="your_list7" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button7" id="shopping_bag_button7">
             <label for="shopping_bag_button7" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -277,7 +276,7 @@
             <label for="your_list8" class="icon_pluss"></label>
           </div>
           <div class="buttons">
-            <a href="/products/batman-movie-page.html"><label class="more_info_button">More info</label></a>
+            <a href="/products/batman-movie-page.html" class="more_info_button">More info</a>
             <input type="checkbox" name="shopping_bag_button8" id="shopping_bag_button8">
             <label for="shopping_bag_button8" class="shopping_bag_button">
               <span class="shopping_bag"></span></label>
@@ -285,14 +284,14 @@
         </div>
       </div>
     </section>
-    <section class="supportfilm">
+    <div class="supportfilm">
       <div class="supportfilm_area">
         <p>Supporting small filmmakers and discovering interesting films.</p>
       </div>
-    </section>
+    </div>
   </main>
   <footer>
-    <section class="footerbar">
+    <div class="footerbar">
         <div class="footernav">
             <span> &copy; SquareEyes </span>
             <a href="/about_us.html">About us</a>
@@ -312,7 +311,7 @@
               <img src="/icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
             </figure>
         </div>
-    </section>
+      </div>
 </footer>
 <script src="/js/uni.js"></script>
 <script src="/js/all_movies.js"></script>
