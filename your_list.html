@@ -1,49 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="describtion" content="Webpage for movie lovers. Choose between numbers of fantastic movies.">
-  <link rel="stylesheet" href="unicode.cs">
-  <link rel="stylesheet" href="css_code/your_list.css">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
-  <title>Square Eyes | Sign in / Sign up</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="describtion" content="Webpage for movie lovers. Choose between numbers of fantastic movies.">
+    <link rel="stylesheet" href="unicode.css">
+    <link rel="stylesheet" href="css_code/your_list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
+    <title>Square Eyes | Your profile</title>
 </head>
+
 <body>
     <header>
         <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
         <section class="header_left">
-          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
-        <nav class="nav_left">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="movie-pages/all-movies.html">Movies</a></li>
-                <li><a href="contact_us.html">Your list</a></li>
-                <li><a href="contact_us.html">Favorites</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
-              </ul>
-          </nav>
-        </section>  
+            <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" class="hamburger_icon" alt="Show navigation bar"></label>
+            <nav class="nav_left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movie-pages/all-movies.html">Movies</a></li>
+                    <li><a href="your_list.html">Your list</a></li>
+                    <li><a href="your_fav.html">Favorites</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
         <section class="header_right">
             <nav class="nav_right">
                 <input type="search" placeholder="Search" class="search">
                 <label id="menu_search_icon" class="icon_search" alt="Show search bar"></label>
-                <a href="your_fav.html"><figure class="icon_favorites_nav"></figure></a>
-                <a href="your_list.html"><figure class="icon_your_list_nav"></figure></a>
-                <a href="checkout.html"><figure class="icon_shopping_bag_nav"></figure></a>
-                <a href="your_page.html"><figure class="icon_profile_nav"></figure></a>
+                <a href="your_fav.html">
+                    <figure class="icon_favorites_nav"></figure>
+                </a>
+                <a href="your_list.html">
+                    <figure class="icon_your_list_nav"></figure>
+                </a>
+                <a href="checkout.html">
+                    <figure class="icon_shopping_bag_nav"></figure>
+                </a>
+                <a href="your_page.html">
+                    <figure class="icon_profile_nav"></figure>
+                </a>
             </nav>
         </section>
         <div class="search_bar_area" id="search_bar_area">
             <input type="search" placeholder="Search" class="search_dropdown" fucus>
         </div>
-        </header>
+    </header>
     <main class="main_h content_wrap">
-        
+        <section class="your_list_content">
+            <div class="your_list_movies">
+                <div class="h1_text">
+                    <figure class="icon_your_list_nav"></figure>
+                    <h1>Your list</h1>
+                </div>
+                <p class="p_top">Your list of movies</p>
+                <h2>Rented</h2>
+                <div class="paid">
+                    <div class="information_box">
+                        <a href="/products/batman-movie-page.html" class="movie_cover"><img
+                                src="/images/Movie_batman.jpeg" alt="Batman movie cover"></a>
+                        <div class="information_text">
+                            <h3>The Batman</h3>
+                            <p>Not yet watched - <span class="yellow">30 days left</span></p>
+                        </div>
+                        <div class="information_box_end">
+                            <div class="figure_rightarrow">
+                                <p>Watch now</p>
+                                <figure class="rightarrow2"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Not watched</h2>
+                <div class="in_list">
+                    <div class="information_box">
+                        <a href="/products/batman-movie-page.html" class="movie_cover"><img
+                                src="/images/Movie_hollywood.jpeg" alt="Batman movie cover"></a>
+                        <div class="information_text">
+                            <h3>Once upon a time in Hollywood</h3>
+                        </div>
+                        <div class="information_box_end">
+                            <div class="figure_rightarrow">
+                                <p>Watch now</p>
+                                <figure class="rightarrow2"></figure>
+                            </div>
+                            <div class="figure_x">
+                                <figure class="icon_x"></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information_box">
+                        <a href="/products/batman-movie-page.html" class="movie_cover"><img
+                                src="/images/Movie_godzilla.jpeg" alt="Batman movie cover"></a>
+                        <div class="information_text">
+                            <h3>Godzilla</h3>
+                        </div>
+                        <div class="information_box_end">
+                            <div class="figure_rightarrow">
+                                <p>Watch now</p>
+                                <figure class="rightarrow2"></figure>
+                            </div>
+                            <div class="figure_x">
+                                <figure class="icon_x"></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information_box">
+                        <a href="/products/batman-movie-page.html" class="movie_cover"><img
+                                src="/images/Movie_addams family.jpeg" alt="Batman movie cover"></a>
+                        <div class="information_text">
+                            <h3>The Addams Family</h3>
+                        </div>
+                        <div class="information_box_end">
+                            <div class="figure_rightarrow">
+                                <p>Watch now</p>
+                                <figure class="rightarrow2"></figure>
+                            </div>
+                            <div class="figure_x">
+                                <figure class="icon_x"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="footerbar">
@@ -63,11 +150,12 @@
                 <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
                 </figure>
                 <figure>
-                  <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+                    <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
                 </figure>
             </div>
         </section>
     </footer>
     <script src="/js/uni.js"></script>
 </body>
+
 </html>

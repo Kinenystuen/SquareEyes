@@ -30,6 +30,9 @@ html {
     textarea {
       font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
     }
+    input:focus, label:focus, text:focus {
+      outline: none;
+    }
 
   .content_wrap /* tells the page to center everything */ {
     width: 80%;
@@ -64,6 +67,9 @@ html {
   .hidden_text {
     visibility: hidden;
   }
+  .yellow { /*just yellow */
+    color: var(--yellow);
+}
 
   button { /*removes the original button look */
     background-color: transparent;

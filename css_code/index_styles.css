@@ -58,7 +58,7 @@ headerscreen:hover {
 .Squareeyes_logoname {
   position: absolute;
   display: flex;
-  top: 213px;
+  top: 185px;
   left: calc(50% - 286px/2);
   max-height: 245px;
   max-width: 50vw;
@@ -367,7 +367,7 @@ headerscreen:hover {
   }
 
   .Squareeyes_logoname {
-    top: 175px;
+    top: 142px;
     left: calc(50% - 228.38px/2);
     font-size: 2rem;
     line-height: 25px;
@@ -527,7 +527,7 @@ headerscreen:hover {
   }
 
   .Squareeyes_logoname {
-    top: 120px;
+    top: 82px;
     left: calc(50% - 139.89px/2);
     font-size: 1.4rem;
   }
