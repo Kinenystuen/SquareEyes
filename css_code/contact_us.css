@@ -152,27 +152,9 @@ body {
 .socialmedia figure {
     margin: 0px;
 }
-.instagram, .twitter, .facebook {
+.socialmedia_icon {
     height: 4rem;
     width: auto;
     box-sizing: border-box;
     cursor: pointer;
   }
-.instagram {
-    content: url(/icons/icon_instagram.svg);
-}
-.instagram:hover {
-    content: url(/icons/icon_instagram_hover.svg);
-}
-.twitter {
-    content: url(/icons/icon_twitter.svg);
-}
-.twitter:hover {
-    content: url(/icons/icon_twitter_hover.svg);
-}
-.facebook {
-    content: url(/icons/icon_facebook.svg);
-}
-.facebook:hover {
-    content: url(/icons/icon_facebook_hover.svg);
-}

@@ -421,9 +421,29 @@ html {
   .footersocialmedia figure {
     margin: 0px;
   }
-  .iconsocial {
+  .instagram, .twitter, .facebook {
     height: auto;
     width: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .instagram {
+    content: url(/icons/icon_instagram.svg);
+  }
+  .instagram:hover {
+      content: url(/icons/icon_instagram_hover.svg);
+  }
+  .twitter {
+      content: url(/icons/icon_twitter.svg);
+  }
+  .twitter:hover {
+      content: url(/icons/icon_twitter_hover.svg);
+  }
+  .facebook {
+      content: url(/icons/icon_facebook.svg);
+  }
+  .facebook:hover {
+      content: url(/icons/icon_facebook_hover.svg);
   }
  /* Section 4 - movies */
 

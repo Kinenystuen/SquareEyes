@@ -15,7 +15,7 @@
         <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
         <div class="header_left">
           <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" class="hamburger_icon"><span class="gone_text">Show navigation bar</span></label>
+        <label for="menu_checkbox" class="hamburger_icon" aria-label="Show navigation bar"></label>
         <nav class="nav_left">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,7 +30,7 @@
           <div class="header_right">
             <nav class="nav_right">
                 <input type="search" placeholder="Search" class="search">
-                <label id="menu_search_icon" class="icon_search"><span class="gone_text">Show search bar</span></label>
+                <label id="menu_search_icon" class="icon_search" aria-label="Show search bar"></label>
                 <a href="your_fav.html"><figure class="icon_favorites_nav"></figure></a>
                 <a href="your_list.html"><figure class="icon_your_list_nav"></figure></a>
                 <a href="checkout.html"><figure class="icon_shopping_bag_nav"></figure></a>
@@ -38,7 +38,7 @@
             </nav>
         </div>
         <div class="search_bar_area" id="search_bar_area">
-            <input type="search" placeholder="Search" class="search_dropdown" fucus>
+            <input type="search" placeholder="Search" class="search_dropdown">
         </div>
         </header>
     <main class="main_h content_wrap">
@@ -59,18 +59,17 @@
                 <div class="message_input">
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your name" aria-labelledby="Your name">
+                        <input type="text" name="name" id="name" placeholder="Your name">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Your email" aria-labelledby="email">
+                        <input type="email" name="email" id="email" placeholder="Your email">
                     </div>
                 </div>
                 <label for="message">Message</label>
-                <textarea type="text" name="message" id="message" cols="20" rows="2" placeholder="Your message"
-                    aria-labelledby="email"></textarea>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Your message"></textarea>
                 <div class="submit_area">
-                    <input id="" type="submit" name="Submit" value="Send">
+                    <input type="submit" name="Submit" value="Send">
                     <div id="sendmessage">Send</div>
                 </div>
             </form>
@@ -84,11 +83,11 @@
         <div class="divsocialmedia">
             <p>You can also find us on soscial media:</p>
             <div class="socialmedia">
-                <figure class="instagram">
+                <figure class="instagram socialmedia_icon">
                 </figure>
-                <figure class="twitter">
+                <figure class="twitter socialmedia_icon">
                 </figure>
-                <figure class="facebook">
+                <figure class="facebook socialmedia_icon">
                 </figure>
             </div>
         </div>
@@ -99,12 +98,12 @@
             <h2>Want to sign up to our newsletter?</h2>
             <p>Join the SquareEyes family and be among the first to receive news about new movies! </p>
             <div class="newsletterinput">
-                <input id="email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
+                <input id="email2" placeholder="Your email" name="email2" type="text" class="newsletteremail" required>
                 <input type="submit" value="Subscribe" class="newslettersubscribe">
             </div>
           </div>
         </section>
-        <section class="footerbar">
+        <div class="footerbar">
             <div class="footernav">
                 <span> &copy; SquareEyes </span>
                 <a href="about_us.html">About us</a>
@@ -116,15 +115,14 @@
                         alt="Squareeyes logo"></a>
             </div>
             <div class="footersocialmedia">
-                <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+                <figure class="instagram">
                 </figure>
-                <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+                <figure class="twitter">
                 </figure>
-                <figure>
-                  <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+                <figure class="facebook">
                 </figure>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="/js/uni.js"></script>
     <script src="/js/contact_us.js"></script>
