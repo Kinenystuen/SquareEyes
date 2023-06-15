@@ -103,6 +103,7 @@ button, label, input { /*do i need this? fix*/
     padding: 8px;
     cursor: pointer;
     width: 1.2rem;
+    margin: 4px;
 }
 .trashcan:hover {
     content: url(/icons/icon_trashcan_hover.svg);
@@ -195,9 +196,8 @@ button, label, input { /*do i need this? fix*/
     margin: auto;
     justify-content: center;
 }
-.Login_signin_b a {
+.Login_signin_b {
     color: var(--dark_purple);
-    text-decoration: none;
     text-transform: uppercase;
     
 }
@@ -209,6 +209,9 @@ button, label, input { /*do i need this? fix*/
     display: flex;
     justify-content: center;
     font-size: 0.8rem;
+}
+.loginpart a{
+    text-decoration: none;
 }
 
 .loginpart p:nth-child(3) {
@@ -257,25 +260,24 @@ input:hover, input:focus {
 }
 .icon_visa {
     content: url(/icons/icon_visa.svg);
-    background-repeat: no-repeat;
-    max-height: 1.5rem;
-    object-fit: fill;
-    cursor: pointer;
 }
 .icon_paypal {
-    content: url(/icons/icon_paypal.svg);
+    content: url(/icons/icon_paypal.svg);   
+}
+.icon_paypal, .icon_visa {
     background-repeat: no-repeat;
     max-height: 1.5rem;
-    object-fit: fill;
     cursor: pointer;
 }
 
 .visaarea, .paypalarea{
     display: flex;
-    flex-direction: row;
     flex: 1;
-    align-items: center;
-    padding: 4px;
+    flex-direction: row;
+    padding: 1rem;
+}
+.visaarea input, .paypalarea input {
+    width: 1rem;
 }
 
 .expiredate_cvcarea {
@@ -319,7 +321,6 @@ input:hover, input:focus {
 input[type="checkbox"]:hover + label:before {
     background-color: var(--greywhite);
     background-image: url(/icons/icon_checked_c.svg);
-    outline: 1px solid var(--greywhite);
 }
 input[type="checkbox"]:checked + label:before {
     background-color: var(--purple);
@@ -362,7 +363,15 @@ input[type="submit"] {
 }
 @media (max-width:1190px) {
     .movie_details {
-        flex: 0.5;
+        flex: 1fr;
+        margin-left: 0.5rem;
+    }
+    .movie_details_h4 {
+        margin: 0px;
+    }
+    .chosen_movie {
+        padding: 0px;
+        margin: 0px 0px;
     }
 }
 
@@ -382,6 +391,13 @@ input[type="submit"] {
     .paynow, .login_signin_b {
         min-width: none;
         max-width: 400px;
-        
     }
+    .chosen_movie {
+        padding: 2%;
+    }
+}
+@media (max-width:520px) {
+    .chosen_movie {
+        padding: 0%;
+    }   
 }
