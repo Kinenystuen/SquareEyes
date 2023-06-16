@@ -19,22 +19,22 @@
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
     <div class="header_left">
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-      <label for="menu_checkbox" class="hamburger_icon"><span class="gone_text">Show navigation bar</span></label>
-      <nav class="nav_left">
-        <ul>
+      <label for="menu_checkbox" role="button" tabindex="1" class="hamburger_icon" aria-label="Navigation menu"></label>
+      <nav class="nav_left" aria-hidden="true">
+        <ul>                
           <li><a href="index.html" class="active_page">Home</a></li>
           <li><a href="movie-pages/all-movies.html">Movies</a></li>
           <li><a href="your_list.html">Your list</a></li>
           <li><a href="your_fav.html">Favorites</a></li>
           <li><a href="about_us.html">About us</a></li>
           <li><a href="contact_us.html">Contact us</a></li>
-      </ul>
+        </ul>
       </nav>
     </div>
     <div class="header_right">
-      <nav class="nav_right">
+      <nav class="nav_right" aria-hidden="true">
         <input type="search" placeholder="Search" class="search">
-        <label id="menu_search_icon" class="icon_search"><span class="gone_text">Show search bar</span></label>
+        <label id="menu_search_icon" type="button" tabindex="0" class="icon_search" aria-label="Search bar"></label>
         <a href="your_fav.html">
           <figure class="icon_favorites_nav"></figure>
         </a>
@@ -72,7 +72,7 @@
           </figure>
         </a>
       </div>
-    </section> 
+    </section>
     <div class="section1" id="section1">
       <div class="section1_info">
         <p>Embrace the world of independent cinema and discover great collections from talented filmmakers.</p>
@@ -84,10 +84,10 @@
     </div>
     <div class="section2">
       <div class="section2_area">
-          <div class="section2_row">
-            <img src="icons/icon_yellow_dot.png" alt="A yellow dot" class="yellow_dot">
-            <p>Find your new favorite movies with our handpicked collections and easy-to-browse categories.</p>
-          </div>
+        <div class="section2_row">
+          <img src="icons/icon_yellow_dot.png" alt="A yellow dot" class="yellow_dot">
+          <p>Find your new favorite movies with our handpicked collections and easy-to-browse categories.</p>
+        </div>
         <div class="section2_row">
           <img src="icons/icon_yellow_dot.png" alt="A yellow dot" class="yellow_dot">
           <p>Discover high-quality videos and support independent filmmakers.</p>
@@ -100,29 +100,31 @@
         <img class="batman_cover" src="images/Movie_batman.jpeg" alt="Batman cover picture">
       </div>
       <div class="section3_info">
-        <p>Experience the excitement of superheroes, the wonder of animation, and the thrill of horror with our collection of movies.</p>
+        <p>Experience the excitement of superheroes, the wonder of animation, and the thrill of horror with our
+          collection of movies.</p>
       </div>
     </div>
     <section class="section4">
       <h2>Suggestions:</h2>
       <div>
-        <figure class="section4_movie">
+        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
           <img src="images/Movie_fasr_&_furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
-        </figure>
-        <figure class="section4_movie">
+        </figure></a>
+        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
           <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
-        </figure>
-        <figure class="section4_movie">
+        </figure></a>
+        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
           <img src="images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
-        </figure>
-        <figure class="section4_movie">
+        </figure></a>
+        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
           <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
-        </figure>
+        </figure></a>
       </div>
     </section>
     <section class="section5">
       <div class="section5_image">
-        <img src="images/once_hollywood_homepage.jpg" class="once_upon_home" alt="Movie cover for Once upon a time in Hollywood">
+        <img src="images/once_hollywood_homepage.jpg" class="once_upon_home"
+          alt="Movie cover for Once upon a time in Hollywood">
         <img src="images/Movie_hollywood.jpeg" class="once_upon" alt="Movie cover for Once upon a time in Hollywood">
       </div>
       <div class="background_gradient"></div>
@@ -131,7 +133,7 @@
         <h3>Once upon a time in hollywood</h3>
         <a href="products/batman-movie-page.html">More info</a>
       </div>
-      
+
     </section>
 
     <div class="supportfilm">
@@ -141,40 +143,40 @@
       </div>
     </div>
 
-</main>
-<footer>
+  </main>
+  <footer>
     <section class="newsletter">
       <div class="newsletter_area">
         <h2>Want to sign up to our newsletter?</h2>
         <p>Join the SquareEyes family and be among the first to receive news about new movies! </p>
         <div class="newsletterinput">
-            <input id="email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
-            <input type="submit" value="Subscribe" class="newslettersubscribe">
+          <input id="email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
+          <input type="submit" value="Subscribe" class="newslettersubscribe">
         </div>
       </div>
     </section>
     <div class="footerbar">
-        <div class="footernav">
-            <span> &copy; SquareEyes </span>
-            <a href="about_us.html">About us</a>
-            <a href="contact_us.html">Contact us</a>
-            <a href="#">Terms and conditions</a>
-        </div>
-        <div class="footerlogo">
-            <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png"
-                    alt="Squareeyes logo"></a>
-        </div>
-        <div class="footersocialmedia">
-            <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
-            </figure>
-            <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
-            </figure>
-            <figure>
-              <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
-            </figure>
-        </div>
+      <div class="footernav">
+        <span> &copy; SquareEyes </span>
+        <a href="about_us.html">About us</a>
+        <a href="contact_us.html">Contact us</a>
+        <a href="#">Terms and conditions</a>
       </div>
-</footer>
-<script src="/js/uni.js"></script>
+      <div class="footerlogo">
+        <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png" alt="Squareeyes logo"></a>
+      </div>
+      <div class="footersocialmedia">
+        <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+        </figure>
+        <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+        </figure>
+        <figure>
+          <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+        </figure>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/uni.js"></script>
 </body>
+
 </html>

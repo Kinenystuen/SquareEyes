@@ -81,8 +81,9 @@ html {
   /* /////// Header code //////////*/
   
   header  {
-    position: relative;
+    position: fixed; /*maked the header stay at the top all time*/
     display: flex;
+    top: 0px;   
     width: 100%;
     padding: 0% 10% 0% 10%;
     height: auto;
@@ -91,6 +92,7 @@ html {
     box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);/* drop shadow */
     font-family: "Abril Fatface";
     box-sizing: border-box;
+    z-index: 1;
   }
   
   .logo_header {
@@ -266,9 +268,7 @@ html {
   content: url(/icons/icon_search_hover.png);
 }
 .search_bar_area {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  visibility: hidden;
 }
 .search_dropdown {
   width: 100%;
@@ -749,6 +749,12 @@ html {
         }
         .icon_search {  
           display: flex;
+        }
+        .search_bar_area {
+          visibility: visible;
+          display: flex;
+          width: 100%;
+          justify-content: center;
         }
 
       /* Section6 - Supporting small filmmakers */
