@@ -51,7 +51,6 @@ body {
 .message_area {
     display: flex;
     flex-direction: column;
-    z-index: 1;
 }
 .message_area input:hover, .message_area textarea:hover, .message_area input:focus, .message_area textarea:focus{
     background-color: var(--white);

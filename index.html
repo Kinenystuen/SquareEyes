@@ -19,7 +19,7 @@
     <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
     <div class="header_left">
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
-      <label for="menu_checkbox" role="button" tabindex="1" class="hamburger_icon" aria-label="Navigation menu"></label>
+      <label for="menu_checkbox" tabindex="0" class="hamburger_icon" aria-label="Navigation menu"></label>
       <nav class="nav_left" aria-hidden="true">
         <ul>                
           <li><a href="index.html" class="active_page">Home</a></li>
@@ -34,7 +34,7 @@
     <div class="header_right">
       <nav class="nav_right" aria-hidden="true">
         <input type="search" placeholder="Search" class="search">
-        <label id="menu_search_icon" type="button" tabindex="0" class="icon_search" aria-label="Search bar"></label>
+        <label id="menu_search_icon" tabindex="0" class="icon_search" aria-label="Search bar"></label>
         <a href="your_fav.html">
           <figure class="icon_favorites_nav"></figure>
         </a>
@@ -67,7 +67,7 @@
         </div>
         <img class="batmanseats" src="images/cinema_batman_test.png" alt="Design of cinema seats">
         <a href="#section1">
-          <figure>
+          <figure tabindex="0" role="button">
             <img class="arrowdown" src="icons/icon_arrow.png" alt="Arrow for guiding you down.">
           </figure>
         </a>
