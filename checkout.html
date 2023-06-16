@@ -16,7 +16,7 @@
 <body>
     <header>
         <a href="index.html"><img class="logo_header" src="Images/SquareEyes_Logo_org.png" alt="Logo SquareEyes"></a>
-        <section class="header_left">
+        <div class="header_left">
             <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
             <label for="menu_checkbox" class="hamburger_icon" aria-label="Navigation menu"></label>
             <nav class="nav_left">
@@ -29,8 +29,8 @@
                     <li><a href="contact_us.html">Contact us</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="header_right">
+        </div>
+        <div class="header_right">
             <nav class="nav_right">
                 <input type="search" placeholder="Search" class="search">
                 <label id="menu_search_icon" class="icon_search" aria-label="Search bar"></label>
@@ -47,9 +47,9 @@
                     <figure class="icon_profile_nav"></figure>
                 </a>
             </nav>
-        </section>
+        </div>
         <div class="search_bar_area" id="search_bar_area">
-            <input type="search" placeholder="Search" class="search_dropdown" fucus>
+            <input type="search" placeholder="Search" class="search_dropdown">
         </div>
     </header>
     <main class="content_wrap main_h">
@@ -96,7 +96,6 @@
                     <a href="/movie-pages/all-movies.html" class="continue_shopping">
                         <div class="backarrow"></div>Continue shopping
                     </a>
-                    </a>
                 </div>
                 <section class="payment_details">
                     <h2>2. Payment Details</h2>
@@ -111,53 +110,53 @@
                         <p>34kr</p>
                     </div>
                     <div class="loginpart">
-                        <a href="your_page.html"><button class="Login_signin_b">Log in / sign in</button></a>
+                        <a href="/your_page.html" class="Login_signin_b">Log in / sign in</a>
                         <p>or</p>
                         <p>Submit your details</p>
                     </div>
                     <form class="payment_area" action="form-success.php" method="post">
-                        <section class="your_datails">
+                        <div class="your_datails">
                             <div>
                                 <label class="firstname" for="firstname">Your first name</label>
-                                <input type="name" name="firstname" id="firstname" placeholder="First name"
-                                    aria-labelledby="Your first name" required>
+                                <input type="text" name="firstname" id="firstname" placeholder="First name"
+                                    aria-label="Your first name" required>
                             </div>
                             <div>
                                 <label class="lastname" for="lastname">Your last name</label>
-                                <input type="name" name="lastname" id="lastname" placeholder="Last name"
-                                    aria-labelledby="Your last name" required>
+                                <input type="text" name="lastname" id="lastname" placeholder="Last name"
+                                    aria-label="Your last name" required>
                             </div>
                             <div>
                                 <label for="email">Your email</label>
                                 <input type="email" name="email" id="email" placeholder="Your email"
-                                    aria-labelledby="Your email" required>
+                                    aria-label="Your email" required>
                             </div>
 
                             <p>Select payment method</p>
                             <div class="paymentmethod">
                                 <div class="visaarea">
-                                    <input type="radio" id="visa" name="payment_method" value="visa" checked>
+                                    <input type="radio" id="visa" name="payment_method" value="visa" aria-label="Visa">
                                     <label for="visa" class="icon_visa"></label>
                                 </div>
                                 <div class="paypalarea">
-                                    <input type="radio" id="paypal" name="payment_method" value="paypal">
+                                    <input type="radio" id="paypal" name="payment_method" value="paypal" aria-label="Paypal">
                                     <label for="paypal" class="icon_paypal">Paypal</label>
                                 </div>
                             </div>
                             <div>
                                 <label for="card_number">Card number</label>
                                 <input type="text" name="card_number" id="card_number" placeholder="xxxx xxxx xxxx xxxx"
-                                    aria-labelledby="Card number" required>
+                                    aria-label="Card number" required>
                             </div>
                             <div class="expiredate_cvcarea">
                                 <div>
                                     <label for="expire_date">Expire date</label>
                                     <input type="text" name="expire_date" id="expire_date" placeholder="xx/xx"
-                                        aria-labelledby="Expire date" maxlength="5" required>
+                                        aria-label="Expire date" maxlength="5" required>
                                 </div>
                                 <div>
                                     <label for="cvc">CVC</label>
-                                    <input type="text" name="cvc" id="cvc" placeholder="xxx" aria-labelledby="CVC"
+                                    <input type="text" name="cvc" id="cvc" placeholder="xxx" aria-label="CVC"
                                         maxlength="3" required>
                                 </div>
                             </div>
@@ -174,7 +173,7 @@
                             </div>
                             <input type="submit" value="Pay now" id="paynow">
                             <label for="paynow" class="paynow"><a href="/checkout_sucsess.html">Pay now</a></label>
-                        </section>
+                        </div>
                     </form>
                 </section>
             </section>
@@ -184,7 +183,7 @@
 
     <footer>
 
-        <section class="footerbar">
+        <div class="footerbar">
             <div class="footernav">
                 <span> &copy; SquareEyes </span>
                 <a href="about_us.html">About us</a>
@@ -204,7 +203,7 @@
                     <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
                 </figure>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="/js/uni.js"></script>
 </body>

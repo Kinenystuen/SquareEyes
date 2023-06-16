@@ -186,20 +186,18 @@ button, label, input { /*do i need this? fix*/
 
 .Login_signin_b {
     display: flex;
-    min-width: 90%;
     font-size: 1.3rem;
     padding: 4px;
     border-radius: 5px;
     border: none;
     background: var(--greywhite);
     font-weight: 200;
-    margin: auto;
+    margin: 0px 5%;
     justify-content: center;
-}
-.Login_signin_b {
+
     color: var(--dark_purple);
     text-transform: uppercase;
-    
+    box-sizing: border-box;
 }
 .Login_signin_b:hover {
     background: var(--white);

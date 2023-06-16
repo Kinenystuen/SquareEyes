@@ -9,3 +9,7 @@ menu_search_icon_button.addEventListener("click", function() {
     search_bar_area.style.display = "none";
   }
 });
+
+function log_in_page() {
+    window.location.href = 'your_page.html';
+}
