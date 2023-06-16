@@ -223,7 +223,6 @@ html {
     background-image: url(/icons/icon_search_2.png);
     background-repeat: no-repeat;
     background-size: 1.8rem;
-    background-position: right;
     background-position: 98%;
     background-color: transparent;
     place-content: var(--dark_purple);

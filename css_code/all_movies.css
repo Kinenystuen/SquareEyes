@@ -88,25 +88,19 @@ h2 a{
 
   /* Sory by nav */
   .sortby {
-    display: flex;
-    background-color: var(--greywhite);
-    padding: 8px 17px;
+    background-image: url(/icons/icon_downarrow.png);
+    background-position: 90%;
+    background-size: 1rem;
+    background-repeat: no-repeat;
     margin: auto;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 0.6rem 63px 0.6rem 7px;
   }
+
   .sortby_text {
     display: flex;
-    margin: auto;
     width:fit-content;
     white-space: nowrap;
     color: var(--dark_purple);
-  }
-  .downarrow {
-    content: url(/icons/icon_downarrow.png);
-    height: 0.6rem;
-    margin: auto;
-    padding: 0px 0px 0px 16px;
   }
   .movie_org input {
     display: none;
@@ -150,9 +144,10 @@ h2 a{
   #sortby_menu_button:checked ~ .movie_nav {
     height: 30px;
   }
-  #sortby_menu_button:checked ~ .downarrow { /*dosnt work */
-    content: '';
+  #sortby_menu_button:checked ~ .sortby {
+    background-image: url(/icons/icon_downarrow_rotated.png);
   }
+
 
 
 
