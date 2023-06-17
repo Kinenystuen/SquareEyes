@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="css_code/index_styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;800&display=swap"
     rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
-  <title>Square Eyes | Home</title>
+  <title>SquareEyes | Home</title>
 </head>
 
 <body>
@@ -20,7 +19,7 @@
     <div class="header_left">
       <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
       <label for="menu_checkbox" tabindex="0" class="hamburger_icon" aria-label="Navigation menu"></label>
-      <nav class="nav_left" aria-hidden="true">
+      <nav class="nav_left" id="nav_left" aria-hidden="true">
         <ul>                
           <li><a href="index.html" class="active_page">Home</a></li>
           <li><a href="movie-pages/all-movies.html">Movies</a></li>
@@ -33,8 +32,8 @@
     </div>
     <div class="header_right">
       <nav class="nav_right">
-        <input type="search" placeholder="Search" class="search">
-        <label id="menu_search_icon" class="icon_search" aria-label="Search bar"></label>
+        <input type="search" placeholder="Search" class="search" aria-labelledby="menu_search_icon">
+        <label id="menu_search_icon" class="icon_search" aria-label="Search bar"><span class="gone_text">Search bar</span></label>
         <a href="your_fav.html">
             <figure class="icon_favorites_nav" aria-label="Go to your favorites page"></figure>
         </a>
@@ -174,12 +173,9 @@
         <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png" alt="Squareeyes logo"></a>
       </div>
       <div class="footersocialmedia">
-        <figure class="instagram" aria-label="Instagram">
-        </figure>
-        <figure class="twitter" aria-label="Twitter">
-        </figure>
-        <figure class="facebook" aria-label="Facebook">
-        </figure>
+        <a href="#" class="instagram" aria-label="Instagram"></a>
+        <a href="#" class="twitter" aria-label="Twitter"></a>
+        <a href="#" class="facebook" aria-label="Facebook"></a>
     </div>
     </div>
   </footer>
