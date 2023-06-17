@@ -170,8 +170,8 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    height: 1.8rem;
-    width: 2rem;
+    height: 2.rem;
+    width: 2.4rem;
     justify-content: center;
   }
 
@@ -214,7 +214,7 @@ html {
   .icon_favorites_nav, .icon_your_list_nav,.icon_shopping_bag_nav, .icon_profile_nav {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2rem;
+    background-size:2rem;
     align-items: center;
     margin: 0px;
     
