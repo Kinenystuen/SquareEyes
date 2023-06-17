@@ -414,7 +414,9 @@ html {
   .newslettersubscribe {
     align-items: flex-end;
     background-color: var(--yellow);
+    color: var(--dark_purple);
     text-transform: uppercase;
+    cursor: pointer;
   }
   
   .newsletteremail, .newslettersubscribe {
