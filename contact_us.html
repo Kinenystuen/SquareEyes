@@ -29,8 +29,8 @@
         </div>  
           <div class="header_right">
             <nav class="nav_right">
-                <input type="search" placeholder="Search" class="search" aria-labelledby="menu_search_icon">
-                <label id="menu_search_icon" class="icon_search" aria-label="Search bar"><span class="gone_text">Search bar</span></label>
+                <input id="menu_search_icon" type="search" placeholder="Search" class="search" aria-labelledby="search_bar">
+        <label for="menu_search_icon" class="icon_search"><span id="search_bar" class="gone_text">Search bar</span></label>
                 <a href="your_fav.html" aria-label="Go to your favorites page">
                     <figure class="icon_favorites_nav"></figure>
                 </a>
@@ -103,10 +103,11 @@
             <h2>Want to sign up to our newsletter?</h2>
             <p>Join the SquareEyes family and be among the first to receive news about new movies! </p>
             <fieldset class="newsletterfieldset">
-                <label for="subscribe_to_newsletter"></label>
-                <input id="email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
+                <legend id="n_s" class="gone_text">Newsletter subscribtion</legend>
+                <label for="newsletter_email" aria-labelledby="n_s"></label>
+                <input id="newsletter_email" placeholder="Your email" name="email" type="text" class="newsletteremail" required>
                 <input type="submit" value="Subscribe" class="newslettersubscribe">
-              </fieldset>
+            </fieldset>
           </div>
         </section>
         <div class="footerbar">

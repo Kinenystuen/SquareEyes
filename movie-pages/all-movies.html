@@ -29,8 +29,8 @@
         </div>  
           <div class="header_right">
             <nav class="nav_right">
-              <input type="search" placeholder="Search" class="search" aria-labelledby="menu_search_icon">
-              <label id="menu_search_icon" class="icon_search" aria-label="Search bar"><span class="gone_text">Search bar</span></label>
+              <input type="search" id="menu_search_icon" name="menu_search_icon" placeholder="Search" class="search">
+              <label for="menu_search_icon" class="icon_search" aria-label="Search"></label>
               <a href="/your_fav.html" aria-label="Go to your favorites page">
                   <figure class="icon_favorites_nav"></figure>
               </a>
@@ -46,7 +46,8 @@
           </nav>
         </div>
         <div class="search_bar_area" id="search_bar_area">
-            <input type="search" placeholder="Search" class="search_dropdown">
+          <input type="search" id="dropdown_menu" name="dropdown_menu" placeholder="Search" class="search_dropdown">
+          <label for="dropdown_menu" aria-label="Dropdown search menu"></label>
         </div>
         </header>
   <main class="content_wrap main_h">
