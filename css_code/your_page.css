@@ -25,10 +25,11 @@ html {
     flex-direction: column;
 }
 .signin_area a, .signup_area a {
-    color: var(--greywhite);
     font-size: 0.8rem;
     padding: 1rem;
     box-sizing: border-box;
+    text-decoration: none;
+    color: var(--greywhite);
 }
 .signin_area div, .signup_area div {
     margin: 10px 0px;
@@ -50,10 +51,6 @@ html {
 }
 .signin_area input:hover , .signin_area input:focus, .signup_area input:hover , .signup_area input:focus {
     background-color: var(--white);
-}
-.signin_area a, .signup_area a {
-    text-decoration: none;
-    color: var(--dark_purple);
 }
 a.yellowbutton, .grey input {
     justify-content: center;

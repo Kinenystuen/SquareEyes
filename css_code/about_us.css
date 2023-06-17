@@ -61,8 +61,10 @@ body {
     gap: 4px;
     z-index: 1;
 }
-.contact_us_here p, .supportfilm p {
+.contact_us_here h2, .supportfilm p {
     font-size: 1.4rem;
+    justify-content: center;
+    text-align: center;
 }
 .contact_us_here a {
     box-sizing: border-box;
