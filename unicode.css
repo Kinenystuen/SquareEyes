@@ -20,6 +20,9 @@ html {
   main { 
     padding-top: 80px;
   }
+  .footerbar {
+    margin-top: 5rem;
+  }
 
   input,
   label,
@@ -33,6 +36,7 @@ html {
   .content_wrap /* tells the page to center everything */ {
     width: 80%;
     margin: 0px auto;
+    max-width: 1500px;
   }
   .main_h {
     min-height: 100vh;
@@ -192,6 +196,9 @@ html {
   .icon_shopping_bag_nav:hover {
     content: url(/icons/icon_shopping_bag_nav_hover.png);
   }
+  .icon_shopping_bag_one_item {
+    content: url(/icons/icon_shopping_bag_one_item.png);
+  }
 
   .icon_profile_nav {
     content: url(/icons/icon_profile.png);
@@ -288,8 +295,77 @@ html {
   display: show;
 }
 
+/* Checkbox design */
+/* checkbox icon*/
+.checkboxes input[type="checkbox"] {
+  display: none;
+}
+.checkboxes input[type="checkbox"] + label::after {
+  content: "";
+  outline: 1px solid var(--purple);
+
+  border-radius: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
   
-  /* ///////// Footer code //////// */
+  background-color: var(--greywhite);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+}
+.checkboxes input[type="checkbox"]:hover + label::after {
+  background-color: var(--greywhite);
+  background-image: url(/icons/icon_checked_c.svg);
+  outline: 1px solid var(--greywhite);
+
+}
+.checkboxes input[type="checkbox"]:checked + label::after {
+  background-color: var(--purple);
+  background-image: url(/icons/icon_checked.svg);
+}
+/* checkbox area */ 
+.checkboxes {
+  display: flex;
+  width: 100%;
+}
+
+.checkboxes label {
+  position: relative;
+  cursor: pointer;
+  justify-content: end;
+  align-items: center;
+}
+
+/* moviephotos_section */
+
+.suggestion_section {
+  position: relative;
+  padding: 100px 0px;
+  max-width: 1500px;
+  margin: 0px auto;
+  }
+.moviephotos {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 20px;
+  }
+  .moviephotos figure {
+    margin: 0px;
+  }
+  .moviephotos img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover; /* to set a specific height, without the pic squeezing */
+  }
+.moviephotosimg:hover {
+  outline: 2px solid var(--purple);
+}
+
+  
+/* ///////// Footer code //////// */
   
   footer  {
     position: relative;
@@ -438,32 +514,8 @@ html {
   .facebook:hover {
       content: url(/icons/icon_facebook_hover.svg);
   }
- /* Section 4 - movies */
-
- .suggestion_section div {
-  display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 20px;
-}
-
-.suggestion_section img {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  grid-column: -1/1;
-  object-fit: cover; /* to set a specific height, without the pic squeezing */
-
-}
-
-.suggestion_section img:hover {
-  outline: 2px solid var(--purple);
-}
-
-.suggestion_movie {
-  margin: 0px;
-}
-
-  /* Section6 - Supporting small filmmakers */
+ 
+/* Section6 - Supporting small filmmakers */
 
 .supportfilm {
   display: flex;

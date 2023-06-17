@@ -24,25 +24,29 @@ html {
     display: flex;
     flex-direction: column;
 }
+.signin_area a, .signup_area a {
+    color: var(--greywhite);
+    font-size: 0.8rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 .signin_area div, .signup_area div {
     margin: 10px 0px;
 }
-.signin_area label, .signup_area label {
+.signin_area label, .signup_area label, .signin_area input, .signup_area input {
     display: flex;
-    font-size: 0.8rem;
     width: 100%;
     margin: 0px;
     margin-bottom: 8px;
-}
-.signin_area input, .signup_area input {
-    display: flex;
-    background-color: var(--greywhite);
     box-sizing: border-box;
     border-radius: 5px;
+    width: 100%;    
     border: none;
+}
+.signin_area input, .signup_area input {
+    background-color: var(--greywhite);
     padding: 6px;
-    width: 100%;
-    align-items: end;
+    cursor: pointer;
 }
 .signin_area input:hover , .signin_area input:focus, .signup_area input:hover , .signup_area input:focus {
     background-color: var(--white);
@@ -51,74 +55,18 @@ html {
     text-decoration: none;
     color: var(--dark_purple);
 }
-.yellow {
-    background-color: var(--yellow);
-    color: var(--dark_purple);
+a.yellowbutton, .grey input {
+    justify-content: center;
     text-align:  center;
-    justify-content: center;
-    text-transform: uppercase;
+    font-size: 1.4rem;
     border-radius: 5px;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.yellow a:hover {
-    background-color: var(--yellow);
-    font-weight: 600;
-}
-.grey input{
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
     text-transform: uppercase;
-}
-.grey input:hover{
-    font-weight: 600;
-}
-
-.signin_area a, .signup_area a {
-    color: var(--greywhite);
-    font-size: 0.8rem;
+    color: var(--dark_purple);
     padding: 1rem;
-    box-sizing: border-box;
 }
-/* checkbox area*/
-.checkboxes {
-    display: flex;
-    width: 100%;
+.yellowbutton {
+    background-color: var(--yellow);
 }
-.checkboxes input[type="checkbox"] {
-    display: none;
-}
-.checkboxes label {
-    position: relative;
-    cursor: pointer;
-    justify-content: end;
-    align-items: center;
-}
-.checkboxes label::after {
-    content: "";
-    outline: 1px solid var(--purple);
-
-    border-radius: 5px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 1rem;
-    
-    background-color: var(--greywhite);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    box-sizing: border-box;
-}
-
-/* checkbox icon*/
-input[type="checkbox"]:hover + label::after {
-    background-color: var(--greywhite);
-    background-image: url(/icons/icon_checked_c.svg);
-    outline: 1px solid var(--greywhite);
-
-}
-input[type="checkbox"]:checked + label::after {
-    background-color: var(--purple);
-    background-image: url(/icons/icon_checked.svg);
+.yellow a:hover, .grey input:hover {
+    font-weight: 600;
 }

@@ -35,16 +35,16 @@
                 <input type="search" placeholder="Search" class="search">
                 <label id="menu_search_icon" class="icon_search" aria-label="Search bar"></label>
                 <a href="/your_fav.html">
-                    <figure class="icon_favorites_nav"></figure>
+                    <figure class="icon_favorites_nav" aria-label="Go to your favorites page"></figure>
                 </a>
                 <a href="/your_list.html">
-                    <figure class="icon_your_list_nav"></figure>
+                    <figure class="icon_your_list_nav" aria-label="Go to your list page"></figure>
                 </a>
                 <a href="/checkout.html">
-                    <figure class="icon_shopping_bag_nav"></figure>
+                    <figure class="icon_shopping_bag_nav" aria-label="Go to shopping bag"></figure>
                 </a>
                 <a href="/your_page.html">
-                    <figure class="icon_profile_nav"></figure>
+                    <figure class="icon_profile_nav" aria-label="Go to your profile"></figure>
                 </a>
             </nav>
         </div>
@@ -80,14 +80,14 @@
 
                             <div class="icons">
                                 <input type="checkbox" name="favorites1" id="favorites1">
-                                <label for="favorites1" class="icon_heart"></label>
+                                <label for="favorites1" class="icon_heart" aria-label="Add to your favorites"></label>
                                 <input type="checkbox" name="your_list1" id="your_list1">
-                                <label for="your_list1" class="icon_pluss"></label>
+                                <label for="your_list1" class="icon_pluss" aria-label="Add to your list"></label>
                             </div>
                         </div>
                         <input type="checkbox" name="shopping_bag_button1" id="shopping_bag_button1">
-                        <label for="shopping_bag_button1" class="shopping_bag_button"><span
-                                class="shopping_bag_icon"></span></label>
+                        <label for="shopping_bag_button1" class="shopping_bag_button"
+                            aria-label="Add to shopping bag"><span class="shopping_bag_icon"></span></label>
                         <div class="shoppingbag_options">
                             <label><a href="/movie-pages/all-movies.html"><span class="leftarrow"></span>Continue
                                     shopping</a></label>
@@ -99,11 +99,11 @@
             </div>
         </section>
         <div class="movietrailer" id="movietrailer">
-            <div id="close_trailer" class="close_trailer" onclick="watchtrailer()">
+            <div id="close_trailer" class="close_trailer" aria-label="Close trailer" onclick="watchtrailer()">
                 <figure></figure>
             </div>
-            <iframe id="trailerplayer" class="batman_trailer"
-                src="https://www.youtube.com/embed/mqqft2x_Aa4" title="The Batman - Trailer"
+            <iframe id="trailerplayer" class="batman_trailer" src="https://www.youtube.com/embed/mqqft2x_Aa4"
+                title="The Batman - Trailer"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
@@ -151,36 +151,34 @@
                     alt="The Batman. (2022). Roberst Pattinson and Zoë Kravitz in The Batman (2022).">
             </div>
         </section>
-        <div class="suggestion_section content_wrap">
+        <section class="suggestion_section content_wrap">
             <h2>Suggestions:</h2>
-            <div>
-                <div>
-                    <a href="/products/batman-movie-page.html">
-                        <figure class="section4_movie">
-                            <img src="/images/Movie_fasr_&_furious.jpeg"
-                                alt="Movie cover for Fast & Furious: Hobbs & Shaw">
-                        </figure>
-                    </a>
-                    <a href="/products/batman-movie-page.html">
-                        <figure class="section4_movie">
-                            <img src="/images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
-                        </figure>
-                    </a>
-                    <a href="/products/batman-movie-page.html">
-                        <figure class="section4_movie">
-                            <img src="/images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
-                        </figure>
-                    </a>
-                    <a href="/products/batman-movie-page.html">
-                        <figure class="section4_movie">
-                            <img src="/images/Movie_scream.jpeg" alt="Movie cover for Scream">
-                        </figure>
-                    </a>
-                </div>
+            <div class="moviephotos">
+                <a href="/products/batman-movie-page.html">
+                    <figure class="moviephotosimg">
+                        <img src="/images/Movie_fasr_&_furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
+                    </figure>
+                </a>
+                <a href="/products/batman-movie-page.html">
+                    <figure class="moviephotosimg">
+                        <img src="/images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
+                    </figure>
+                </a>
+                <a href="/products/batman-movie-page.html">
+                    <figure class="moviephotosimg">
+                        <img src="/images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
+                    </figure>
+                </a>
+                <a href="/products/batman-movie-page.html">
+                    <figure class="moviephotosimg">
+                        <img src="/images/Movie_scream.jpeg" alt="Movie cover for Scream">
+                    </figure>
+                </a>
             </div>
+        </section>
     </main>
     <footer>
-        <section class="footerbar">
+        <div class="footerbar">
             <div class="footernav">
                 <span> &copy; SquareEyes </span>
                 <a href="/about_us.html">About us</a>
@@ -192,15 +190,14 @@
                         alt="Squareeyes logo"></a>
             </div>
             <div class="footersocialmedia">
-                <figure><img src="/icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+                <figure class="instagram" aria-label="Instagram">
                 </figure>
-                <figure><img src="/icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+                <figure class="twitter" aria-label="Twitter">
                 </figure>
-                <figure>
-                    <img src="/icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+                <figure class="facebook" aria-label="Facebook">
                 </figure>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="/js/batman_moviepage.js"></script>
     <script src="/js/uni.js"></script>

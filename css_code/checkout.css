@@ -286,45 +286,6 @@ input:hover, input:focus {
     width: 100%;
 }
 
-/*checkboxes */
-.checkboxes {
-    display:flex;
-}
-
-.checkboxes input[type="checkbox"] {
-    display: none;
-}
-
-.checkboxes label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-}
-.checkboxes label::before {
-    content: "";
-    position: relative;
-    outline: 1px solid var(--purple);
-    
-    border-radius: 5px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
-    
-    background-color: var(--greywhite);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    box-sizing: border-box;
-}
-input[type="checkbox"]:hover + label:before {
-    background-color: var(--greywhite);
-    background-image: url(/icons/icon_checked_c.svg);
-}
-input[type="checkbox"]:checked + label:before {
-    background-color: var(--purple);
-    background-image: url(/icons/icon_checked.svg);
-}
-
 input[type="submit"] {
     display: none;
 }

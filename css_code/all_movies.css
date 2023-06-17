@@ -174,14 +174,14 @@ h2 a{
     object-fit: cover;
     margin: auto;
   }
-    .cover_img {
-    display: flex;
-    max-height: 420px;
-    justify-content: end;
-    justify-self: end;
-    align-items: end;
-    text-align: flex-end;
-    object-fit: cover; 
+  .movie_cover img:hover {
+    outline: 2px solid var(--purple);
+  }
+  .cover_img {
+  display: flex;
+  max-height: 420px;
+  object-fit: cover; 
+  margin: auto;
   }
 
   .movie_info {

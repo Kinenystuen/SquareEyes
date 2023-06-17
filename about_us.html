@@ -26,7 +26,7 @@
           <li><a href="movie-pages/all-movies.html">Movies</a></li>
           <li><a href="your_list.html">Your list</a></li>
           <li><a href="your_fav.html">Favorites</a></li>
-          <li><a href="about_us.html">About us</a></li>
+          <li><a href="about_us.html" class="active_page">About us</a></li>
           <li><a href="contact_us.html">Contact us</a></li>
         </ul>
       </nav>
@@ -36,18 +36,18 @@
         <input type="search" placeholder="Search" class="search">
         <label id="menu_search_icon" class="icon_search" aria-label="Search bar"></label>
         <a href="your_fav.html">
-          <figure class="icon_favorites_nav"></figure>
+            <figure class="icon_favorites_nav" aria-label="Go to your favorites page"></figure>
         </a>
         <a href="your_list.html">
-          <figure class="icon_your_list_nav"></figure>
+            <figure class="icon_your_list_nav" aria-label="Go to your list page"></figure>
         </a>
         <a href="checkout.html">
-          <figure class="icon_shopping_bag_nav"></figure>
+            <figure class="icon_shopping_bag_nav" aria-label="Go to shopping bag"></figure>
         </a>
         <a href="your_page.html">
-          <figure class="icon_profile_nav"></figure>
+            <figure class="icon_profile_nav" aria-label="Go to your profile"></figure>
         </a>
-      </nav>
+    </nav>
     </div>
     <div class="search_bar_area" id="search_bar_area">
       <input type="search" placeholder="Search" class="search_dropdown">
@@ -94,14 +94,13 @@
         <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png" alt="Squareeyes logo"></a>
       </div>
       <div class="footersocialmedia">
-        <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+        <figure class="instagram" aria-label="Instagram">
         </figure>
-        <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+        <figure class="twitter" aria-label="Twitter">
         </figure>
-        <figure>
-          <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+        <figure class="facebook" aria-label="Facebook">
         </figure>
-      </div>
+    </div>
     </div>
   </footer>
   <script src="/js/uni.js"></script>

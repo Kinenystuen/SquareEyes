@@ -32,22 +32,22 @@
       </nav>
     </div>
     <div class="header_right">
-      <nav class="nav_right" aria-hidden="true">
+      <nav class="nav_right">
         <input type="search" placeholder="Search" class="search">
-        <label id="menu_search_icon" tabindex="0" class="icon_search" aria-label="Search bar"></label>
+        <label id="menu_search_icon" class="icon_search" aria-label="Search bar"></label>
         <a href="your_fav.html">
-          <figure class="icon_favorites_nav"></figure>
+            <figure class="icon_favorites_nav" aria-label="Go to your favorites page"></figure>
         </a>
         <a href="your_list.html">
-          <figure class="icon_your_list_nav"></figure>
+            <figure class="icon_your_list_nav" aria-label="Go to your list page"></figure>
         </a>
         <a href="checkout.html">
-          <figure class="icon_shopping_bag_nav"></figure>
+            <figure class="icon_shopping_bag_nav" aria-label="Go to shopping bag"></figure>
         </a>
         <a href="your_page.html">
-          <figure class="icon_profile_nav"></figure>
+            <figure class="icon_profile_nav" aria-label="Go to your profile"></figure>
         </a>
-      </nav>
+    </nav>
     </div>
     <div class="search_bar_area" id="search_bar_area">
       <input type="search" placeholder="Search" class="search_dropdown">
@@ -104,21 +104,29 @@
           collection of movies.</p>
       </div>
     </div>
-    <section class="section4">
+    <section class="suggestion_section">
       <h2>Suggestions:</h2>
-      <div>
-        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
-          <img src="images/Movie_fasr_&_furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
-        </figure></a>
-        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
-          <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
-        </figure></a>
-        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
-          <img src="images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
-        </figure></a>
-        <a href="/products/batman-movie-page.html"><figure class="section4_movie">
-          <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
-        </figure></a>
+      <div class="moviephotos">
+          <a href="/products/batman-movie-page.html">
+              <figure class="moviephotosimg">
+                  <img src="images/Movie_fasr_&_furious.jpeg" alt="Movie cover for Fast & Furious: Hobbs & Shaw">
+              </figure>
+          </a>
+          <a href="/products/batman-movie-page.html">
+              <figure class="moviephotosimg">
+                  <img src="images/Movie_godzilla.jpeg" alt="Movie cover for Godzilla">
+              </figure>
+          </a>
+          <a href="/products/batman-movie-page.html">
+              <figure class="moviephotosimg">
+                  <img src="images/Movie_toy_story.jpeg" alt="Movie cover for Toy Story 4">
+              </figure>
+          </a>
+          <a href="/products/batman-movie-page.html">
+              <figure class="moviephotosimg">
+                  <img src="images/Movie_scream.jpeg" alt="Movie cover for Scream">
+              </figure>
+          </a>
       </div>
     </section>
     <section class="section5">
@@ -144,7 +152,7 @@
     </div>
 
   </main>
-  <footer>
+  <footer class="footer_class">
     <section class="newsletter">
       <div class="newsletter_area">
         <h2>Want to sign up to our newsletter?</h2>
@@ -166,17 +174,15 @@
         <a href="index.html"><img class="logo_footer" src="images/SquareEyes_Logo_org.png" alt="Squareeyes logo"></a>
       </div>
       <div class="footersocialmedia">
-        <figure><img src="icons/icon_instagram.png" alt="Icon for Instagram" class="iconsocial">
+        <figure class="instagram" aria-label="Instagram">
         </figure>
-        <figure><img src="icons/icon_twitter.png" alt="Icon for Twitter" class="iconsocial">
+        <figure class="twitter" aria-label="Twitter">
         </figure>
-        <figure>
-          <img src="icons/icon_facebook.png" alt="Icon for Facebook" class="iconsocial">
+        <figure class="facebook" aria-label="Facebook">
         </figure>
-      </div>
+    </div>
     </div>
   </footer>
   <script src="/js/uni.js"></script>
 </body>
-
 </html>
