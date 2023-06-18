@@ -229,6 +229,30 @@ h2 {
     padding: 2px 0px;
 }
 
+/* section 3 moviephotos_section */
+
+.moviephotos_section,
+.suggestion_section {
+    position: relative;
+    padding-top: 100px;
+}
+
+.photos_from_movie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    height: auto;
+}
+
+.photos_from_movie img {
+    width: 100%;
+    height: 35rem;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
 @media (max-width: 1500px) {
     /* batmansection1 */
 
@@ -385,27 +409,4 @@ h2 {
         margin: 20px 0;
     }
 
-
-
-    /* section 3 moviephotos_section */
-
-    .moviephotos_section,
-    .suggestion_section {
-        position: relative;
-        padding-top: 100px;
-    }
-
-    .moviephotos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10px;
-    }
-
-    .moviephotos img {
-        width: 100%;
-        height: 20rem;
-        box-sizing: border-box;
-        object-fit: cover;
-        /* to set a specific height, without the pic squeezing */
-    }
 }
