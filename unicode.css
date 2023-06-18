@@ -7,8 +7,8 @@ html {
     --white: #f7f7f7;
   
     scroll-behavior: smooth;
-  
     font-size: 16px;
+    position: relative;
   }
   
   header, body , footer{
@@ -56,11 +56,19 @@ html {
     max-width: 100%;
     display: block;
   }
-  main h1 {
-    margin-top: 4rem;
-}
+  /* font sizes */
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 16px auto;
+    max-width: 1500px;
+  }
+  h2 {
+    font-size: 1.1rem;
+      margin: 2px;
+  }
 
-  /*to add info to icons */
+  /*to add info to some icons */
   .gone_text {
     display: none;
   }
@@ -81,7 +89,7 @@ html {
   /* /////// Header code //////////*/
   
   header  {
-    position: fixed; /*maked the header stay at the top all time*/
+    position: fixed; /*makes the header stay at the top all time*/
     display: flex;
     top: 0px;   
     width: 100%;
@@ -90,22 +98,23 @@ html {
     margin: 0px auto;
     background-color: var(--dark_purple);
     box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);/* drop shadow */
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     box-sizing: border-box;
     z-index: 999;
   }
-  
-  .logo_header {
+  .logo_header, .logo_footer {
     display: block;
     flex: 1;
+    background: var(--yellow);
+    padding: 9px 31px;
+  }
+  .logo_header {
     padding: 9px 31px;
     height: 70px;
     left: 0px;
     top: -4px;
-    background: var(--yellow);
     border-radius: 0px 0px 10px 10px;
     margin-top: 0px;
-    z-index: 1;
   }
   
   /*  Hamburger menu */
@@ -467,18 +476,9 @@ html {
   .footernav a:hover {
     color: var(--white);
   }
-  
-  .footerlogo {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-  }
-  
   .logo_footer {
-    padding: 9px 31px;
     height: 80px;
     bottom: 0px;
-    background: var(--yellow);
     border-radius: 10px 10px 0px 0px;
   }
   

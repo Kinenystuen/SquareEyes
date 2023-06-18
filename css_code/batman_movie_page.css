@@ -100,40 +100,31 @@ h2 {
   .shoppingbag_options {
     display: none;
     gap: 8px;
-    row-gap: 4px;
     margin: 8px 0px;
   }
   .shoppingbag_options a {
     text-decoration: none;
     color: var(--dark_purple);
+    background-color: var(--greywhite);
     text-align: center;
     padding: 8px 10px;
-  }
-  .shoppingbag_options label {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    background-color: var(--greywhite);
     border-radius: 5px;
     font-size: 0.8rem;
-  }
-  .shoppingbag_options label a { /* sets the text center etc in options */
     display: flex;
     align-items: center;
-}
-  .shoppingbag_options label:hover, .shopping_bag_button:hover {
+    justify-content: center;
+    flex: 1;
+  }
+
+  .shoppingbag_options a:hover, .shopping_bag_button:hover {
     font-weight: 600;
     background-color: #d2d2d2;
   }
 
-.shoppingbag_options label {
-    padding: 2.2px;
-}
-
-#shopping_bag_button1:checked~.shoppingbag_options {
-    display: show;
-    display: flex;
-}
+    #shopping_bag_button1:checked~.shoppingbag_options {
+        display: show;
+        display: flex;
+    }
 
 /* trailer window */
 
