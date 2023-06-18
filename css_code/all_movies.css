@@ -93,7 +93,7 @@ h2 a{
     background-size: 1rem;
     background-repeat: no-repeat;
     margin: auto;
-    padding: 0.6rem 63px 0.6rem 7px;
+    padding: 0.6rem 68px 0.6rem 7px;
   }
 
   .sortby_text {
@@ -126,7 +126,13 @@ h2 a{
   }
   .sortby_menu li:hover {
     background-color: var(--white);
-    border-radius: 5px;
+    border-radius: 0px;
+  }
+  .sortby_menu li:nth-child(1):hover{
+    border-radius: 5px 5px 0px 0px;
+  }
+  .sortby_menu li:nth-child(6):hover{
+    border-radius:0px 0px 5px 5px;
   }
   .sortby_menu li:nth-child(1):hover {
     background-color: var(--greywhite);

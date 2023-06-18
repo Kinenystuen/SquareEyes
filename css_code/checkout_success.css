@@ -37,14 +37,18 @@ main h1 {
     transform: scale(1.1) translateY(20px);
   }
 
+  .movie {
+    max-height: auto ;
+  }
   .movie h2 {
     margin-top: 100px;
     font-size: 1rem;
     text-transform: uppercase;
   }
   .movie img {
-    max-width: auto;
-    height: 50vh;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
   }
   .movie button {
     width: 100%;

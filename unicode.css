@@ -404,6 +404,7 @@ html {
     max-width: 50%;
     margin: 20px auto;
     border: none;
+    width: 100%;
   }
   
   .newsletteremail {
@@ -426,20 +427,19 @@ html {
     font-family: 'montserrat';
     font-weight: lighter;
     border: none;
+    word-wrap: break-word;
   }
-  
-  .newsletteremail:hover {
+  input.newslettersubscribe:hover {
     font-weight: 600;
+  }
+  .newsletteremail:hover {
+    background-color: var(--white);
   }
   
   .newsletteremail:focus {
     font-weight: 400;
     background-color: var(--white);
     outline: none;
-  }
-  
-  .newslettersubscribe:hover {
-    font-weight: 600;
   }
   
   /* Footerbar */
@@ -915,6 +915,16 @@ html {
 
       .supportfilm_area a {
         font-size: 1.2rem;
+      }
+
+      /* Newsletter */
+      .newsletterfieldset {
+        flex-direction: column;
+        gap: 8px;
+      }
+      
+      .newsletteremail, .newslettersubscribe {
+        text-align: center;
       }
 
       /* Footerbar */
