@@ -241,7 +241,7 @@ h2 {
         flex-direction: column;
     }
     .batman_header_pic {
-        content: url(/images/batman\ header.png);
+        content: url(/images/batman_header-min.png);
         width: 100%;
         margin: 0px;
     }

@@ -48,7 +48,7 @@ body {
 }
 
 .movie_set {
-    content: url(/images/movie_set.png);
+    content: url(/images/movie_set-min.png);
     max-width: 100%;
 }
 
