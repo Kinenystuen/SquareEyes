@@ -32,8 +32,10 @@
         </div>
         <div class="header_right">
             <nav class="nav_right">
-                <input id="menu_search_icon" type="search" placeholder="Search" class="search" aria-labelledby="search_bar">
-        <label for="menu_search_icon" class="icon_search"><span id="search_bar" class="gone_text">Search bar</span></label>
+                <input id="menu_search_icon" type="search" placeholder="Search" class="search"
+                    aria-labelledby="search_bar">
+                <label for="menu_search_icon" class="icon_search"><span id="search_bar" class="gone_text">Search
+                        bar</span></label>
                 <a href="your_fav.html" aria-label="Go to your favorites page">
                     <figure class="icon_favorites_nav"></figure>
                 </a>
@@ -51,7 +53,7 @@
         <div class="search_bar_area" id="search_bar_area">
             <input type="search" id="dropdown_menu" name="dropdown_menu" placeholder="Search" class="search_dropdown">
             <label for="dropdown_menu" aria-label="Dropdown search menu"></label>
-          </div>
+        </div>
     </header>
     <main class="content_wrap main_h">
         <div class="max-width">
@@ -100,82 +102,88 @@
                 </div>
                 <section class="payment_details">
                     <h2>2. Payment Details</h2>
-
-                    <div class="item">
-                        <p>The Batman</p>
-                        <p>34kr</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="item">
-                        <p>Total price</p>
-                        <p>34kr</p>
-                    </div>
-                    <div class="loginpart">
-                        <a href="/your_page.html" class="Login_signin_b">Log in / sign in</a>
-                        <p>or</p>
-                        <p>Submit your details</p>
-                    </div>
-                    <form class="payment_area" action="form-success.php" method="post">
-                        <div class="your_datails">
-                            <div>
-                                <label class="firstname" for="firstname">Your first name</label>
-                                <input type="text" name="firstname" id="firstname" placeholder="First name"
-                                    aria-label="Your first name" required>
-                            </div>
-                            <div>
-                                <label class="lastname" for="lastname">Your last name</label>
-                                <input type="text" name="lastname" id="lastname" placeholder="Last name"
-                                    aria-label="Your last name" required>
-                            </div>
-                            <div>
-                                <label for="email">Your email</label>
-                                <input type="email" name="email" id="email" placeholder="Your email"
-                                    aria-label="Your email" required>
-                            </div>
-
-                            <p>Select payment method</p>
-                            <div class="paymentmethod">
-                                <div class="visaarea">
-                                    <input type="radio" id="visa" name="payment_method" value="visa" aria-label="Visa" checked>
-                                    <label for="visa" class="icon_visa" aria-label="Visa as payment method"></label>
-                                </div>
-                                <div class="paypalarea">
-                                    <input type="radio" id="paypal" name="payment_method" value="paypal" aria-label="Paypal">
-                                    <label for="paypal" class="icon_paypal" aria-label="Paypal as payment method"></label>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="card_number">Card number</label>
-                                <input type="text" name="card_number" id="card_number" placeholder="xxxx xxxx xxxx xxxx"
-                                    aria-label="Card number" required>
-                            </div>
-                            <div class="expiredate_cvcarea">
-                                <div>
-                                    <label for="expire_date">Expire date</label>
-                                    <input type="text" name="expire_date" id="expire_date" placeholder="xx/xx"
-                                        aria-label="Expire date" maxlength="5" required>
-                                </div>
-                                <div>
-                                    <label for="cvc">CVC</label>
-                                    <input type="text" name="cvc" id="cvc" placeholder="xxx" aria-label="CVC"
-                                        maxlength="3" required>
-                                </div>
-                            </div>
-                            <p>When clicking “Pay now” you confirm that you are 18 years old and that you agree to these
-                                terms. Your purchase(s) will be available immediatly after payment.</p>
-                            <div class="checkboxes">
-                                <input class="checkbox_box" type="checkbox" name="terms" id="terms" checked required>
-                                <label for="terms" class="checkbox_label">I agree with the terms.</label>
-                            </div>
-                            <div class="checkboxes">
-                                <input class="checkbox_box" type="checkbox" name="newsletter" id="newsletter">
-                                <label for="newsletter" class="checkbox_label">I want to recive updates via
-                                    email.</label>
-                            </div>
-                            <input type="submit" value="Pay now" id="paynow">
-                            <label for="paynow" class="paynow"><a href="/checkout_sucsess.html">Pay now</a></label>
+                    <div class="payment_details_b">
+                        <div class="item">
+                            <p>The Batman</p>
+                            <p>34kr</p>
                         </div>
-                    </form>
+                        <div class="line"></div>
+                        <div class="item">
+                            <p>Total price</p>
+                            <p>34kr</p>
+                        </div>
+                        <div class="loginpart">
+                            <a href="/your_page.html" class="Login_signin_b">Log in / sign in</a>
+                            <p>or</p>
+                            <p>Submit your details</p>
+                        </div>
+                        <form class="payment_area" action="form-success.php" method="post">
+                            <div class="your_datails">
+                                <div>
+                                    <label class="firstname" for="firstname">Your first name</label>
+                                    <input type="text" name="firstname" id="firstname" placeholder="First name"
+                                        aria-label="Your first name" required>
+                                </div>
+                                <div>
+                                    <label class="lastname" for="lastname">Your last name</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Last name"
+                                        aria-label="Your last name" required>
+                                </div>
+                                <div>
+                                    <label for="email">Your email</label>
+                                    <input type="email" name="email" id="email" placeholder="Your email"
+                                        aria-label="Your email" required>
+                                </div>
+
+                                <p>Select payment method</p>
+                                <div class="paymentmethod">
+                                    <div class="visaarea">
+                                        <input type="radio" id="visa" name="payment_method" value="visa"
+                                            aria-label="Visa" checked>
+                                        <label for="visa" class="icon_visa" aria-label="Visa as payment method"></label>
+                                    </div>
+                                    <div class="paypalarea">
+                                        <input type="radio" id="paypal" name="payment_method" value="paypal"
+                                            aria-label="Paypal">
+                                        <label for="paypal" class="icon_paypal"
+                                            aria-label="Paypal as payment method"></label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="card_number">Card number</label>
+                                    <input type="text" name="card_number" id="card_number"
+                                        placeholder="xxxx xxxx xxxx xxxx" aria-label="Card number" required>
+                                </div>
+                                <div class="expiredate_cvcarea">
+                                    <div>
+                                        <label for="expire_date">Expire date</label>
+                                        <input type="text" name="expire_date" id="expire_date" placeholder="xx/xx"
+                                            aria-label="Expire date" maxlength="5" required>
+                                    </div>
+                                    <div>
+                                        <label for="cvc">CVC</label>
+                                        <input type="text" name="cvc" id="cvc" placeholder="xxx" aria-label="CVC"
+                                            maxlength="3" required>
+                                    </div>
+                                </div>
+                                <p>When clicking “Pay now” you confirm that you are 18 years old and that you agree to
+                                    these
+                                    terms. Your purchase(s) will be available immediatly after payment.</p>
+                                <div class="checkboxes">
+                                    <input class="checkbox_box" type="checkbox" name="terms" id="terms" checked
+                                        required>
+                                    <label for="terms" class="checkbox_label">I agree with the terms.</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input class="checkbox_box" type="checkbox" name="newsletter" id="newsletter">
+                                    <label for="newsletter" class="checkbox_label">I want to recive updates via
+                                        email.</label>
+                                </div>
+                                <input type="submit" value="Pay now" id="paynow">
+                                <label for="paynow" class="paynow"><a href="/checkout_sucsess.html">Pay now</a></label>
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </section>
         </div>

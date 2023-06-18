@@ -5,6 +5,7 @@ html {
     --greywhite: #d2d2d2;
     --white: #f7f7f7;
 }
+
 h2 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -22,6 +23,7 @@ h2 {
     background-position-x: right;
     background-position-y: top;
 }
+
 .headerpic_gradient {
     position: absolute;
     display: flex;
@@ -36,23 +38,27 @@ h2 {
 .movie_info {
     flex-direction: column;
     justify-content: center;
-    align-items: left; 
+    align-items: left;
     margin-left: 15%;
     z-index: 2;
     height: 100%;
     max-width: 500px;
 }
+
 .movie_info h1 {
     font-size: 2rem;
-    text-transform:uppercase;
+    text-transform: uppercase;
     margin: 0px;
 }
+
 .imdb_rating_mobile {
     display: none;
 }
+
 .movie_price {
     font-size: 1.4rem;
 }
+
 .button_icon_area {
     display: flex;
     gap: 10px;
@@ -61,7 +67,7 @@ h2 {
 }
 
 .playbutton {
-    font-family: 'montserrat',  Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     background-color: var(--yellow);
     color: var(--dark_purple);
@@ -71,22 +77,28 @@ h2 {
     border: none;
     box-sizing: border-box;
 }
+
 .playbutton:hover {
     font-weight: 600;
     padding: 8px;
 }
+
 /* shopping bag */
-  .shopping_bag_icon { /*icon */
+.shopping_bag_icon {
+    /*icon */
     content: url(/icons/icon_shopping_bag_final.png);
-      width: 1.2rem;
-      height: 1.3rem;
-      align-self: center;
-      padding-left: 1rem;
-  }
-  .shopping_bag_button::before {
+    width: 1.2rem;
+    height: 1.3rem;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.shopping_bag_button::before {
     content: "Add";
-  }
-  .shopping_bag_button { /*the one with add ;) */
+}
+
+.shopping_bag_button {
+    /*the one with add ;) */
     display: flex;
     justify-content: center;
     padding: 1rem 0px;
@@ -96,13 +108,15 @@ h2 {
     color: var(--dark_purple);
     text-transform: uppercase;
     font-size: 1.2rem;
-  }
-  .shoppingbag_options {
+}
+
+.shoppingbag_options {
     display: none;
     gap: 8px;
     margin: 8px 0px;
-  }
-  .shoppingbag_options a {
+}
+
+.shoppingbag_options a {
     text-decoration: none;
     color: var(--dark_purple);
     background-color: var(--greywhite);
@@ -114,16 +128,17 @@ h2 {
     align-items: center;
     justify-content: center;
     flex: 1;
-  }
+}
 
-  .shoppingbag_options a:hover, .shopping_bag_button:hover {
+.shoppingbag_options a:hover,
+.shopping_bag_button:hover {
     font-weight: 600;
     background-color: #d2d2d2;
-  }
+}
 
-    #shopping_bag_button1:checked~.shoppingbag_options {
-        display: flex;
-    }
+#shopping_bag_button1:checked~.shoppingbag_options {
+    display: flex;
+}
 
 /* trailer window */
 
@@ -137,13 +152,15 @@ h2 {
     top: 6vh;
     right: 5%;
 }
-.close_trailer figure{
+
+.close_trailer figure {
     content: url(/icons/icon_cross_grey.png);
     object-position: center;
     width: 2rem;
     height: auto;
     margin: auto;
 }
+
 .close_trailer figure:hover {
     content: url(/icons/icon_cross.png);
     cursor: pointer;
@@ -154,6 +171,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 .batman_trailer {
     width: 80%;
     height: auto;
@@ -168,29 +186,35 @@ h2 {
     padding: 16px 0px;
     max-width: 1500px;
 }
+
 .movie_details {
     display: flex;
     padding: 0px;
     margin-bottom: 0px;
 }
+
 .movie_details_more {
     display: flex;
     flex-direction: row;
 }
+
 .movie_details_more p {
     font-size: 1rem;
     padding: 2px 0px;
     margin: 0px;
 }
+
 .what {
     flex: 1;
     text-align: left;
 
 }
+
 .it_is {
     flex: 1;
     text-align: left;
 }
+
 .details_more .movie_details_more:nth-child(4) {
     margin-top: 20px;
 }
@@ -204,35 +228,45 @@ h2 {
     font-size: 0.7rem;
     padding: 2px 0px;
 }
+
 @media (max-width: 1500px) {
     /* batmansection1 */
 
-.movie_info, .playbutton {
-    font-size: 0.8rem;
+    .movie_info,
+    .playbutton {
+        font-size: 0.8rem;
+    }
+
+    .movie_info h1 {
+        font-size: 1.8rem;
+    }
+
+    .movie_price {
+        font-size: 1.2rem;
+    }
+
+    .playbutton:hover {
+        font-weight: 600;
+        padding: 8px;
+    }
+
+    /* shopping bag */
+    .shopping_bag_button::before {
+        content: "Add";
+    }
+
+    button.playbutton,
+    .shopping_bag_button {
+        height: 2.6rem;
+        align-items: center;
+        padding: 0px 4px;
+    }
+
+    .movie_details_more p {
+        font-size: 0.8rem;
+    }
 }
-.movie_info h1 {
-    font-size: 1.8rem;
-}
-.movie_price {
-    font-size: 1.2rem;
-}
-.playbutton:hover {
-    font-weight: 600;
-    padding: 8px;
-}
-/* shopping bag */
-  .shopping_bag_button::before {
-    content: "Add";
-  }
-  button.playbutton, .shopping_bag_button {
-    height: 2.6rem;
-    align-items: center;
-    padding: 0px 4px;
-  }
-  .movie_details_more p {
-    font-size: 0.8rem;
-}
-}
+
 @media (max-width: 950px) {
     .movie_info {
         margin-left: 0px;
@@ -243,6 +277,7 @@ h2 {
     .batmansection1 {
         min-height: 400px;
     }
+
     .movie_info {
         max-width: 350px;
     }
@@ -252,7 +287,9 @@ h2 {
     .content_wrap {
         max-width: 90%;
     }
-    .batmansection1, .headerpic_gradient {
+
+    .batmansection1,
+    .headerpic_gradient {
         position: relative;
         min-height: auto;
         margin: 30px 0px;
@@ -260,47 +297,58 @@ h2 {
         background: none;
         height: 0%;
     }
+
     .headerpic_gradient {
         flex-direction: column;
     }
+
     .batman_header_pic {
         content: url(/images/batman_header-min.png);
         width: 100%;
         margin: 0px;
     }
+
     .movie_info {
-        position: relative; 
+        position: relative;
         max-width: 100%;
         margin-left: 0px;
     }
+
     .movie_info_top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 10px;
     }
+
     .movie_info h1 {
         font-size: 1.2rem;
     }
+
     .imdb_rating {
         display: none;
     }
+
     .imdb_rating_mobile {
         display: flex;
         flex-direction: column;
         align-items: end;
         font-size: 1rem;
     }
+
     .movie_price {
         font-size: 1.4rem;
         margin: 8px;
     }
+
     .playbutton {
         padding: 0px 8px;
     }
+
     .playbutton:hover {
         padding: 0px 4.3px;
     }
+
     .buttons label a {
         padding: 0px;
     }
@@ -311,11 +359,13 @@ h2 {
         justify-content: center;
         z-index: 10;
     }
+
     .movietrailer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
     .close_trailer {
         position: absolute;
         display: flex;
@@ -335,7 +385,7 @@ h2 {
         margin: 20px 0;
     }
 
-    
+
 
     /* section 3 moviephotos_section */
 
