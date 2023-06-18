@@ -83,12 +83,7 @@ button, label, input { /*do i need this? fix*/
     font-size: 0.8rem;
     padding: 0px 8px 0px 0px;
 }
-.what {
-    flex: 1;
-    text-align: left;
-
-}
-.it_is {
+.what, .it_is {
     flex: 1;
     text-align: left;
 }
@@ -148,8 +143,7 @@ button, label, input { /*do i need this? fix*/
     align-items: center;
     font-size: 1rem;
     color: var(--greywhite);
-    background-color: var(--dark_purple);
-    border-radius: 8px;
+    border-radius:8px;
     border: none;
     padding: 8px;
     margin: 20px 0px 100px 0px;
@@ -165,7 +159,7 @@ button, label, input { /*do i need this? fix*/
 
 /* ////////  Payment details /////// */
 
-.payment_area .line {
+div.line, div.item {
     width: 90%;
 }
 .payment_details {

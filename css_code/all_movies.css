@@ -1,13 +1,9 @@
-
-h1 {
-    font-size: 1.8rem;
-    font-weight: 200;
-    margin: 16px auto;
-    max-width: 1500px;
-}
-h2 {
-  font-size: 1.1rem;
-    margin: 2px;
+html {
+  --dark_purple: #050517;
+  --purple: #2E1B3B;
+  --yellow: #F0C808;
+  --greywhite: #d2d2d2;
+  --white: #f7f7f7;
 }
 h2 a{
     text-decoration: none;
@@ -23,20 +19,25 @@ h2 a{
     max-width: 1500px;
 }
 /* Movie categorie nav */
+.movie_nav {
+  display: flex;
+  width: 100%;
+  font-size: 1rem; 
+  background-color: var(--dark_purple);
+  box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);
+  border-radius: 8px;
+  height: auto;
+}
 .movie_nav a {
     text-decoration: none;
     padding: 8px;
     color: var(--greywhite);
+    border-radius: 5px;
+    box-sizing: border-box;
   }
-  
-  .movie_nav {
-    display: flex;
-    width: 100%;
-    font-size: 1rem; 
-    background-color: var(--dark_purple);
-    box-shadow: 0px 4px 50px rgba(80, 80, 80, 0.25);
-    border-radius: 8px;
-    height: auto;
+  .movie_nav a:hover {
+    background: var(--purple);
+    outline: 1px solid var(--purple);
   }
   .movie_nav ul {
     padding: 8px 5px;
@@ -47,35 +48,14 @@ h2 a{
     display: inline-flex;
   }
   
-  .movie_nav a {
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  .movie_nav a:hover {
-    background: var(--purple);
-    outline: 1px solid var(--purple);
-    border-radius: 5px;
-  }
-  
   .active_movie {
-    box-sizing: border-box;
     background-color: var(--purple);
     color: var(--white);
     text-transform: uppercase;
   }
   
-  .movie_nav label:nth-child(1) {
+  .movie_nav label:nth-child(1), #moviemenu_checkbox {
     display: none;
-  }
-  
-  #moviemenu_checkbox {
-    display: none;
-  }
-  
-  .movies {
-    position: relative;
-    padding-bottom: 100px;
-    max-width: 800px;
   }
 
   /* Sory by nav */
@@ -94,7 +74,7 @@ h2 a{
     white-space: nowrap;
     color: var(--dark_purple);
   }
-  .movie_org input {
+  .movie_org input, .sortby_menu li {
     display: none;
   }
   .sortby_menu {
@@ -103,13 +83,18 @@ h2 a{
     right: 2px;
     z-index: 1;
   }
+  .sortby_menu a {
+    padding: 8px;
+    text-decoration: none;
+    color: var(--dark_purple);
+    width: 100%;
+  }
   .sortby_menu ul {
     background-color: var(--greywhite);
     border-radius: 5px ;
     padding: 0px;
   }
   .sortby_menu li {
-    display:none;
     width: 100%;
     border-top: 1px solid var(--dark_purple);
   }
@@ -121,7 +106,7 @@ h2 a{
     border-radius: 0px;
   }
   .sortby_menu li:nth-child(1):hover{
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px;
   }
   .sortby_menu li:nth-child(6):hover{
     border-radius:0px 0px 5px 5px;
@@ -129,37 +114,20 @@ h2 a{
   .sortby_menu li:nth-child(1):hover {
     background-color: var(--greywhite);
   }
-  .sortby_menu a {
-    padding: 8px;
-    text-decoration: none;
-    color: var(--dark_purple);
-    width: 100%;
-  }
-
   #sortby_menu_button:checked ~ .sortby_menu li {
     display: flex;
   }
-  #sortby_menu_button:checked ~ .movie_nav {
-    height: 30px;
-  }
-  #sortby_menu_button:checked ~ .sortby {
-    background-image: url(/icons/icon_downarrow_rotated.png);
-  }
 
 
-
-
-  
   /* Movie cards */
-
   .movies {
-    min-height: auto;
-    margin: 20px auto 170px auto;
-    max-width: 1500px;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     flex-direction: row;
     grid-gap: 20px;    
+    min-height: auto;
+    margin: 20px auto 170px auto;
+    max-width: 1500px;
   }
   .movie_card {
     display: flex;
@@ -196,10 +164,6 @@ h2 a{
     font-size: 1.4rem;
   }
   /* buttons and shopping bag */
-  /* 
-  buttons = the boss
-  buttons a = more info button all. 
-  */
   .buttons { 
     display: flex;
     gap: 4px;
@@ -222,10 +186,7 @@ h2 a{
   }
   .buttons a {
     text-decoration: none;
-    color: var(--dark_purple);
-    text-align: center;
     padding: 8px 10px;
-    background-color: var(--greywhite);
     flex: 1;
   }
   .buttons a:hover, .shopping_bag_button:hover {
@@ -248,27 +209,24 @@ h2 a{
   }
 
   @media (max-width:1300px) {
-    font-size: 14px;
+    html {
+      font-size: 14px;
+    }
     .icons {
         width: 1.5rem;
         height: 1.5rem;
     }
     .movie_info {
-        justify-content: space-between;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
   }
   
   @media (max-width:1120px) {
-    main {
-        font-size: 14px;
-    }
-
     /* movie card */
     .buttons label {
         font-size: 0.8rem;
       }
-  }
+    }
   @media (max-width:1000px) {
     /* movie card */
     .movie_cover {
@@ -281,23 +239,13 @@ h2 a{
   
 
   @media (max-width:950px) {
-    .movie_descrition {
-        font-size: 0.7rem;
-    }
-    .movie_info h2 {
-        font-size: 1rem;
-    }
 
     /* Changes the categories menu */
     .movie_nav li {
         display: none;
     }
-    .movie_nav li:nth-child(1) {
+    .movie_nav li:nth-child(1), .movie_nav label:nth-child(1) {
       display: flex;
-    }
-    .movie_nav label:nth-child(1) {
-        display: flex;
-        p
     }
     #moviemenu_checkbox:checked ~ .movie_nav li{
         display: flex;
@@ -322,20 +270,16 @@ h2 a{
 
 
 
-  @media (max-width:700px) {
+  @media (max-width:800px) {
     .movies {
         grid-template-columns:repeat(1, 1fr);
     }
-    .movie_descrition {
+    .movie_descrition, .buttons label {
         font-size: 1rem;
     }
     .movie_info h2 {
         font-size: 1.4rem;
-    }
-    .buttons label {
-        font-size: 1rem;
-      }
-    
+    }    
     .icons {
       height: 1.8rem;
     }
@@ -357,7 +301,6 @@ h2 a{
       .movie_nav a{
         font-size: 1rem;
       }
-
       .categories {
           width: 95%;
           background-color: var(--dark_purple);
@@ -373,16 +316,12 @@ h2 a{
       .sortby {
         width: auto;
       }
-
       .icons {
         height: 2rem;
       }
 
       /* movie cards */
-      .movie_cover {
-        flex: 1;
-      }
-      .movie_info {
+      .movie_cover, .movie_info {
         flex: 1;
       }
   }

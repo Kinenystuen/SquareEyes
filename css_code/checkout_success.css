@@ -4,13 +4,8 @@ html {
     --yellow: #F0C808;
     --greywhite: #d2d2d2;
     --white: #f7f7f7;
-
-    position: relative;
 }
 
-main h1 {
-    font-size: 1.8rem;
-}
 .successfull_purchase, .watch_now {
     display: flex;
     justify-content: center;
@@ -36,9 +31,11 @@ main h1 {
   .arrowdown:hover {
     transform: scale(1.1) translateY(20px);
   }
-
-  .movie {
-    max-height: auto ;
+  .movie img, .movie button {
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
   }
   .movie h2 {
     margin-top: 100px;
@@ -47,14 +44,11 @@ main h1 {
   }
   .movie img {
     object-fit: cover;
-    width: 100%;
-    max-width: 400px;
     height: auto;
   }
   .movie button {
-    width: 100%;
     background-color: var(--yellow);
-    padding: 8px 0px;
+    padding: 8px 5%;
     font-size: 1.2rem;
     border-radius:0px 0px 5px 5px;
   }

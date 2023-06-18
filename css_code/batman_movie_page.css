@@ -4,8 +4,6 @@ html {
     --yellow: #F0C808;
     --greywhite: #d2d2d2;
     --white: #f7f7f7;
-
-    position: relative;
 }
 h2 {
     font-size: 0.9rem;
@@ -32,7 +30,7 @@ h2 {
     background: linear-gradient(90deg, #050517 0%, rgba(5, 5, 23, 0.5) 31.59%, rgba(217, 217, 217, 0) 65.21%);
     height: 100%;
     width: 100%;
-    z-index: 2; /*sends the background to the back */
+    z-index: 2;
 }
 
 .movie_info {
@@ -78,10 +76,12 @@ h2 {
     padding: 8px;
 }
 /* shopping bag */
-.shopping_bag { /*icon */
+  .shopping_bag_icon { /*icon */
     content: url(/icons/icon_shopping_bag_final.png);
-      width: 1rem;
-      height: auto;
+      width: 1.2rem;
+      height: 1.3rem;
+      align-self: center;
+      padding-left: 1rem;
   }
   .shopping_bag_button::before {
     content: "Add";
@@ -122,7 +122,6 @@ h2 {
   }
 
     #shopping_bag_button1:checked~.shoppingbag_options {
-        display: show;
         display: flex;
     }
 
@@ -135,7 +134,7 @@ h2 {
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
-    top: 2%;
+    top: 6vh;
     right: 5%;
 }
 .close_trailer figure{
@@ -205,7 +204,40 @@ h2 {
     font-size: 0.7rem;
     padding: 2px 0px;
 }
-  
+@media (max-width: 1500px) {
+    /* batmansection1 */
+
+.movie_info, .playbutton {
+    font-size: 0.8rem;
+}
+.movie_info h1 {
+    font-size: 1.8rem;
+}
+.movie_price {
+    font-size: 1.2rem;
+}
+.playbutton:hover {
+    font-weight: 600;
+    padding: 8px;
+}
+/* shopping bag */
+  .shopping_bag_button::before {
+    content: "Add";
+  }
+  button.playbutton, .shopping_bag_button {
+    height: 2.6rem;
+    align-items: center;
+    padding: 0px 4px;
+  }
+  .movie_details_more p {
+    font-size: 0.8rem;
+}
+}
+@media (max-width: 950px) {
+    .movie_info {
+        margin-left: 0px;
+    }
+}
 
 @media (max-height: 900px) {
     .batmansection1 {
